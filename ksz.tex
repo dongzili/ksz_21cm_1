@@ -44,7 +44,7 @@
 % the following line is for submission, including submission to the arXiv!!
 %\hspace{5.2in} \mbox{Fermilab-Pub-04/xxx-E}
 
-\title{Cross Correlate Tidal Reconstructed 21cm Signal with Kinematic Sunyaev-Zel'dovich Effect: A New Probe for Missing Baryons at $z\sim1-2}
+\title{Cross Correlate Tidal Reconstructed 21cm Signal with Kinematic Sunyaev-Zel'dovich Effect: A New Probe for Missing Baryons at $z\sim1-2$}
 %\input author.tex
 \input abstract.tex
 \pacs{}
@@ -54,29 +54,23 @@
 \section{Introduction}
 \input introduction.tex
 
-%{\it Cosmic Tidal Reconstruction.}---
-%\section{Complete Procedure and Simulation Results}
-\section{Reconstruction Algorithm}
-\subsection{3D Cosmic Tidal Reconstruction}
+\section{Velocity Reconstruction and kSZ signals Cross Correlation}
+\input kszRecon.tex
+\section{Cross Correlation with Noise Substracted Field} 
+\subsection{Mimic the Noise Substraction}
+\input noiseSubstraction.tex
+\subsection{Cross Correlation Behavior with Noise Substracted Field}
+\input controlResult.tex
+\section{3D Cosmic Tidal Reconstruction}
+\subsection{Algorithm}
 \input tide.tex
-
-%{\it Velocity Reconstruction and kSZ signals}---
-\subsection{Velocity Reconstruction and kSZ signals}
-\input cross.tex
-
-%{\it Simulations.}---
-\section{Simulations}
-\subsection{Simulation Set up}
-\input simulation.tex
-\subsection{Results}
-\input result.tex
-%\section{Why/When Tidal Reconstruction}
-%\input when.tex
+\subsection{Cross Correlation Behavior with Tidal Reconstructed Field}
+\input tideResult.tex
 \section{Discussion and error estimates}
-\subsection{Redshift Distortion}
-\input rsd.tex
 \subsection{Statistical Error}
 \input error.tex
+\subsection{Redshift Distortion}
+\input rsd.tex
 \section{Conclusion}
 \section{Acknowledge}
 \input acknowledge.tex

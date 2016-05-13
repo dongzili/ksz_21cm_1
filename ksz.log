@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.11)  9 MAY 2016 14:39
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=latex 2016.4.11)  12 MAY 2016 22:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -88,18 +88,10 @@ Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
 File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
 )
-Package graphics Info: Driver file: pdftex.def on input line 91.
+Package graphics Info: Driver file: dvips.def on input line 91.
 
-(/usr/share/texlive/texmf-dist/tex/latex/pdftex-def/pdftex.def
-File: pdftex.def 2011/05/27 v0.06d Graphics/color for pdfTeX
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
-Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
-Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
-)
-\Gread@gobject=\count93
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
 ))
 \Gin@req@height=\dimen102
 \Gin@req@width=\dimen103
@@ -144,13 +136,13 @@ LaTeX Info: Redefining \boldsymbol on input line 39.
 (/usr/share/texlive/texmf-dist/tex/latex/amsmath/amsopn.sty
 Package: amsopn 1999/12/14 v2.01 operator names
 )
-\inf@bad=\count94
+\inf@bad=\count93
 LaTeX Info: Redefining \frac on input line 210.
-\uproot@=\count95
-\leftroot@=\count96
+\uproot@=\count94
+\leftroot@=\count95
 LaTeX Info: Redefining \overline on input line 306.
-\classnum@=\count97
-\DOTSCASE@=\count98
+\classnum@=\count96
+\DOTSCASE@=\count97
 LaTeX Info: Redefining \ldots on input line 378.
 LaTeX Info: Redefining \dots on input line 381.
 LaTeX Info: Redefining \cdots on input line 466.
@@ -159,15 +151,15 @@ LaTeX Info: Redefining \cdots on input line 466.
 \big@size=\dimen108
 LaTeX Font Info:    Redeclaring font encoding OML on input line 566.
 LaTeX Font Info:    Redeclaring font encoding OMS on input line 567.
-\macc@depth=\count99
-\c@MaxMatrixCols=\count100
+\macc@depth=\count98
+\c@MaxMatrixCols=\count99
 \dotsspace@=\muskip11
-\c@parentequation=\count101
-\dspbrk@lvl=\count102
+\c@parentequation=\count100
+\dspbrk@lvl=\count101
 \tag@help=\toks19
-\row@=\count103
-\column@=\count104
-\maxfields@=\count105
+\row@=\count102
+\column@=\count103
+\maxfields@=\count104
 \andhelp@=\toks20
 \eqnshift@=\dimen109
 \alignsep@=\dimen110
@@ -204,8 +196,11 @@ Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
 File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
 )
-Package color Info: Driver file: pdftex.def on input line 130.
-)
+Package color Info: Driver file: dvips.def on input line 130.
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
 (/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
 Package: verbatim 2003/08/22 v1.5q LaTeX2e package for verbatim enhancements
 \every@verbatim=\toks23
@@ -237,249 +232,161 @@ File: ot1ptm.fd 2001/06/04 font definitions for OT1/ptm.
 Class revtex4 Info: Patching array package. on input line 41.
 Class revtex4 Info: cite was not loaded (OK!) on input line 41.
 Class revtex4 Info: multicol was not loaded (OK!) on input line 41.
+ (./abstract.tex
+LaTeX Font Info:    Try loading font information for U+msa on input line 22.
 
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
-[Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count106
-\scratchdimen=\dimen116
-\scratchbox=\box36
-\nofMPsegments=\count107
-\nofMParguments=\count108
-\everyMPshowfont=\toks25
-\MPscratchCnt=\count109
-\MPscratchDim=\dimen117
-\MPnumerator=\count110
-\makeMPintoPDFobject=\count111
-\everyMPtoPDFconversion=\toks26
-) (/usr/share/texlive/texmf-dist/tex/generic/oberdiek/pdftexcmds.sty
-Package: pdftexcmds 2011/11/29 v0.20 Utility functions of pdfTeX for LuaTeX (HO
-)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifluatex.sty
-Package: ifluatex 2010/03/01 v1.3 Provides the ifluatex switch (HO)
-Package ifluatex Info: LuaTeX not detected.
-)
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
-Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
-Package ifpdf Info: pdfTeX in PDF mode is detected.
-)
-Package pdftexcmds Info: LuaTeX not detected.
-Package pdftexcmds Info: \pdf@primitive is available.
-Package pdftexcmds Info: \pdf@ifprimitive is available.
-Package pdftexcmds Info: \pdfdraftmode found.
-)
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
-Package: epstopdf-base 2010/02/09 v2.5 Base part for package epstopdf
-
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/grfext.sty
-Package: grfext 2010/08/19 v1.1 Manage graphics extensions (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvdefinekeys.sty
-Package: kvdefinekeys 2011/04/07 v1.3 Define keys (HO)
-))
-(/usr/share/texlive/texmf-dist/tex/latex/oberdiek/kvoptions.sty
-Package: kvoptions 2011/06/30 v3.11 Key value format for package options (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/kvsetkeys.sty
-Package: kvsetkeys 2012/04/25 v1.16 Key value parser (HO)
-
-(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/etexcmds.sty
-Package: etexcmds 2011/02/16 v1.5 Avoid name clashes with e-TeX commands (HO)
-Package etexcmds Info: Could not find \expanded.
-(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
-(etexcmds)             that some package has redefined \expanded.
-(etexcmds)             In the latter case, load this package earlier.
-)))
-Package grfext Info: Graphics extension search list:
-(grfext)             [.png,.pdf,.jpg,.mps,.jpeg,.jbig2,.jb2,.PNG,.PDF,.JPG,.JPE
-G,.JBIG2,.JB2,.eps]
-(grfext)             \AppendGraphicsExtensions on input line 452.
-
-(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Liv
-e
-))
-(./abstract.tex
-LaTeX Font Info:    Try loading font information for U+msa on input line 7.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
+(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 7.
+LaTeX Font Info:    Try loading font information for U+msb on input line 22.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 51.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.51 \maketitle
-               
-? 
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 54.
-(./introduction.tex) [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(./tide.tex
-Overfull \hbox (30.18655pt too wide) in alignment at lines 49--64
- [][][] []
- []
+ (./introduction.tex
+LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 3.
+
+Package natbib Warning: Citation `Cooke14' on page 1 undefined on input line 3.
 
 
-Overfull \hbox (29.81676pt too wide) in alignment at lines 66--71
- [][][] []
- []
 
-) (./cross.tex [2]) (./simulation.tex
-Package epstopdf Info: Source file: <compare_powv2d_z1z2.eps>
-(epstopdf)                    date: 2016-05-09 14:39:31
-(epstopdf)                    size: 44557 bytes
-(epstopdf)             Output file: <compare_powv2d_z1z2-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-05-09 14:39:31
-(epstopdf)                    size: 14586 bytes
-(epstopdf)             Command: <repstopdf --outfile=compare_powv2d_z1z2-eps-co
-nverted-to.pdf compare_powv2d_z1z2.eps>
-(epstopdf)             \includegraphics on input line 3.
-Package epstopdf Info: Output file is already uptodate.
-
-<compare_powv2d_z1z2-eps-converted-to.pdf, id=30, 1172.38pt x 1039.885pt>
-File: compare_powv2d_z1z2-eps-converted-to.pdf Graphic file (type pdf)
-
-<use compare_powv2d_z1z2-eps-converted-to.pdf>
-Package pdftex.def Info: compare_powv2d_z1z2-eps-converted-to.pdf used on input
- line 3.
-(pdftex.def)             Requested size: 244.79782pt x 217.12877pt.
-) (./result.tex
-Package epstopdf Info: Source file: <cl_correlation_z1_z2.eps>
-(epstopdf)                    date: 2016-05-09 14:39:31
-(epstopdf)                    size: 15381 bytes
-(epstopdf)             Output file: <cl_correlation_z1_z2-eps-converted-to.pdf>
-
-(epstopdf)                    date: 2016-05-09 14:39:30
-(epstopdf)                    size: 11748 bytes
-(epstopdf)             Command: <repstopdf --outfile=cl_correlation_z1_z2-eps-c
-onverted-to.pdf cl_correlation_z1_z2.eps>
-(epstopdf)             \includegraphics on input line 3.
-runsystem(repstopdf --outfile=cl_correlation_z1_z2-eps-converted-to.pdf cl_corr
-elation_z1_z2.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <cl_correlation_z1_z2-eps-converted-to.pdf>
-
-(epstopdf)                    date: 2016-05-09 14:39:41
-(epstopdf)                    size: 11748 bytes.
-
-<cl_correlation_z1_z2-eps-converted-to.pdf, id=31, 578.16pt x 867.24pt>
-File: cl_correlation_z1_z2-eps-converted-to.pdf Graphic file (type pdf)
-
-<use cl_correlation_z1_z2-eps-converted-to.pdf>
-Package pdftex.def Info: cl_correlation_z1_z2-eps-converted-to.pdf used on inpu
-t line 3.
-(pdftex.def)             Requested size: 244.79782pt x 367.18929pt.
-
-Underfull \hbox (badness 3746) in paragraph at lines 30--32
-\OT1/ptm/m/n/10 k modes, and we only lost small $\OML/cmm/m/it/10 k[]$ \OT1/ptm
-/m/n/10 modes in the
- []
-
-[3 <./compare_powv2d_z1z2-eps-converted-to.pdf>]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 49.
-
-) (./rsd.tex [4 <./cl_correlation_z1_z2-eps-converted-to.pdf>]) (./error.tex
-Package epstopdf Info: Source file: <Cl_sn_z1z2.eps>
-(epstopdf)                    date: 2016-05-09 14:39:31
-(epstopdf)                    size: 58206 bytes
-(epstopdf)             Output file: <Cl_sn_z1z2-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-05-09 14:39:30
-(epstopdf)                    size: 52610 bytes
-(epstopdf)             Command: <repstopdf --outfile=Cl_sn_z1z2-eps-converted-t
-o.pdf Cl_sn_z1z2.eps>
-(epstopdf)             \includegraphics on input line 3.
-runsystem(repstopdf --outfile=Cl_sn_z1z2-eps-converted-to.pdf Cl_sn_z1z2.eps)..
-.executed safely (allowed).
-
-Package epstopdf Info: Result file: <Cl_sn_z1z2-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-05-09 14:39:42
-(epstopdf)                    size: 52610 bytes.
-
-<Cl_sn_z1z2-eps-converted-to.pdf, id=63, 433.62pt x 722.7pt>
-File: Cl_sn_z1z2-eps-converted-to.pdf Graphic file (type pdf)
-
-<use Cl_sn_z1z2-eps-converted-to.pdf>
-Package pdftex.def Info: Cl_sn_z1z2-eps-converted-to.pdf used on input line 3.
-(pdftex.def)             Requested size: 244.79782pt x 407.99542pt.
-
-Overfull \hbox (5.76073pt too wide) in alignment at lines 18--20
- [][][] []
- []
+Package natbib Warning: Citation `Fukugita98' on page 1 undefined on input line
+ 3.
 
 
-Underfull \hbox (badness 1424) in paragraph at lines 27--37
-[]\OT1/ptm/m/n/10 In our case, we cal-cu-late $\OML/cmm/m/it/10 C[]$ \OT1/ptm/m
-/n/10 from CAMB [[]].
- []
+Package natbib Warning: Citation `Komatsu11' on page 1 undefined on input line 
+3.
 
 
-Underfull \hbox (badness 1755) in paragraph at lines 27--37
-\OML/cmm/m/it/10 C[]$\OT1/ptm/m/n/10 . $\OML/cmm/m/it/10 C[] \OT1/cmr/m/n/10 = 
-(\OML/cmm/m/it/10 ^^[[]^^R[]\OT1/cmr/m/n/10 )[]\OML/cmm/m/it/10 W[]$\OT1/ptm/m/
-n/10 ; where
- []
+Package natbib Warning: Citation `Hinshaw13' on page 1 undefined on input line 
+3.
 
 
-Underfull \hbox (badness 1331) in paragraph at lines 27--37
-\OML/cmm/m/it/10 ^^[[] \OT1/cmr/m/n/10 = 8\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 7\O
-ML/cmm/m/it/10 ^^VK[]$ \OT1/ptm/m/n/10 is Sen-si-tiv-ity per beam solid an-
- []
+Package natbib Warning: Citation `Pen1999' on page 1 undefined on input line 7.
 
-[5 <./Cl_sn_z1z2-eps-converted-to.pdf>]) (./acknowledge.tex
-! Misplaced alignment tab character &.
-l.10 ...Ontario through the Ministry of Research &
-                                                   Innovation.
-? 
-) (./ksz.bbl
-Underfull \hbox (badness 7203) in paragraph at lines 2--1
-[]\OT1/ptm/m/n/10 We ac-knowl-edge dis-cus-sions with Kendrick Smith,
- []
 
-) [6] (./ksz.aux) ) 
-Here is how much of TeX's memory you used:
- 4480 strings out of 493304
- 57876 string characters out of 6139871
- 162220 words of memory out of 5000000
- 7801 multiletter control sequences out of 15000+600000
- 33535 words of font info for 87 fonts, out of 8000000 for 9000
- 960 hyphenation exceptions out of 8191
- 38i,9n,26p,451b,294s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}<
-/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></
-usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/sh
-are/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/te
-xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/
-texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type
-1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
-c/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfo
-nts/cm/cmmib10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr5.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
-onts/symbols/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
-mb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/
-share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ksz.pdf (6 pages, 340922 bytes).
-PDF statistics:
- 155 PDF objects out of 1000 (max. 8388607)
- 111 compressed objects within 2 object streams
- 0 named destinations out of 1000 (max. 500000)
- 16 words of extra memory for PDF output out of 10000 (max. 10000000)
 
+Package natbib Warning: Citation `Soltan06' on page 1 undefined on input line 7
+.
+
+
+Package natbib Warning: Citation `Fukugita04' on page 1 undefined on input line
+ 9.
+
+
+Package natbib Warning: Citation `Werk14' on page 1 undefined on input line 9.
+
+
+Package natbib Warning: Citation `Dave10' on page 1 undefined on input line 10.
+
+
+
+Package natbib Warning: Citation `Sunyaev72' on page 1 undefined on input line 
+12.
+
+
+Package natbib Warning: Citation `Sunyaev80' on page 1 undefined on input line 
+12.
+
+
+Package natbib Warning: Citation `Zhang04' on page 1 undefined on input line 13
+.
+
+
+Package natbib Warning: Citation `McQuinn05' on page 1 undefined on input line 
+13.
+
+
+Package natbib Warning: Citation `Zahn12' on page 1 undefined on input line 13.
+
+
+
+Package natbib Warning: Citation `Hand12' on page 1 undefined on input line 27.
+
+
+
+Package natbib Warning: Citation `Shao11' on page 1 undefined on input line 27.
+
+
+
+Package natbib Warning: Citation `Li14' on page 1 undefined on input line 27.
+
+
+Package natbib Warning: Citation `Hill16' on page 1 undefined on input line 29.
+
+
+
+Package natbib Warning: Citation `2014SPIE.9145E..22B' on page 1 undefined on i
+nput line 44.
+
+
+Package natbib Warning: Citation `2015ApJ...798...40X' on page 1 undefined on i
+nput line 44.
+
+
+Package natbib Warning: Citation `HIRAX' on page 1 undefined on input line 45.
+
+
+Package natbib Warning: Citation `DiMatteo04' on page 1 undefined on input line
+ 53.
+
+
+Package natbib Warning: Citation `Masui13' on page 1 undefined on input line 53
+.
+
+
+Package natbib Warning: Citation `Switzer15' on page 1 undefined on input line 
+56.
+
+
+Package natbib Warning: Citation `2012:pen' on page 1 undefined on input line 6
+7.
+
+
+Package natbib Warning: Citation `2015:zhu' on page 1 undefined on input line 6
+7.
+
+[1]
+
+Package natbib Warning: Citation `2013:code' on page 2 undefined on input line 
+80.
+
+) (./kszRecon.tex
+
+Package natbib Warning: Citation `Shao11' on page 2 undefined on input line 3.
+
+
+LaTeX Warning: Reference `eq:v' on page 2 undefined on input line 29.
+
+) (./noiseSubstraction.tex
+
+Package natbib Warning: Citation `2014SPIE.9145E..22B' on page 2 undefined on i
+nput line 12.
+
+
+Package natbib Warning: Citation `2014SPIE.9145E..4VN' on page 2 undefined on i
+nput line 12.
+
+
+Package natbib Warning: Citation `2012IJMPS..12..256C' on page 2 undefined on i
+nput line 13.
+
+
+Package natbib Warning: Citation `2015ApJ...798...40X' on page 2 undefined on i
+nput line 13.
+
+) (./controlResult.tex
+
+LaTeX Warning: Reference `fig:v' on page 2 undefined on input line 1.
+
+[2]
+
+LaTeX Warning: Reference `fig:r' on page 3 undefined on input line 11.
+
+
+LaTeX W

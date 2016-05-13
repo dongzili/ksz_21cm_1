@@ -242,26 +242,6 @@
 \bibitem[{HIR()}]{HIRAX}
 \bibinfo{howpublished}{http://www.acru.ukzn.ac.za/~hirax/}.
 
-\bibitem[{\citenamefont{{Pen} et~al.}(2012)\citenamefont{{Pen}, {Sheth},
-  {Harnois-Deraps}, {Chen}, and {Li}}}]{2012:pen}
-\bibinfo{author}{\bibfnamefont{U.-L.} \bibnamefont{{Pen}}},
-  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{{Sheth}}},
-  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Harnois-Deraps}}},
-  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{{Chen}}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{{Li}}},
-  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
-  \eprint{1202.5804}.
-
-\bibitem[{\citenamefont{{Zhu} et~al.}(2015)\citenamefont{{Zhu}, {Pen}, {Yu},
-  {Er}, and {Chen}}}]{2015:zhu}
-\bibinfo{author}{\bibfnamefont{H.-M.} \bibnamefont{{Zhu}}},
-  \bibinfo{author}{\bibfnamefont{U.-L.} \bibnamefont{{Pen}}},
-  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{{Yu}}},
-  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{{Er}}}, \bibnamefont{and}
-  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{{Chen}}},
-  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2015}),
-  \eprint{1511.04680}.
-
 \bibitem[{\citenamefont{{Di Matteo} et~al.}(2004)\citenamefont{{Di Matteo},
   {Ciardi}, and {Miniati}}}]{DiMatteo04}
 \bibinfo{author}{\bibfnamefont{T.}~\bibnamefont{{Di Matteo}}},
@@ -296,6 +276,26 @@
   \bibinfo{author}{\bibfnamefont{T.~C.} \bibnamefont{{Voytek}}},
   \bibinfo{journal}{\apj} \textbf{\bibinfo{volume}{815}}, \bibinfo{eid}{51}
   (\bibinfo{year}{2015}), \eprint{1504.07527}.
+
+\bibitem[{\citenamefont{{Pen} et~al.}(2012)\citenamefont{{Pen}, {Sheth},
+  {Harnois-Deraps}, {Chen}, and {Li}}}]{2012:pen}
+\bibinfo{author}{\bibfnamefont{U.-L.} \bibnamefont{{Pen}}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{{Sheth}}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Harnois-Deraps}}},
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{{Chen}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{Z.}~\bibnamefont{{Li}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2012}),
+  \eprint{1202.5804}.
+
+\bibitem[{\citenamefont{{Zhu} et~al.}(2015)\citenamefont{{Zhu}, {Pen}, {Yu},
+  {Er}, and {Chen}}}]{2015:zhu}
+\bibinfo{author}{\bibfnamefont{H.-M.} \bibnamefont{{Zhu}}},
+  \bibinfo{author}{\bibfnamefont{U.-L.} \bibnamefont{{Pen}}},
+  \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{{Yu}}},
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{{Er}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{X.}~\bibnamefont{{Chen}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2015}),
+  \eprint{1511.04680}.
 
 \bibitem[{\citenamefont{{Harnois-D{\'e}raps}
   et~al.}(2013)\citenamefont{{Harnois-D{\'e}raps}, {Pen}, {Iliev}, {Merz},

@@ -1,0 +1,31 @@
+To ressemble realistic observations, we take into account the resolution, small scale noises and foreground substractions. 
+We apply two filters on original density contrast $\delta$ to imitate the effects of noise substractions:
+
+1. Import a cut off scale $k_c$, 
+with a step function $J(k_c-k)$ with $J(x)=0, x<0; J(x)=1, x\geqslant0$.
+This is reasonable for a filled aperture experiment, which
+has good brightness sensitivity and an exponetially growing noise at small 
+scales.
+We choose $k_c=0.5\ h/\mr{Mpc}$ and $0.32 h/\mr{Mpc}$ respectively for $z=1$ and $z=2$ , which corresponds
+to $\ell\sim1150$. 
+This is generally realistic, judging from ongoing 21cm experiments like
+CHIME \cite{2014SPIE.9145E..22B}\cite{2014SPIE.9145E..4VN}
+and Tianlai \cite{2012IJMPS..12..256C}\cite{2015ApJ...798...40X}.
+
+2. Use a high pass filter $W_{fs}(k_\parallel)=1-e^{-k_\parallel^2R_\parallel^2/2}$ to imitate the foreground substraction. 
+We choose 
+$R_\parallel=15\ \mr{Mpc}/h$ for $z=1$ and $R_\parallel=8\ \mr{Mpc}/h$ for $z=2$, which gives
+$W_{fs}=0.5$ at
+$k_\parallel=0.08\ \mr{Mpc}/h$ and $0.15\ \mr{Mpc}/h$ respectively. 
+%This is realistic according to the condition of current 21cm observations 
+%\cite{2013ApJ...763L..20M}\cite{Switzer13}.
+
+The observed 21cm field after foreground subtraction is then given by 
+\begin{eqnarray}
+\label{eq:fs}
+\delta_{fs}(\bm{k})=\delta(\bm{k})W_{fs}(k_\parallel)J(k_c-k),
+\end{eqnarray}
+where $\delta(\bm{k})$ is the original density field from simulation, 
+
+With the noise substracted density contrast $\delta_{fs}$, we follow the procedure described in last section to generate a mock kSZ signal $\hat \Theta_{fs}$  
+and calculate cross correlation $r_{\Theta,\hat\Theta_{fs}}$.

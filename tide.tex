@@ -1,23 +1,9 @@
-While a cosmic signal in 21cm measurement is of the order of mK,  
-foregrounds coming from Galactic emissions, telescope noise, 
-extragalactic radio sources and Radio recombination lines, 
-can reach the order of Kelvin \cite{DiMatteo04}\cite{Masui13}. 
-Lots of techniques have been developed to substract the foregrounds, 
-taking advantage of the attribute that they have fewer bright spectral
-degrees of freedom\cite{Switzer15}.
-Unfortunately, the substraction usually contaminates the smooth large scale structure information.
-Since the large scale information is essential for the estimate of
-peculiar velocity, we need to recover the information.
-%Since foregounds are spectrally smooth, when we are substracting them, 
-%we lose the information about smooth large scale structure of real signals. 
-However, since large scale structure is correlated closely to the emergence of peculiar velocity, we need a method to estimate its distribution.
+The cosmic tidal reconstruction is a kind of quadratic statistics developed to extract large scale information from alignment of small scale structures.
+It uses the second order density variance on small scales to solve for the large scale tidal shear and hence gravitational potential.
 
-The cosmic tidal reconstruction is a kind of quadratic statistics developed to achieve this goal.
-Its main idea is using small scale filamentary structures to solve for the large scale tidal shear and gravitational potential.
+Here, we present a complete 3 dimentional reconstruction algorithm that works best in close linear regions.
 
-Here, we present a 3 dimentional reconstruction algorithm that works best in close linear regions.
-
-First, we filter for the small scale structures that are most likely to be influenced by tidal force of large scale fields.
+First, we smooth the density contrast to reduce the non-gaussianity.
 
 (1) Convolve the field with a Gaussian kernal
 $S(\bm{k})=e^{-k^2R^2/2}$, 
@@ -26,26 +12,57 @@ to reduce the complicated non-linear effects on small scales.
 
 (2) Gaussianize the field, taking 
 $\delta_g=\mathrm{ln}(1+\delta)$. 
-This is to allieviate the problem that filter $W_i$ in (3) heavily weights high density regions.
+This is to allieviate the problem that filter $W_i$ in Eq.(\ref{eq:wi}) heavily weights high density regions.
 
-(3) Apply filter $W_i(\bm{k})$, which assigns weights to $\delta_g$ according to predicted displacements caused by tidal field in near linear regions \cite{2015:zhu}.
-${\delta}^{w_i}_g(\bm{k})=W_i(\bm{k})\delta_g(\bm{k})$, 
+
+Second, we filter for the small scale structures that are most likely to be influenced by tidal force of large scale fields and calculate its variance. 
+With it, we estimate the tidal force and reconstruct the large scale density field.
+
+(1) Following gravitational lensing procedures, decompose the $3\times3$ symmetric, traceless tidal force tensor 
+\begin{eqnarray}
+\label{eq:tij}
+t_{ij}=\Phi_{L,ij}-\nabla^2\Phi_L\delta^D_{ij}/3
+\end{eqnarray}
+into 5 $\gamma$ components, 
+\begin{eqnarray}
+t_{ij}=\left( \begin{array}{ccc}
+\gamma_{+}-\gamma_{z} & \gamma_{\times} & \gamma_{x}\\
+\gamma_{\times} & -\gamma_{+}-\gamma_{z} & \gamma_{y}\\
+\gamma_{x} & \gamma_{y} & 2\gamma_z
+\end{array} \right).
+\end{eqnarray}
+Here, $\Phi_{L,ij}$ is the large scale potential, 
+$\delta^D$ is the Dirac function.
+
+Consider only first two order perturbations, 
+the tidal distorted power spectrum \cite{2015:zhu} is given by
+\begin{eqnarray}
+\label{eq:powerdistort}
+P(\bm{k},\tau)|_{t_{ij}}&=&P_{1s}(k,\tau)+
+\hat{k}^i\hat{k}^jt_{ij}^{(0)}P_{1s}(k,\tau)f(k,\tau),
+\end{eqnarray}
+
+(2) Convolve $\delta_g$ with a filter $W_i$. 
+\begin{eqnarray}
+\delta}^{w_i}_g(\bm{k})=W_i(\bm{k})\delta_g(\bm{k}) 
+\end{eqnarray}
+The filter is deduced from eq.\ref{eq:powerdistort}, 
+with additional weights from measurement noise. 
+Its effect is to select predicted displacements caused by tidal field and calculate the variance.
 \begin{eqnarray}
 \label{eq:wi}
 W_i(\bm{k})=i (\frac{P(k)f(k)}{P_{tot}^2(k)})^{\frac{1}{2}}\frac{k_i}{k}
-=S(k)\frac{k_i}{k}
+=S(k)\frac{k_i}{k}\nonumber
 \end{eqnarray}
 i indicates $\hat x,\hat y,\hat z$ directions, 
 $P_{tot}=P+P_{noise}$ is observed matter powerspectrum, 
 P is theoretical matter powerspectrum,
 $f=2\alpha(\tau)-\beta(\tau)dlnP/dlnk$, 
-where $\alpha$ and $\beta$ are functions related to linear growth funcion, and are calculated to be (0.6, 1.3) for $z=1$ and (0.4, 0.9) for $z=2$.
+where $\alpha$ and $\beta$ are functions related to linear growth funcion \cite{2015:zhu}, 
+and are calculated to be (0.6, 1.3) for $z=1$ and (0.4, 0.9) for $z=2$.
 \footnote{The effect of the filter $W_i$ on different scales could be seen in Appendix 1.}
 
-
-Second, we estimate the tidal force and hense reconstruct the large scale density field.
-
-(1) Following gravitational lensing procedures, we decompose the $3\times3$ symmetric, traceless tidal force tensor into 5 $\gamma$ components, and estimate them from density variance.
+(3) Estimate the 5 tidal tensor components from density variance.
 \begin{eqnarray}
 \label{eq:gamma}
 \hat{\gamma}_1(\bm{x})&=&
@@ -62,15 +79,19 @@ Second, we estimate the tidal force and hense reconstruct the large scale densit
 {\delta}^{w_1}_g(\bm{x}){\delta}^{w_1}_g(\bm{x})-
 {\delta}^{w_2}_g(\bm{x}){\delta}^{w_2}_g(\bm{x}))]/3,\nonumber
 \end{eqnarray}
-(2) Reconstruct 3D density field.
+(2) Reconstruct 3D density field. 
+
+Since $\nabla^2\Phi_L\sim\kappa_\mr{3D}$, from eq.\ref{eq:tij}, we can get
 \begin{eqnarray}
 \kappa_\mr{3D}(\bm{k})&=&\frac{1}{k_1^2+k_2^2+k_3^2}
 [(k_1^2-k_2^2)\gamma_1(\bm{k})+2k_1k_2\gamma_2(\bm{k})\\
-&&+2k_1k_3\gamma_x(\bm{k})+2k_2k_3\gamma_y(\bm{k})\nonumber
+    &+&2k_1k_3\gamma_x(\bm{k})+2k_2k_3\gamma_y(\bm{k})\nonumber
 +(2k_3^2-k_1^2-k_1^2)\gamma_z(\bm{k})].
 \end{eqnarray}
+$\kappa_\mr{3D}$ denotes the large scale density contrast.
 
 Third, we correct bias and suppress noise with a Wiener filter.
+
 Due to the foregrounds, the noise in z direction will be different from x,y direction, therefore we apply an anisotropic Wiener filter.
 \begin{eqnarray}
 	\label{eq:wiener}
@@ -78,6 +99,6 @@ Due to the foregrounds, the noise in z direction will be different from x,y dire
 \end{eqnarray}
 Bias $b=\frac{P_{k3D \delta}}{P_\delta}$, Wiener filter $W=\frac{P_\delta}{P_{k3D}/b^2}$.
 
-Here and afterwards, 
-we use "$\wedge$" to denote recontructed fields.
+Here $\hat \kappa_{c}$ is the output large scale density contrast we obtain from tidal reconstruction.
+We use it to calculate velocity $\hat v_z^{tide}$ and mock kSZ signal $\hat \Theta_{tide}$ following identical procedure as to noise substracted field.
 
