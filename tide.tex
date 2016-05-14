@@ -18,12 +18,12 @@ This is to allieviate the problem that filter $W_i$ in Eq.(\ref{eq:wi}) heavily 
 Second, we filter for the small scale structures that are most likely to be influenced by tidal force of large scale fields and calculate its variance. 
 With it, we estimate the tidal force and reconstruct the large scale density field.
 
-(1) Following gravitational lensing procedures, decompose the $3\times3$ symmetric, traceless tidal force tensor 
+(1) Following gravitational lensing procedures, decompose the symmetric, traceless tidal force tensor 
 \begin{eqnarray}
 \label{eq:tij}
 t_{ij}=\Phi_{L,ij}-\nabla^2\Phi_L\delta^D_{ij}/3
 \end{eqnarray}
-into 5 $\gamma$ components, 
+into 5 components, 
 \begin{eqnarray}
 t_{ij}=\left( \begin{array}{ccc}
 \gamma_{+}-\gamma_{z} & \gamma_{\times} & \gamma_{x}\\
@@ -39,28 +39,27 @@ the tidal distorted power spectrum \cite{2015:zhu} is given by
 \begin{eqnarray}
 \label{eq:powerdistort}
 P(\bm{k},\tau)|_{t_{ij}}&=&P_{1s}(k,\tau)+
-\hat{k}^i\hat{k}^jt_{ij}^{(0)}P_{1s}(k,\tau)f(k,\tau),
+\hat{k}^i\hat{k}^jt_{ij}^{(0)}P_{1s}(k,\tau)f(k,\tau)
 \end{eqnarray}
 
-(2) Convolve $\delta_g$ with a filter $W_i$. 
+(2) Convolve $\delta_g$ with a filter $W_i$ 
+deduced from Eq.(\ref{eq:powerdistort}) 
 \begin{eqnarray}
-\delta}^{w_i}_g(\bm{k})=W_i(\bm{k})\delta_g(\bm{k}) 
+\delta^{w_i}_g(\bm{k})=W_i(\bm{k})\delta_g(\bm{k}) 
 \end{eqnarray}
-The filter is deduced from eq.\ref{eq:powerdistort}, 
-with additional weights from measurement noise. 
-Its effect is to select predicted displacements caused by tidal field and calculate the variance.
+Its effect is to select possible displacements caused by tidal field and calculate the variance.
 \begin{eqnarray}
 \label{eq:wi}
 W_i(\bm{k})=i (\frac{P(k)f(k)}{P_{tot}^2(k)})^{\frac{1}{2}}\frac{k_i}{k}
 =S(k)\frac{k_i}{k}\nonumber
 \end{eqnarray}
-i indicates $\hat x,\hat y,\hat z$ directions, 
+where i indicates $\hat x,\hat y,\hat z$ directions, 
 $P_{tot}=P+P_{noise}$ is observed matter powerspectrum, 
 P is theoretical matter powerspectrum,
 $f=2\alpha(\tau)-\beta(\tau)dlnP/dlnk$, 
 where $\alpha$ and $\beta$ are functions related to linear growth funcion \cite{2015:zhu}, 
 and are calculated to be (0.6, 1.3) for $z=1$ and (0.4, 0.9) for $z=2$.
-\footnote{The effect of the filter $W_i$ on different scales could be seen in Appendix 1.}
+\footnote{The value of $S(k)$ on different scales could be seen in Appendix 1.}
 
 (3) Estimate the 5 tidal tensor components from density variance.
 \begin{eqnarray}
@@ -79,16 +78,17 @@ and are calculated to be (0.6, 1.3) for $z=1$ and (0.4, 0.9) for $z=2$.
 {\delta}^{w_1}_g(\bm{x}){\delta}^{w_1}_g(\bm{x})-
 {\delta}^{w_2}_g(\bm{x}){\delta}^{w_2}_g(\bm{x}))]/3,\nonumber
 \end{eqnarray}
-(2) Reconstruct 3D density field. 
+(4) Reconstruct large scale density contrast $\kappa_\mr{3D}$ from tidal tensor:
 
-Since $\nabla^2\Phi_L\sim\kappa_\mr{3D}$, from eq.\ref{eq:tij}, we can get
+
+With Eq.(\ref{eq:tij}) we get 
+$\kappa_\mr{3D}\sim\nabla^2\Phi_L=\frac{3}{2}\frac{\partial_i\partial_j}{\nabla^2}t_{ij}$, hence
 \begin{eqnarray}
-\kappa_\mr{3D}(\bm{k})&=&\frac{1}{k_1^2+k_2^2+k_3^2}
-[(k_1^2-k_2^2)\gamma_1(\bm{k})+2k_1k_2\gamma_2(\bm{k})\\
-    &+&2k_1k_3\gamma_x(\bm{k})+2k_2k_3\gamma_y(\bm{k})\nonumber
-+(2k_3^2-k_1^2-k_1^2)\gamma_z(\bm{k})].
+\kappa_\mr{3D}(\bm{k})=\frac{1}{k^2}
+&&[(k_1^2-k_2^2)\gamma_1(\bm{k})+2k_1k_2\gamma_2(\bm{k})\nonumber\\
+&&+2k_1k_3\gamma_x(\bm{k})+2k_2k_3\gamma_y(\bm{k})\\\nonumber
+&&+(2k_3^2-k_1^2-k_1^2)\gamma_z(\bm{k})].
 \end{eqnarray}
-$\kappa_\mr{3D}$ denotes the large scale density contrast.
 
 Third, we correct bias and suppress noise with a Wiener filter.
 
