@@ -1,12 +1,22 @@
-Given a density field, due to the cancellation of positive and negative velocity, its direct cross correlation between kSZ signal will vanish.
-Here, we apply a method that first calculates the linear peculiar velocity from density field, and then generate a mock kSZ signal following the same equation as the real signals. 
+The CMB temperature fluctuations caused by kSZ effect is:
+\begin{eqnarray}
+\label{eq:ksz}
+\Theta_{kSZ}(\hat n)\equiv\frac{\Delta T_{kSZ}}{T_{\mr{CMB}}}
+=-\frac{1}{c}\int d\eta  g(\eta)  \bm{p}_\parallel\ ,
+\end{eqnarray}
+where $\eta(z)$ is the comoving distance at redshift z, $g(\eta)=e^{-\tau} d\tau/d\eta$ is the visibility function, $\tau$ is the optical depth to Thomson scattering, $\bm{p}_\parallel=(1+\delta)\bm{v}_\parallel$, with $\delta$ the electron overdensity. 
+We assume that $g(\eta)$ doesn't change significally in one redshift bin, 
+and integrate $\bm{p}_\parallel$ along radial axis to get $\hat \Theta_{kSZ}$
+
+Due to the cancellation of positive and negative velocity, its direct cross correlation between kSZ signal will vanish.
+To better maintain the one to one multiplication between velocity field and density contrast, 
+we first calculates the linear peculiar velocity, and then generate a mock kSZ signal 
 \cite{Shao11}.
 In this way, we can at most maximize the correlation.
-%We constructing a mock 2D map of kSZ signal that can be direc real kSZ signal 
 
 Assume we have a density contrast field $\delta=\frac{\rho-\bar{\rho}}{\bar{\rho}}$, where $\bar\rho$ is the average density of a certain redshift slice. 
 
-Basic steps to get the cross correlation are as follows.
+Detailed steps are as follows.
 
 (1) Estimate the velocity field:
 
@@ -23,7 +33,6 @@ where $f=\frac{d\mathrm{ln}D}{d\mathrm{ln}a}$, D(a) is the linear growth functio
 a is the scale factor, H is the Hubble parameter.
 
 $v_z \propto \frac{k_z}{k^2}$, indicating the most prominent signal comes from small k mode, which corresponds to large scale structure. 
-This further verify our motivation for tidal reconstruction procedure.
 
 (2) suppress the noise in velocity field with a Wiener filter. 
 This is because the term $\frac{k_z}{k^2}$ in Eq.(\ref{eq:v}) will strongly amplify noises in small k modes. 
@@ -33,17 +42,7 @@ This is because the term $\frac{k_z}{k^2}$ in Eq.(\ref{eq:v}) will strongly ampl
 \end{eqnarray}
 Bias $b=\frac{P_{\hat v_z,v_z}}{P_{v_z}}$, Wiener filter $W=\frac{P_{v_z}}{P_{\hat v_z}/b^2}$.
 
-(3) Calculate 2D kSZ map.
-
-The CMB temperature fluctuations caused by kSZ effect is:
-\begin{eqnarray}
-\label{eq:ksz}
-\Theta_{kSZ}(\hat n)\equiv\frac{\Delta T_{kSZ}}{T_{\mr{CMB}}}
-=-\frac{1}{c}\int d\eta  g(\eta)  \bm{p}_\parallel\ ,
-\end{eqnarray}
-where $\eta(z)$ is the comoving distance at redshift z, $g(\eta)=e^{-\tau} d\tau/d\eta$ is the visibility function, $\tau$ is the optical depth to Thomson scattering, $\bm{p}_\parallel=(1+\delta)\bm{v}_\parallel$, with $\delta$ the electron overdensity. 
-We assume that $g(\eta)$ doesn't change significally in one redshift bin, 
-and integrate $\bm{p}_\parallel$ along radial axis to get $\hat \Theta_{kSZ}$
+(3) Calculate 2D kSZ map follow Eq.(\ref{eq:ksz}).
 
 (4) Calculate correlation coefficients.
 

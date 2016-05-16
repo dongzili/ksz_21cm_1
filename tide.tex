@@ -1,5 +1,5 @@
 The cosmic tidal reconstruction is a kind of quadratic statistics developed to extract large scale information from alignment of small scale structures.
-It uses the second order density variance on small scales to solve for the large scale tidal shear and hence gravitational potential.
+It uses the anisotropic distortions on small scales powerspectrum to solve for the large scale tidal shear and hence gravitational potential.
 
 Here, we present a complete 3 dimentional reconstruction algorithm that works best in close linear regions.
 
@@ -18,7 +18,21 @@ This is to allieviate the problem that filter $W_i$ in Eq.(\ref{eq:wi}) heavily 
 Second, we filter for the small scale structures that are most likely to be influenced by tidal force of large scale fields and calculate its variance. 
 With it, we estimate the tidal force and reconstruct the large scale density field.
 
+Consider only first order coupling between small and large scales,  
+the distorted power spectrum \cite{2015:zhu} is given by
+\begin{eqnarray}
+\label{eq:powerdistort}
+P(\bm{k},\tau)|_{t_{ij}}&=&P_{1s}(k,\tau)+
+\hat{k}^i\hat{k}^jt_{ij}^{(0)}P_{1s}(k,\tau)f(k,\tau)
+\end{eqnarray}
+where $P(\bm{k},\tau$ can be obtained from observation, 
+$f=2\alpha(\tau)-\beta(\tau)dlnP/dlnk$, 
+$\alpha$ and $\beta$ are functions related to linear growth funcion \cite{2015:zhu}, 
+and are calculated to be (0.6, 1.3) for $z=1$ and (0.4, 0.9) for $z=2$.
+$P_{1s}(k,\tau)$ is the $1_{st}$ order small scale linear powerspectrum, 
+from theoretical calculation.
 (1) Following gravitational lensing procedures, decompose the symmetric, traceless tidal force tensor 
+
 \begin{eqnarray}
 \label{eq:tij}
 t_{ij}=\Phi_{L,ij}-\nabla^2\Phi_L\delta^D_{ij}/3
@@ -26,21 +40,14 @@ t_{ij}=\Phi_{L,ij}-\nabla^2\Phi_L\delta^D_{ij}/3
 into 5 components, 
 \begin{eqnarray}
 t_{ij}=\left( \begin{array}{ccc}
-\gamma_{+}-\gamma_{z} & \gamma_{\times} & \gamma_{x}\\
-\gamma_{\times} & -\gamma_{+}-\gamma_{z} & \gamma_{y}\\
-\gamma_{x} & \gamma_{y} & 2\gamma_z
+\gamma_{1}-\gamma_{z} & \gamma_{\times} & \gamma_{2}\\
+\gamma_{\times} & -\gamma_{1}-\gamma_{z} & \gamma_{y}\\
+\gamma_{2} & \gamma_{y} & 2\gamma_z
 \end{array} \right).
 \end{eqnarray}
-Here, $\Phi_{L,ij}$ is the large scale potential, 
+Here, $\Phi_{L,ij}$ is the second derivative of large scale potential, 
 $\delta^D$ is the Dirac function.
 
-Consider only first two order perturbations, 
-the tidal distorted power spectrum \cite{2015:zhu} is given by
-\begin{eqnarray}
-\label{eq:powerdistort}
-P(\bm{k},\tau)|_{t_{ij}}&=&P_{1s}(k,\tau)+
-\hat{k}^i\hat{k}^jt_{ij}^{(0)}P_{1s}(k,\tau)f(k,\tau)
-\end{eqnarray}
 
 (2) Convolve $\delta_g$ with a filter $W_i$ 
 deduced from Eq.(\ref{eq:powerdistort}) 
@@ -56,9 +63,6 @@ W_i(\bm{k})=i (\frac{P(k)f(k)}{P_{tot}^2(k)})^{\frac{1}{2}}\frac{k_i}{k}
 where i indicates $\hat x,\hat y,\hat z$ directions, 
 $P_{tot}=P+P_{noise}$ is observed matter powerspectrum, 
 P is theoretical matter powerspectrum,
-$f=2\alpha(\tau)-\beta(\tau)dlnP/dlnk$, 
-where $\alpha$ and $\beta$ are functions related to linear growth funcion \cite{2015:zhu}, 
-and are calculated to be (0.6, 1.3) for $z=1$ and (0.4, 0.9) for $z=2$.
 \footnote{The value of $S(k)$ on different scales could be seen in Appendix 1.}
 
 (3) Estimate the 5 tidal tensor components from density variance.
