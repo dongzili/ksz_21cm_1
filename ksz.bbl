@@ -138,8 +138,7 @@
   \bibinfo{author}{\bibfnamefont{U.-L.} \bibnamefont{{Pen}}}, \bibnamefont{and}
   \bibinfo{author}{\bibfnamefont{H.}~\bibnamefont{{Trac}}},
   \bibinfo{journal}{\mnras} \textbf{\bibinfo{volume}{347}},
-  \bibinfo{pages}{1224} (\bibinfo{year}{2004}), \eprint{astro-ph/0304534},
-  \urlprefix\url{http://adsabs.harvard.edu/abs/2004MNRAS.347.1224Z}.
+  \bibinfo{pages}{1224} (\bibinfo{year}{2004}), \eprint{astro-ph/0304534}.
 
 \bibitem[{\citenamefont{{McQuinn} et~al.}(2005)\citenamefont{{McQuinn},
   {Furlanetto}, {Hernquist}, {Zahn}, and {Zaldarriaga}}}]{McQuinn05}

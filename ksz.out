@@ -2,11 +2,13 @@
 \BOOKMARK [1][-]{section*.2}{Velocity Reconstruction and kSZ signals Cross Correlation}{}% 2
 \BOOKMARK [1][-]{section*.3}{Cross Correlation with Noise Substracted Field}{}% 3
 \BOOKMARK [2][-]{section*.4}{Mimic the Noise Substraction}{section*.3}% 4
-\BOOKMARK [2][-]{section*.5}{Cross Correlation Behavior with Noise Substracted Field}{section*.3}% 5
-\BOOKMARK [1][-]{section*.6}{3D Cosmic Tidal Reconstruction}{}% 6
-\BOOKMARK [2][-]{section*.7}{Algorithm}{section*.6}% 7
-\BOOKMARK [2][-]{section*.8}{Cross Correlation Behavior with Tidal Reconstructed Field}{section*.6}% 8
-\BOOKMARK [1][-]{section*.9}{Statistical Error}{}% 9
-\BOOKMARK [1][-]{section*.10}{Discussion and Conclusion}{}% 10
-\BOOKMARK [1][-]{section*.11}{Acknowledge}{}% 11
-\BOOKMARK [1][-]{section*.12}{References}{}% 12
+\BOOKMARK [2][-]{section*.5}{Cross Correlation from Noise Substracted Field}{section*.3}% 5
+\BOOKMARK [2][-]{section*.6}{Explanation of the Cross Correlation Behavior}{section*.3}% 6
+\BOOKMARK [1][-]{section*.7}{3D Cosmic Tidal Reconstruction}{}% 7
+\BOOKMARK [2][-]{section*.8}{Algorithm}{section*.7}% 8
+\BOOKMARK [2][-]{section*.9}{Cross Correlation from Tidal Reconstructed Field}{section*.7}% 9
+\BOOKMARK [2][-]{section*.10}{Improvements of Tidal Reconstruction}{section*.7}% 10
+\BOOKMARK [1][-]{section*.11}{Statistical Error}{}% 11
+\BOOKMARK [1][-]{section*.12}{Discussion and Conclusion}{}% 12
+\BOOKMARK [1][-]{section*.13}{Acknowledge}{}% 13
+\BOOKMARK [1][-]{section*.14}{References}{}% 14
