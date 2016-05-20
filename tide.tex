@@ -1,7 +1,58 @@
-The cosmic tidal reconstruction is a kind of quadratic statistics developed to extract large scale information from alignment of small scale structures.
-It uses the anisotropic distortions on small scales powerspectrum to solve for the large scale tidal shear and hence gravitational potential.
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{cl_correlation_z1_z2.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{The cross correlation r between reconstructed kSZ $P_{\hat \Theta_{kSZ}}$ 
+and real kSZ $P_{\Theta_{kSZ}}$.
+    (Dashed line) kSZ calculated from foreground substracted 21cm density field $\delta_{fs}$;
+    (Solid line) kSZ calculated from tidal reconstructed density field.
+%    (Blue lines) take into account of redshift distortions.
+}
+\label{fig:r}
+\end{figure}
+Since the loss of large scale information in z direction will reduce the cross correlation with small l and influence the performance on large l. 
+We try to recover the modes with a method called Cosmic Tidal Reconstruction. 
+This is one of the first application of its 3D version. 
+\subsection{Algorithm}
+The fundamental idea of Cosmic Tidal Reconstruction is that 
+the evolution of small scale structure is modulated by large scale 
+gravitational force. We can select this effect and solve for the large scale potential. 
 
-Here, we present a complete 3 dimentional reconstruction algorithm that works best in close linear regions.
+
+Main Procedure:
+
+Consider only the anisotropic influence from tidal force, 
+the distortions on power spectrum \cite{2015:zhu} can linearly be calculated as  
+\begin{eqnarray}
+\label{eq:powerdistort}
+\delta P(\bm{k},\tau)|_{t_{ij}}&=&
+\hat{k}^i\hat{k}^jt_{ij}^{(0)}P_{1s}(k,\tau)f(k,\tau)
+\end{eqnarray}
+where f is the linear coupling function;
+$P_{1s}(k,\tau)$ is the theoretical small scale linear powerspectrum; 
+and $\delta P(\bm{k},\tau)$ is the real distortion from observations. 
+
+Hence we can solve for the unknown quantity $t_{ij}$, 
+which is the tidal force tensor defined as 
+\begin{eqnarray}
+\label{eq:tij}
+t_{ij}=\Phi_{L,ij}-\nabla^2\Phi_L\delta^D_{ij}/3
+\end{eqnarray}
+Here, $\Phi_{L,ij}$ is the second derivative of large scale potential, 
+$\delta^D$ is the Dirac function.
+
+With $t_{ij}$, we calculate the variance of large scale potential 
+and get the large scale density contrast.
+$\kappa_\mr{3D}\sim\nabla^2\Phi_L=\frac{3}{2}\frac{\partial_i\partial_j}{\nabla^2}t_{ij}$.
+
+Since $f(k,\tau)$ increase with k in our interested scales, 
+the distortions are more obvious in small scales. 
+Therefore, the method mainly use the quadratic statistics on small scales to recover the large scale density field. 
+It works best for close linear regions.
+
+
+Detailed steps:
 
 First, we smooth the density contrast to reduce the non-gaussianity.
 
@@ -18,27 +69,7 @@ This is to allieviate the problem that filter $W_i$ in Eq.(\ref{eq:wi}) heavily 
 Second, we filter for the small scale structures that are most likely to be influenced by tidal force of large scale fields and calculate its variance. 
 With it, we estimate the tidal force and reconstruct the large scale density field.
 
-Consider only second order coupling between small and large scales,  
-the tidal distorted power spectrum \cite{2015:zhu} is given by
-\begin{eqnarray}
-\label{eq:powerdistort}
-P(\bm{k},\tau)|_{t_{ij}}&=&P_{1s}(k,\tau)+
-\hat{k}^i\hat{k}^jt_{ij}^{(0)}P_{1s}(k,\tau)f(k,\tau)
-\end{eqnarray}
-where $P(\bm{k},\tau$ can be obtained from observation, 
-$f=2\alpha(\tau)-\beta(\tau)dlnP/dlnk$ describes the theoretical coupling, 
-$\alpha$ and $\beta$ are functions related to linear growth funcion \cite{2015:zhu}, 
-and are calculated to be (0.6, 1.3) for $z=1$ and (0.4, 0.9) for $z=2$.
-$P_{1s}(k,\tau)$ is the small scale linear powerspectrum, 
-from theoretical calculation.
-
-(1) Following gravitational lensing procedures, decompose the symmetric, traceless tidal force tensor 
-
-\begin{eqnarray}
-\label{eq:tij}
-t_{ij}=\Phi_{L,ij}-\nabla^2\Phi_L\delta^D_{ij}/3
-\end{eqnarray}
-into 5 components, 
+(1) Following gravitational lensing procedures, decompose the symmetric, traceless tidal force tensor into 5 components, 
 \begin{eqnarray}
 t_{ij}=\left( \begin{array}{ccc}
 \gamma_{1}-\gamma_{z} & \gamma_{\times} & \gamma_{2}\\
@@ -46,22 +77,22 @@ t_{ij}=\left( \begin{array}{ccc}
 \gamma_{2} & \gamma_{y} & 2\gamma_z
 \end{array} \right).
 \end{eqnarray}
-Here, $\Phi_{L,ij}$ is the second derivative of large scale potential, 
-$\delta^D$ is the Dirac function.
-
 
 (2) Convolve $\delta_g$ with a filter $W_i$ 
 deduced from Eq.(\ref{eq:powerdistort}) 
 \begin{eqnarray}
 \delta^{w_i}_g(\bm{k})=W_i(\bm{k})\delta_g(\bm{k}) 
 \end{eqnarray}
-Its effect is to select possible displacements caused by tidal field and calculate the variance.
+%Its effect is to select possible displacements caused by tidal field and calculate the variance.
 \begin{eqnarray}
 \label{eq:wi}
 W_i(\bm{k})=i (\frac{P(k)f(k)}{P_{tot}^2(k)})^{\frac{1}{2}}\frac{k_i}{k}
 =S(k)\frac{k_i}{k}\nonumber
 \end{eqnarray}
 where i indicates $\hat x,\hat y,\hat z$ directions, 
+$f=2\alpha(\tau)-\beta(\tau)dlnP/dlnk$ is again the coupling function, 
+with $\alpha$ and $\beta$ related to linear growth funcion \cite{2015:zhu}, 
+and calculated to be (0.6, 1.3) for $z=1$ and (0.4, 0.9) for $z=2$.
 $P_{tot}=P+P_{noise}$ is observed matter powerspectrum, 
 P is theoretical matter powerspectrum,
 \footnote{The value of $S(k)$ on different scales could be seen in Appendix 1.}
@@ -84,10 +115,6 @@ P is theoretical matter powerspectrum,
 {\delta}^{w_2}_g(\bm{x}){\delta}^{w_2}_g(\bm{x}))]/3,\nonumber
 \end{eqnarray}
 (4) Reconstruct large scale density contrast $\kappa_\mr{3D}$ from tidal tensor:
-
-
-With Eq.(\ref{eq:tij}) we get 
-$\kappa_\mr{3D}\sim\nabla^2\Phi_L=\frac{3}{2}\frac{\partial_i\partial_j}{\nabla^2}t_{ij}$, hence
 \begin{eqnarray}
 \kappa_\mr{3D}(\bm{k})=\frac{1}{k^2}
 &&[(k_1^2-k_2^2)\gamma_1(\bm{k})+2k_1k_2\gamma_2(\bm{k})\nonumber\\

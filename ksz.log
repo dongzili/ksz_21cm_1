@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.11)  20 MAY 2016 08:17
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.11)  20 MAY 2016 14:56
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -495,7 +495,7 @@ nverted-to.pdf compare_powv2d_z1z2.eps>
 (epstopdf)             \includegraphics on input line 34.
 Package epstopdf Info: Output file is already uptodate.
 
-<compare_powv2d_z1z2-eps-converted-to.pdf, id=153, 1172.38pt x 1039.885pt>
+<compare_powv2d_z1z2-eps-converted-to.pdf, id=161, 1172.38pt x 1039.885pt>
 File: compare_powv2d_z1z2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use compare_powv2d_z1z2-eps-converted-to.pdf>
@@ -509,16 +509,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
 
 LaTeX Warning: Reference `fig:powerden' on page 3 undefined on input line 47.
 
-) (./tide.tex [3 <./compare_powv2d_z1z2-eps-converted-to.pdf>]
-
-Package hyperref Warning: Ignoring empty anchor on input line 67.
-
-
-Overfull \hbox (30.18655pt too wide) in alignment at lines 70--85
- [][][] []
- []
-
-) (./tideResult.tex
+) (./tide.tex
 Package epstopdf Info: Source file: <cl_correlation_z1_z2.eps>
 (epstopdf)                    date: 2016-05-09 14:39:31
 (epstopdf)                    size: 15381 bytes
@@ -531,25 +522,63 @@ onverted-to.pdf cl_correlation_z1_z2.eps>
 (epstopdf)             \includegraphics on input line 3.
 Package epstopdf Info: Output file is already uptodate.
 
-<cl_correlation_z1_z2-eps-converted-to.pdf, id=184, 578.16pt x 867.24pt>
+<cl_correlation_z1_z2-eps-converted-to.pdf, id=163, 578.16pt x 867.24pt>
 File: cl_correlation_z1_z2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use cl_correlation_z1_z2-eps-converted-to.pdf>
 Package pdftex.def Info: cl_correlation_z1_z2-eps-converted-to.pdf used on inpu
 t line 3.
 (pdftex.def)             Requested size: 244.79782pt x 367.18929pt.
- [4pdfTeX warning (ext4): destination with the same identifier (name{equation.4
-.13}) has been already used, duplicate ignored
+ [3 <./compare_powv2d_z1z2-eps-converted-to.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 17.
+
+
+Package hyperref Warning: Ignoring empty anchor on input line 98.
+
+
+Underfull \hbox (badness 3612) in paragraph at lines 91--99
+\OT1/ptm/m/n/10 (+20) where i in-di-cates $[]\OML/cmm/m/it/10 ; []; []$ \OT1/pt
+m/m/n/10 (+20) di-rec-tions, $\OML/cmm/m/it/10 f \OT1/cmr/m/n/10 = 2\OML/cmm/m/
+it/10 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^\\OT1/cmr/m/n/10 ) \OMS/cmsy/m/n/10 
+^^@
+ []
+
+
+Overfull \hbox (30.18655pt too wide) in alignment at lines 101--116
+ [][][] []
+ []
+
+[4 <./cl_correlation_z1_z2-eps-converted-to.pdf>]) (./tideResult.tex)
+(./rsd.tex
+Package epstopdf Info: Source file: <compare_bias_rsdsub_z1z2.eps>
+(epstopdf)                    date: 2016-05-15 15:31:31
+(epstopdf)                    size: 32338 bytes
+(epstopdf)             Output file: <compare_bias_rsdsub_z1z2-eps-converted-to.
+pdf>
+(epstopdf)                    date: 2016-05-20 14:45:47
+(epstopdf)                    size: 10762 bytes
+(epstopdf)             Command: <repstopdf --outfile=compare_bias_rsdsub_z1z2-e
+ps-converted-to.pdf compare_bias_rsdsub_z1z2.eps>
+(epstopdf)             \includegraphics on input line 3.
+Package epstopdf Info: Output file is already uptodate.
+
+<compare_bias_rsdsub_z1z2-eps-converted-to.pdf, id=216, 662.475pt x 1127.21124p
+t>
+File: compare_bias_rsdsub_z1z2-eps-converted-to.pdf Graphic file (type pdf)
+ <use compare_bias_rsdsub_z1z2-eps-converted-to.pdf>
+Package pdftex.def Info: compare_bias_rsdsub_z1z2-eps-converted-to.pdf used on 
+input line 3.
+(pdftex.def)             Requested size: 153.00156pt x 260.31952pt.
+) [5pdfTeX warning (ext4): destination with the same identifier (name{equation.
+4.13}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.32 
-     ]
-
-LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 32.
-
-) (./error.tex
+l.80 \subsection
+                {Statistical Error} <./compare_bias_rsdsub_z1z2-eps-converted-t
+o.pdf>] (./error.tex
 Package epstopdf Info: Source file: <Cl_sn_z1z2.eps>
 (epstopdf)                    date: 2016-05-09 14:39:31
 (epstopdf)                    size: 58206 bytes
@@ -560,7 +589,8 @@ Package epstopdf Info: Source file: <Cl_sn_z1z2.eps>
 o.pdf Cl_sn_z1z2.eps>
 (epstopdf)             \includegraphics on input line 3.
 Package epstopdf Info: Output file is already uptodate.
- <Cl_sn_z1z2-eps-converted-to.pdf, id=202, 433.62pt x 722.7pt>
+
+<Cl_sn_z1z2-eps-converted-to.pdf, id=236, 433.62pt x 722.7pt>
 File: Cl_sn_z1z2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use Cl_sn_z1z2-eps-converted-to.pdf>
@@ -579,28 +609,28 @@ Underfull \hbox (badness 1655) in paragraph at lines 29--39
 ptm/m/n/10 (+20) ; where
  []
 
-[5 <./cl_correlation_z1_z2-eps-converted-to.pdf> <./Cl_sn_z1z2-eps-converted-to
-.pdf>]) (./discuss.tex) (./acknowledge.tex) (./ksz.bbl [6])
+) (./discuss.tex) (./acknowledge.tex) (./ksz.bbl [6 <./Cl_sn_z1z2-eps-converted
+-to.pdf>])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 89.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 89.
  [7] (./ksz.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 89.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 89.
 Package rerunfilecheck Info: File `ksz.out' has not changed.
-(rerunfilecheck)             Checksum: 9BC48267FD778D92D8881B517E254193;994.
+(rerunfilecheck)             Checksum: 0C939BF122B5B10ECAFBE3C73BC41761;1130.
 
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 11275 strings out of 493304
- 174641 string characters out of 6139871
- 327668 words of memory out of 5000000
- 14259 multiletter control sequences out of 15000+600000
- 44691 words of font info for 220 fonts, out of 8000000 for 9000
+ 11292 strings out of 493304
+ 174981 string characters out of 6139871
+ 343668 words of memory out of 5000000
+ 14266 multiletter control sequences out of 15000+600000
+ 44810 words of font info for 222 fonts, out of 8000000 for 9000
  960 hyphenation exceptions out of 8191
- 39i,16n,35p,408b,526s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,16n,35p,408b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf
@@ -626,10 +656,10 @@ cm/cmsy5.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy
 usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/f
 onts/type1/urw/times/utmri8a.pfb>
-Output written on ksz.pdf (7 pages, 375840 bytes).
+Output written on ksz.pdf (7 pages, 385551 bytes).
 PDF statistics:
- 348 PDF objects out of 1000 (max. 8388607)
- 300 compressed objects within 3 object streams
- 72 named destinations out of 1000 (max. 500000)
- 32896 words of extra memory for PDF output out of 35830 (max. 10000000)
+ 370 PDF objects out of 1000 (max. 8388607)
+ 318 compressed objects within 4 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 32917 words of extra memory for PDF output out of 35830 (max. 10000000)
 
