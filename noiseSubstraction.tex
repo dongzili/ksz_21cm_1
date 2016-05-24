@@ -4,8 +4,8 @@ Two filters are applied on original density contrast $\delta$ to imitate the eff
 1. For small scale noises:
 
 Import a cut off scale $k_c$ 
-with a step function $J(k_c-k)$. 
-For $k>k_c$, $J(k_c-k)=0$; for $k\leqslant k_x$; $J(k_c-k)=1$.
+with a step function $H(k_c-k)$. 
+For $k>k_c$, $H(k_c-k)=0$; for $k\leqslant k_x$; $H(k_c-k)=1$.
 This is reasonable for a filled aperture experiment, which
 has good brightness sensitivity and an exponetially growing noise at small 
 scales.
@@ -31,5 +31,5 @@ The observed 21cm field after noises subtraction is then given by
 \delta_{ns}(\bm{k})=\delta(\bm{k})W_{fs}(k_\parallel)J(k_c-k),
 \end{eqnarray}
 
-With the noise substracted density contrast $\delta_{ns}$, we follow the procedure described in last section to generate a mock kSZ signal $\hat \Theta_{ns}$  
+With the noise filtered density contrast $\delta_{ns}$, we follow the procedure described in last section to generate a mock kSZ signal $\hat \Theta_{ns}$  
 and calculate cross correlation $r_{\Theta\hat\Theta_{ns}}$.
