@@ -8,11 +8,14 @@
 \usepackage{color}
 \usepackage{verbatim}
 \usepackage{times}
+%what I add
 \usepackage{hyperref}
 \usepackage{url}
 \usepackage{microtype}
 \usepackage[capitalise]{cleveref}
 \usepackage[all]{hypcap}
+\usepackage[toc,page]{appendix}
+%
 \newcommand{\mr}{\mathrm}
 % avoids incorrect hyphenation, added Nov/08 by SSR
 \hyphenation{ALPGEN}
@@ -76,7 +79,7 @@
 \subsection{Improvements on Reconstruction Procedure}
 \input tideImprove.tex
 \section{Discussion and error estimates}
-\subsection{Redshift Distortion}
+\subsection{Redshift Space Distortions}
 \input rsd.tex
 \subsection{Statistical Error}
 \input error.tex
@@ -84,7 +87,9 @@
 \input conclusion.tex
 \section{Acknowledge}
 \input acknowledge.tex
+%\appendix*
+%\section{Complimentary Plots}
+%\input appendix.tex
 \bibliographystyle{apsrev}
 \bibliography{ksz}
-
 \end{document}
