@@ -7,12 +7,16 @@
 and real kSZ $P_{\Theta_{kSZ}}$.
     (Dashed line) kSZ calculated from foreground filtered 21cm density field $\delta_{fs}$;
     (Solid line) kSZ calculated from tidal reconstructed density field.
-%    (Blue lines) take into account of redshift distortions.
+    (Blue lines) take into account of redshift space distortions.
 }
 \label{fig:r}
 \end{figure}
-Since the loss of large scale information in z direction will reduce the cross correlation with small $\ell$ and influence the performance on large $\ell$. 
-We try to recover the modes with a method called Cosmic Tidal Reconstruction. 
+With noise substracted 21cm density field, we are able to have detectable cross correlations for $\ell\gtrsim 800$. 
+However, we are also interested in large scale baryon distributions, 
+which is free from the complicated activities happen in smaller scales.  
+We use Cosmic Tidal Reconstruction to recover correlations for small $\ell$ 
+and improve correlations for intermediate $\ell$.
+%Since the loss of large scale information in z dDDddirection will reduce the cross correlation with small $\ell$ and influence the performance on large $\ell$. 
 This is one of the first application of its 3D version. 
 \subsection{Algorithm}
 The fundamental idea of Cosmic Tidal Reconstruction is that 

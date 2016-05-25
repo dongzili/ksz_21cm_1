@@ -2,46 +2,61 @@ While the baryon abundance of early universe is well fixed
 %by the cosmic microwave background (CMB),Big Bang Nucleosynthesis and Lyman-$\alpha$ forest 
 \cite{Cooke14,Fukugita98,Komatsu11,Hinshaw13}, 
 %a deficiency was noiticed in local universe.
-at $z\lesssim 2$ the detected baryon content in collapsed
-objects, eg. galaxies, galaxy clusters and groups, only accounts for ~10$\%$ of the predicted amount.
-More baryons are believe to reside in Warm-Hot Intergalactic Mediums (WHIM) with typical temperature of $10^5$ K to $10^7$ K \cite{Pen1999}\cite{Soltan06}, which is too cold and diffuse to be detected.
-Continuous effort has been made to detect this part of baryons. 
-One common approach is using hydrogen and metal absorption lines(eg, HI, Mg II,Si II, C II, Si III, C III, Si IV, O VI, O VII) \cite{Fukugita04}\cite{Werk14}.
-However, the lines are usually limited to close circumgalactic medium, while at least 25\% of the baryons are bebieved to reside in more diffused region \cite{Dave10}. Moreover, the uncertainty in metalicity would sometimes reduce the reliability.
+for $z\lesssim 2$, large fractions of baryons are missing in observations.  
+The majority of them are believed to reside in Warm-Hot Intergalactic Mediums (WHIM) with typical temperature of $10^5$ K to $10^7$ K \cite{Pen1999,Soltan06}, which is too hot and diffuse to detect.
+Progress has been made in recent years to detect colder fraction of WHIM using absorption lines 
+(eg, $\mathrm{H_I}$, broad $\mathrm{Ly\alpha, Mg_{II},Si_{II}, C_{II}, Si_{III}, C_{III}, Si_{IV}, O_{VI}, O_{VII}}$) \cite{Bregman07,Werk14}, 
+yet not much detection can reach T$\gtrsim 10^6$ K. 
+Besides, these detections are usually biased towards collapsed objects, 
+ and metal lines have to suffer from the great uncertainty on ionization states 
+and metalicity.
+%However, the lines are usually limited to close circumgalactic medium, while at least 25\% of the baryons are bebieved to reside in more diffused region \cite{Dave10}. Moreover, the uncertainty in ionized fraction and metalicity is also a dormant volcan
 
-A promising tool to probe the missing baryon is the kinetic Sunyaev-Zel'dovich(kSZ) effect \cite{Sunyaev72}\cite{Sunyaev80}, 
-  an effect that is greatly known for its potential to explore the Epoch of Reionization \cite{Zhang04}\cite{McQuinn05}\cite{Zahn12}. 
-It refers to the secondary temperature anisotropy in CMB caused by Compton-scattering of CMB photon with free electrons. 
-The radial velocity of electrons will give a Doppler shift to 
-Since kSZ signal only relates to electron density and radial velocity, 
-regardless the temperature and pressure,  
-and velocity mainly results from large scale structure, 
-the method is less biased towards hot, compact place, 
-and provide more information on the fraction of diffused baryons.
+A more promising tracer for missing baryons is the kinetic Sunyaev-Zel'dovich(kSZ) effect \cite{Sunyaev72,Sunyaev80,Vishniac87}, 
+which results from Compton scattering between CMB photons with free electrons. 
+The radial velocity of electrons will give photon a Doppler shift 
+and hence leads to a 
+secondary anisotropy in CMB temperature.
+The kSZ signal has lots of advantages: 
+First, it is contributed from the absolute majority of baryons, 
+leaving alone only less than $10\%$ of baryons that 
+reside in stars, remnants, atomic and molecular gases \cite{Fukugita04}. 
+The fraction is rather stable.  
+Second, it only relates to electron density and radial velocity, 
+regardless the temperature, pressure or metalicity,  
+%so it is easy to interprete.  
+so no extra assumptions are needed to estimate baryon abundance.  
+Third, velocity mainly results from large scale structure, 
+therefore the method is less biased towards local mass contraction.  
 
 Attractive as it is, 
-due to the contamination of primary CMB, facility noises and probably residual thermal SZ signal, 
+due to the contamination from primary CMB, facility noises, 
+thermal SZ effect and CMB lensing, 
 it is difficult to filter for the kSZ signal independently. 
 Worse still, the signal itself does not contain redshift information.
+Therefore, previous approches tend to cross correlate it with 
+galaxy spectroscopic surveys, 
+which has large scale information and accurate redshift. 
+Yet, it is difficult and costy for this kind of survey to cover large area 
+and reach high redshift.  
+%eg. using pairwise-momentum estimator \cite{Hand12} or velocity-field-reconstruction estimator \cite{Shao11,Li14}. 
+%However since they all require spectroscopy of galaxies to provide accurate redshift, the sky volume and redshift range to apply the method is limited. 
+A recent effort try to relax the condition using projected fields of galaxies 
+from photometry surveys, which is instantly feasible \cite{Hill16}. 
+However, projected fields only maintain the largest scale information in z direction, 
+while for $l\gtrsim1000$, where primary CMB fades away, a sufficient amount of kSZ signal comes from intermediate scales. 
+This limits the overall S/N it can reach.
 
-To fix this, previous approches cross correlated it with galaxy surveys, 
-eg. using pairwise-momentum estimator \cite{Hand12} or velocity-field-reconstruction estimator \cite{Shao11}\cite{Li14}. 
-However since they all require spectroscopy of galaxies to provide accurate redshift, the sky volume and redshift range to apply the method is limited. 
-A recent effort try to fix this using projected fields of galaxies, which is cheap and feasible \cite{Hill16}. 
-However, projected fields only make use of information from the largest scale in z direction, 
-while for $l\gtrsim1000$, where primary CMB fades away, a sufficient amount of kSZ signal comes from smaller scales. 
-This limits the accuracy and S/N it can reach.
-
-In this paper we put forward a new tracer for cross correlation---HI density field from 21cm intensity mapping. 
-Density contrast from 21cm spectra have accurate redshift information, 
-which enables us to reconstruct velocity field and 
-get better correlation with kSZ powerspectra. 
-Moreover, intensity mapping is a kind of surveys that 
-integrates different signals, 
-rather than distinguishing individual galaxies. 
-It accumulates contributions from weak sources 
-and hence be able to reach high S/N at shorter time. 
-There are already several ongoing 21cm experiments aim at large sky coverage and claim to be able to reach $z\gtrsim1$ in very near future.
+In this paper we put forward a new tracer for cross correlation---$\mathrm{H_I}$ density field from 21cm intensity mapping. 
+$\mathrm{H_I}$ 21cm spectra have accurate redshift information. 
+%which enables us to reconstruct velocity field and 
+%get better correlation with kSZ powerspectra. 
+And intensity mapping, since it 
+integrates signals 
+rather than distinguishing individual galaxies, 
+can accumulates contributions from weak sources 
+and reach high S/N much faster. 
+There are already several ongoing experiments aim at large sky coverage and claim to be able to reach $z\gtrsim1$ in very near future.
 CHIME \cite{2014SPIE.9145E..22B}, Tianlai \cite{2015ApJ...798...40X}, 
 HIRAX \cite{HIRAX} etc.
 Therefore, this correlator is more feasible than large galaxy spectroscopic surveys, 
@@ -51,24 +66,27 @@ However, the 21cm density field has its own drawback---the complicated foregroun
 While a cosmic signal in 21cm measurement is of the order of mK,  
 foregrounds coming from Galactic emissions, telescope noise, 
 extragalactic radio sources and Radio recombination lines, 
-can reach the order of Kelvin \cite{DiMatteo04}\cite{Masui13}. 
-Lots of techniques have been developed to substract the foregrounds, 
+can reach the order of K \cite{DiMatteo04,Masui13}. 
+Lots of techniques have been developed to filter the foregrounds, 
 taking advantage of the attribute that they have fewer bright spectral
-degrees of freedom\cite{Switzer15}.
-Unfortunately, substraction will contaminates the smooth large scale structure information in radial direction.
-Since the kSZ signal coming from a both density and velocity field, 
-and velocity is greatly related to large scale structures. 
-This drawback will inhibit the cross correlation behavior.
+degrees of freedom \cite{Switzer15}.
+Unfortunately, the manipulation will contaminates the smooth large scale structure in radial direction, 
+and hence degrade the correlation with kSZ signal.
+%Since the kSZ signal coming from a both density and velocity field, 
+%and velocity is greatly related to large scale structures. 
+%This drawback will inhibit the cross correlation behavior.
 
 In this paper, 
 %we first present the algorithm of how to construct velocity field 
 %and cross correlate with kSZ signals. 
-we first discuss the influence of foregrounds and small scale noises, 
-based on simulation and analysis. 
-To improve the correlation, we for apply a new method called 3D Cosmic Tidal Reconstruction \cite{2012:pen}\cite{2015:zhu}, which recover the large scale modes of density field from its tidal influence on small scale structures. 
+we first evaluate the influence of foregrounds and other noises 
+on the cross correlation. 
+We then apply a method, Cosmic Tidal Reconstruction \cite{2012:pen,2015:zhu}, 
+to recover the large scale structure from its tidal influence on small scales 
+and see the improvement on correlation coefficients. 
 
 The paper is organized as follows: 
-In section II, we demonstrate given a density field, how to correlate with kSZ signal with velocity reconstruction, similar to \ref{Shao11}; 
+In section II, we demonstrate given a density field, how to correlate it with kSZ signal with velocity reconstruction, similar to \cite{Shao11}; 
 In section III, we present the result of cross correlation with foreground filtered field 
 and discuss the behavior; 
 Then in section IV, we introduce the method of 3D tidal reconstruction, 
