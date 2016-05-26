@@ -1,16 +1,15 @@
 \BOOKMARK [1][-]{section*.1}{Introduction}{}% 1
-\BOOKMARK [1][-]{section*.2}{Velocity Reconstruction and kSZ signals Cross Correlation}{}% 2
-\BOOKMARK [1][-]{section*.3}{Cross Correlation with Noise Substracted Field}{}% 3
-\BOOKMARK [2][-]{section*.4}{Mimic the Noise Substraction}{section*.3}% 4
-\BOOKMARK [2][-]{section*.5}{Cross Correlation from Noise Substracted Field}{section*.3}% 5
-\BOOKMARK [2][-]{section*.6}{Explanation of the Cross Correlation Behavior}{section*.3}% 6
-\BOOKMARK [1][-]{section*.7}{3D Cosmic Tidal Reconstruction}{}% 7
-\BOOKMARK [2][-]{section*.8}{Algorithm}{section*.7}% 8
-\BOOKMARK [2][-]{section*.9}{Cross Correlation from Tidal Reconstructed Field}{section*.7}% 9
-\BOOKMARK [2][-]{section*.10}{Improvements on Reconstruction Procedure}{section*.7}% 10
-\BOOKMARK [1][-]{section*.11}{Discussion and error estimates}{}% 11
-\BOOKMARK [2][-]{section*.12}{Redshift Space Distortions}{section*.11}% 12
-\BOOKMARK [2][-]{section*.13}{Statistical Error}{section*.11}% 13
-\BOOKMARK [1][-]{section*.14}{Conclusion}{}% 14
-\BOOKMARK [1][-]{section*.15}{Acknowledge}{}% 15
-\BOOKMARK [1][-]{section*.16}{References}{}% 16
+\BOOKMARK [1][-]{section*.2}{kSZ Reconstruction}{}% 2
+\BOOKMARK [1][-]{section*.3}{Cross Correlation with Noise Substracted 21 cm Field}{}% 3
+\BOOKMARK [2][-]{section*.4}{Mimic Noise Substraction}{section*.3}% 4
+\BOOKMARK [2][-]{section*.5}{Cross Correlation with Noise Substracted Field}{section*.3}% 5
+\BOOKMARK [2][-]{section*.6}{Explanation of Correlation Coefficient Fluctuations}{section*.3}% 6
+\BOOKMARK [1][-]{section*.7}{Cross Correlation after Cosmic Tidal Reconstruction}{}% 7
+\BOOKMARK [2][-]{section*.8}{3D Cosmic Tidal Reconstruction}{section*.7}% 8
+\BOOKMARK [2][-]{section*.9}{Cross Correlation with Tidal Reconstructed Field}{section*.7}% 9
+\BOOKMARK [2][-]{section*.10}{Possible Improvements on Tidal Reconstruction}{section*.7}% 10
+\BOOKMARK [1][-]{section*.11}{Redshift Space Distortions}{}% 11
+\BOOKMARK [1][-]{section*.12}{Statistical Error}{}% 12
+\BOOKMARK [1][-]{section*.13}{Conclusion}{}% 13
+\BOOKMARK [1][-]{section*.14}{Acknowledge}{}% 14
+\BOOKMARK [1][-]{section*.15}{References}{}% 15
