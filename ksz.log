@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.11)  26 MAY 2016 09:22
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2016.4.11)  26 MAY 2016 09:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -489,7 +489,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 63.
 
 (./introduction.tex [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
-(./kszRecon.tex) (./noiseSubstraction.tex) [2] (./controlResult.tex
+(./kszRecon.tex) (./noiseSubstraction.tex [2]) (./controlResult.tex
 Package epstopdf Info: Source file: <compare_powv2d_z1z2.eps>
 (epstopdf)                    date: 2016-05-15 15:37:26
 (epstopdf)                    size: 38892 bytes
@@ -501,7 +501,7 @@ nverted-to.pdf compare_powv2d_z1z2.eps>
 (epstopdf)             \includegraphics on input line 32.
 Package epstopdf Info: Output file is already uptodate.
 
-<compare_powv2d_z1z2-eps-converted-to.pdf, id=149, 1172.38pt x 1039.885pt>
+<compare_powv2d_z1z2-eps-converted-to.pdf, id=148, 1172.38pt x 1039.885pt>
 File: compare_powv2d_z1z2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use compare_powv2d_z1z2-eps-converted-to.pdf>
@@ -531,7 +531,7 @@ onverted-to.pdf cl_correlation_z1_z2.eps>
 (epstopdf)             \includegraphics on input line 3.
 Package epstopdf Info: Output file is already uptodate.
 
-<cl_correlation_z1_z2-eps-converted-to.pdf, id=151, 578.16pt x 867.24pt>
+<cl_correlation_z1_z2-eps-converted-to.pdf, id=150, 578.16pt x 867.24pt>
 File: cl_correlation_z1_z2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use cl_correlation_z1_z2-eps-converted-to.pdf>
@@ -606,11 +606,6 @@ Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 96.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 96.
 Package rerunfilecheck Info: File `ksz.out' has not changed.
 (rerunfilecheck)             Checksum: F820394FBDF7E3B4A2A4D284BFC6848F;1063.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right .
-
-
  ) 
 Here is how much of TeX's memory you used:
  11357 strings out of 493304
@@ -643,7 +638,7 @@ msfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 s/msam10.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></
 usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texli
 ve/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on ksz.pdf (7 pages, 400539 bytes).
+Output written on ksz.pdf (7 pages, 400588 bytes).
 PDF statistics:
  353 PDF objects out of 1000 (max. 8388607)
  303 compressed objects within 4 object streams
