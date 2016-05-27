@@ -1,0 +1,109 @@
+While the baryon abundance of early universe is well fixed 
+%by the cosmic microwave background (CMB),Big Bang Nucleosynthesis and Lyman-$\alpha$ forest 
+\cite{Cooke14,Fukugita98,Komatsu11,Hinshaw13}, 
+%a deficiency was noiticed in local universe.
+for $z\lesssim 2$, large fractions of baryons are missing in observations.  
+The majority of them are believed to reside in Warm-Hot Intergalactic Mediums (WHIM) with typical temperature of $10^5$ K to $10^7$ K \cite{Pen1999,Soltan06}, which is too hot and diffuse to detect.
+Progress has been made in recent years to detect colder fraction of WHIM using absorption lines 
+(e.g, H~I, broad Ly$\alpha$, Mg~II, Si~II, C~II, Si~III, C~III, Si~IV, O~VI, O~VII) \cite{Bregman07,Werk14}, 
+yet not much detection can reach $T\gtrsim 10^6 K$. 
+Besides, these detections are usually biased towards collapsed objects, 
+ and metal lines have to suffer from the great uncertainty on ionization states 
+and metalicity.
+%However, the lines are usually limited to close circumgalactic medium, while at least 25\% of the baryons are bebieved to reside in more diffused region \cite{Dave10}. Moreover, the uncertainty in ionized fraction and metalicity is also a dormant volcan
+
+A more promising tracer for missing baryons is the kinematic Sunyaev-Zel'dovich (kSZ) effect \cite{Sunyaev72,Sunyaev80,Vishniac87}, 
+which results from Compton scattering of cosmic microwave background (CMB) off free electrons. 
+The radial velocity of electrons will give photon a Doppler shift 
+and hence leads to a 
+secondary anisotropy in CMB temperature.
+The kSZ signal has lots of advantages: 
+First, it is contributed from the absolute majority of baryons, 
+leaving alone only less than $10\%$ of baryons that 
+reside in stars, remnants, atomic and molecular gases \cite{Fukugita04}. 
+The fraction is rather stable.  
+Second, it only relates to electron density and radial velocity, 
+regardless the temperature, pressure or metalicity,  
+%so it is easy to interprete.  
+so no extra assumptions are needed to estimate baryon abundance.  
+Third, velocity mainly results from large scale structure, 
+therefore the method is less biased towards local mass contraction.  
+
+Attractive as it is, 
+due to the contamination from primary CMB, facility noises, 
+thermal SZ effect and CMB lensing, 
+it is difficult to filter for the kSZ signal independently. 
+Worse still, the signal itself does not contain redshift information.
+Therefore, previous approches tend to cross correlate it with 
+galaxy spectroscopic surveys, 
+which has large scale information and accurate redshift. 
+Yet, it is difficult and costy for this kind of survey to cover large sky area 
+and probe high redshift.  
+%eg. using pairwise-momentum estimator \cite{Hand12} or velocity-field-reconstruction estimator \cite{Shao11,Li14}. 
+%However since they all require spectroscopy of galaxies to provide accurate redshift, the sky volume and redshift range to apply the method is limited. 
+A recent effort attempts to relax the condition using projected fields of galaxies 
+from photometric surveys, which are highly accessible \cite{Hill16,Ferraro16}. 
+However, projected fields only maintain the largest scale information in $z$ direction, 
+while for $\ell\gtrsim1000$, where primary CMB fades away, a sufficient amount of kSZ signal comes from intermediate scales. 
+This limits the overall S/N it can reach.
+
+In this paper we put forward a new tracer for cross correlation---H~I density field from 21 cm intensity mapping. 
+H~I 21 cm spectra have accurate redshift information. 
+%which enables us to reconstruct velocity field and 
+%get better correlation with kSZ powerspectra. 
+And intensity mapping, since it 
+integrates signals 
+rather than distinguishing individual galaxies, 
+can accumulates contributions from weak sources 
+and reach high S/N much faster. 
+There are already several ongoing experiments aim at large sky coverage and claim to be able to reach $z\gtrsim1$ in very near future, such as
+CHIME \cite{2014SPIE.9145E..22B}, Tianlai \cite{2015ApJ...798...40X}, 
+HIRAX \cite{HIRAX} etc.
+Therefore, this correlator is more feasible than large galaxy spectroscopic surveys, 
+and more accurate that projected field.
+
+However, the 21 cm density field has its own drawback---the complicated foregrounds result from integration. 
+While a cosmic signal in 21 cm measurement is of the order of mK,  
+foregrounds coming from Galactic emissions, telescope noise, 
+extragalactic radio sources and Radio recombination lines, 
+can reach the order of Kelvin \cite{DiMatteo04,Masui13}. 
+Lots of techniques have been developed to filter the foregrounds, 
+taking advantage of the attribute that they have fewer bright spectral
+degrees of freedom \cite{Switzer15}.
+Unfortunately, the manipulation will contaminates the smooth large scale structure in radial direction, 
+and hence degrade the correlation with kSZ signal.
+%Since the kSZ signal coming from a both density and velocity field, 
+%and velocity is greatly related to large scale structures. 
+%This drawback will inhibit the cross correlation behavior.
+
+In this paper, 
+%we first present the algorithm of how to construct velocity field 
+%and cross correlate with kSZ signals. 
+we first evaluate the influence of foregrounds and other noises 
+on the cross correlation. 
+We then apply a method, cosmic tidal reconstruction \cite{2012:pen,2015:zhu}, 
+to recover the large scale structure from its tidal influence on small scales 
+and see the improvement on correlation coefficients. 
+
+The paper is organized as follows: 
+In section II, we demonstrate given a density field, how to correlate it with kSZ signal with velocity reconstruction, similar to \cite{Shao11}; 
+In section III, we present the result of cross correlation with foreground filtered field 
+and discuss the behavior; 
+Then in section IV, we introduce the method of 3D tidal reconstruction, 
+and present the correlation results after small $k$ modes recovered, 
+In section V, we discuss redshift space distortions; 
+In section VI, we estimate statistical error and calculate S/N; 
+%discuss redshift distortion and possible improvements; 
+and we conclude at section VII.
+
+
+Notes: 
+Throughout the paper, We use the $z=1,2$ output of six $N$-body simulations from the
+$\mr{CUBEP}^3\mr{M}$ code \cite{2013:code}, each evolving $1024^3$ particles in a $(1.2\mr{Gpc}/h)^3$ box. 
+Simulation parameters are as follows: Hubble parameter $h=0.678$, baryon
+density $\Omega_{b}=0.049$, dark matter density $\Omega_{c}=0.259$,
+amplitude of primordial curvature power spectrum $A_s=2.139\times10^{-9}$ at 
+$k_0=0.05\;\mr{Mpc}^{-1}$ and scalar spectral index $n_s=0.968$.
+
+we use "$\wedge$" to denote recontructed fields as 
+oppose to fields directly from simulations.

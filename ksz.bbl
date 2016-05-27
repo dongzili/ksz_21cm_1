@@ -1,4 +1,4 @@
-\begin{thebibliography}{27}
+\begin{thebibliography}{28}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -140,6 +140,16 @@
   \bibinfo{author}{\bibfnamefont{D.~N.} \bibnamefont{{Spergel}}},
   \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2016}),
   \eprint{1603.01608}.
+
+\bibitem[{\citenamefont{{Ferraro} et~al.}(2016)\citenamefont{{Ferraro}, {Hill},
+  {Battaglia}, {Liu}, and {Spergel}}}]{Ferraro16}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{{Ferraro}}},
+  \bibinfo{author}{\bibfnamefont{J.~C.} \bibnamefont{{Hill}}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{{Battaglia}}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Liu}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.~N.} \bibnamefont{{Spergel}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2016}),
+  \eprint{1605.02722}.
 
 \bibitem[{\citenamefont{{Bandura} et~al.}(2014)\citenamefont{{Bandura},
   {Addison}, {Amiri}, {Bond}, {Campbell-Wilson}, {Connor}, {Cliche}, {Davis},

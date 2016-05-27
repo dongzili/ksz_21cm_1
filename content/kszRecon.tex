@@ -1,0 +1,56 @@
+\label{sec:kszRecon}
+The CMB temperature fluctuations caused by kSZ effect is:
+\begin{eqnarray}
+\label{eq:ksz}
+\Theta_{kSZ}(\hat n)\equiv\frac{\Delta T_{kSZ}}{T_{\mr{CMB}}}
+=-\frac{1}{c}\int d\eta  g(\eta)  \bm{p}_\parallel\ ,
+\end{eqnarray}
+where $\eta(z)$ is the comoving distance at redshift z, $g(\eta)=e^{-\tau} d\tau/d\eta$ is the visibility function, $\tau$ is the optical depth to Thomson scattering, $\bm{p}_\parallel=(1+\delta)\bm{v}_\parallel$, with $\delta$ the electron overdensity, $\parallel$ indicates direction parallel to line of sight. 
+We assume that $g(\eta)$ doesn't change significally in one redshift bin, 
+and integrate $\bm{p}_\parallel$ along radial axis to get $\hat \Theta_{kSZ}$
+
+Due to the cancellation of positive and negative velocity, its direct cross correlation between kSZ signal will vanish.
+To better maintain the one to one multiplication between velocity field and density contrast, 
+we first calculates the linear peculiar velocity, and then generate a mock kSZ signal 
+\cite{Shao11}.
+In this way, we can at most maximize the correlation.
+
+Assume we have a density contrast field $\delta=(\rho-\bar{\rho})/\bar{\rho}$, where $\bar\rho$ is the average density of a certain redshift slice. 
+
+Detailed steps are as follows.
+
+(1) Estimate the velocity field:
+
+In linear region, the continuity equation goes like:
+$\dot \delta+\nabla \cdot \bm{v}=0$, 
+where $\bm{v}$ is the peculiar velocity and $\delta$ is the matter overdensity. 
+
+Therefore, we obtain an estimator of velocity distribution from the density contract $\delta$:
+\begin{eqnarray}
+	\label{eq:v}
+\hat v_z(\bm{k})=i a H f\delta(\bm{k})\frac{k_z}{k^2}\,
+\end{eqnarray}
+where $f=d\mathrm{ln}D/d\mathrm{ln}a$, $D(a)$ is the linear growth function, 
+$a$ is the scale factor, $H$ is the Hubble parameter.
+
+$v_z \propto k_z/k^2$, indicating the most prominent signal comes from small k mode, which corresponds to large scale structure. 
+
+(2) suppress the noise in velocity field with a Wiener filter. 
+This is because the term $k_z/k^2$ in Eq.(\ref{eq:v}) will strongly amplify noises in small k modes. 
+\begin{eqnarray}
+	\label{eq:wienerv}
+\hat v_z^c(\bm{k})=\frac{\hat v_z(\bm{k})}{b(k_\perp,k_\parallel)}W(k_\perp,k_\parallel)\ ,
+\end{eqnarray}
+Bias $b=P_{\hat v_z,v_z}/P_{v_z}$, Wiener filter $W=P_{v_z}/(P_{\hat v_z}/b^2)$.
+
+(3) Calculate 2D kSZ map follow Eq.(\ref{eq:ksz}).
+
+(4) Calculate correlation coefficients.
+
+We compare reconstructed kSZ signals $\hat \Theta_{kSZ}$ with kSZ signals $\Theta_{kSZ}$ directly from simulations. 
+To quantify the tightness of correlation, we employ a quantity r: 
+\begin{eqnarray}
+	r\equiv \frac{P_{recon,real}}{\sqrt{P_{recon}P_{real}}}\,
+\end{eqnarray}
+
+
