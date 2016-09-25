@@ -1,3 +1,6 @@
+We first present the holographic method\cite{11Shao} we apply 
+to cross correlate kSZ with a density field. 
+
 \label{sec:kszRecon}
 The CMB temperature fluctuations caused by kSZ effect is:
 \begin{eqnarray}
@@ -10,8 +13,8 @@ We assume that $g(\eta)$ doesn't change significally in one redshift bin,
 and integrate $\bm{p}_\parallel$ along radial axis to get $\hat \Theta_{kSZ}$
 
 Due to the cancellation of positive and negative velocity, its direct cross correlation between kSZ signal will vanish.
-To better maintain the one to one multiplication between velocity field and density contrast, 
-we first calculates the linear peculiar velocity, and then generate a mock kSZ signal 
+To take advantage of the known redshift and better maintain the one to one multiplication between velocity field and density contrast,   
+we generate a mock kSZ signal from calculation of linear peculiar velocity. 
 \cite{Shao11}.
 In this way, we can at most maximize the correlation.
 
@@ -35,7 +38,7 @@ $a$ is the scale factor, $H$ is the Hubble parameter.
 
 $v_z \propto k_z/k^2$, indicating the most prominent signal comes from small k mode, which corresponds to large scale structure. 
 
-(2) suppress the noise in velocity field with a Wiener filter. 
+(2) Suppress the noise in velocity field with a Wiener filter. 
 This is because the term $k_z/k^2$ in Eq.(\ref{eq:v}) will strongly amplify noises in small k modes. 
 \begin{eqnarray}
 	\label{eq:wienerv}

@@ -1,6 +1,6 @@
 git add *
-git commit -m "5.26.2 cleaner format"
+git commit -m "9.25 with ns_tide"
 
-git remote add 5.26.2 https://github.com/fleaf5/ksz_21cm_1.git
-git push -u 5.26.2 master
+git remote add 9.25 https://github.com/fleaf5/ksz_21cm_1.git
+git push -u 9.25 master
 

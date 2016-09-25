@@ -1,0 +1,61 @@
+Since actual sky surveys can only resolve structures of certain scales, 
+it is essential to understand which scales contribute most to the kSZ signals. 
+To fulfill the purpose, we write Eq.(\ref{eq:ksz}) in Fourier space and do a qualitive analysis. 
+
+The finite box size of $1200$ Mpc will only have obvious influence on modes with $k\lesssim0.005$, 
+we can safely assume the integration on $z$ direction to be from minus infinity to plus infinity. 
+Moreover, the term $a(z)H(z)f(z)$ in Eq.(\ref{eq:v}) does not vary much in one box, we assume it to be a constant for simplicity. 
+Then the Fourier transformation is just the $k_z=0$ mode of the momentum 
+$p_\parallel(\bm{k})$ in Fourier space. 
+\begin{eqnarray}
+    \label{eq:thetak}
+    \Theta(\bm{l})\equiv&\Theta&({k}_x\chi,{k}_y\chi,0)\propto\int\, 
+    d^3k^\prime\delta(\bm{l}/\chi-\bm{k}_\perp^\prime,k_\parallel^\prime) v_z(\bm{k^\prime})\nonumber\\
+    %
+    %
+%    \xrightarrow[region]{linear}&\int& 
+%d^3k^\prime\delta({\bm{k}}_\perp-\bm{k}_\perp^\prime,k_\parallel^\prime)\delta(\bm{k}^\prime)\frac{k_z^\prime}{k'^2}
+    \end{eqnarray}
+An essential feature of Eq.(\ref{eq:thetak}) is that
+in transverse plane, density and velocity field of different scales are multiplied together;
+ while in parallel direction, only $\delta$ and $v_z$ with identical $k_z$ will be coupled together.  
+
+The contributions of $\delta(\bm{k})$ and $v_z(\bm{k})$ of different scales 
+are implied in Fig.\ref{}. 
+%and also implicit at Eq.(\ref{eq:v}), 
+The velocity field contributes almost dominantly from large scales, 
+leaving little contribution from $k_z>0.2 h/Mpc$ and $k_\perp> 0.02 h/Mpc$. 
+%ignoring the vast k modes in this region. 
+This makes it roughly an ellipitical selection functions in the convolution
+---
+It selects $\delta$ with similar range of $k_z$ yet has $k_\perp\sim\l/\chi-0.01$ h/Mpc.  
+To make it clearer, let us assume that $|v(\bm{k})|$ drops fast enough for 
+large k and could be demonstrated as a Delta Function centered at 
+$(k_\perp,k_\parallel)=(0.01,0.1)$ h/Mpc. 
+then it is immediately shown that 
+$\Theta(\bm{l}) \int\, 
+    d^3k^\prime\delta(\bm{l}/\chi-\bm{k}_\perp^\prime,k_\parallel^\prime) 
+    \delta^D(0.01,0.1)
+    \sim \delta(\bm{l}/\chi-0.01,0.1)$. 
+Therefore, when generating kSZ signals, 
+it is crucial to have large scale modes for $v_z$, 
+yet which modes matter most for $\delta(\bm{k})$ 
+depends on which $\ell$ we look at.  
+
+To decide the targeted $\ell$ range, 
+there are many factors to consider:  
+the strength of the primary CMB, facility limits and 
+other fluctuations on CMB such as thermal SZ effect\ref{} and CMB lensing\ref{}.
+Consider using Plank\ref{15Plank} data 
+in the 217 GHz band, where the tSZ signal vanishes, 
+we demonstrate the angular powerspectrum of primary CMB, 
+facility noises, 
+and kSZ of redshift 1 and 2. 
+As shown in Fig.\ref{fig:CMB}, 
+only in the range of $\ell \sim 500-3000$, 
+there is a chance for us to distinguish the kSZ signal.  
+
+For this $\ell$ range, we demonstrate the essential modes 
+for mock kSZ signal in both $v_z$ and $\delta$ fields with red ellipse 
+in Fig.\ref{fig:k3v}. 
+

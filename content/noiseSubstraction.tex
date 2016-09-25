@@ -1,36 +1,84 @@
-To ressemble realistic observations, we take into account the resolution, small scale noises and foreground substractions. 
-Two filters are applied on original density contrast $\delta$ to imitate the effects of noise substractions:
+As mentioned before, there are three main disadvantages for ongoing 21cm intensity mapping experiments: 
+the relatively low resolution, 
+the strong foreground noises 
+and the spatial loss of interferometers. 
+To discuss how they will influence the cross correlation kSZ, 
+we reprocess the density contrasts obtained in simulation to 
+assemble the loss. 
 
 1. For small scale noises:
 
-Import a cut off scale $k_c$ 
-with a step function $H(k_c-k)$. 
-For $k>k_c$, $H(k_c-k)=0$; for $k\leqslant k_x$; $H(k_c-k)=1$.
-This is reasonable for a single dish experiment, which
-has good brightness sensitivity and an exponetially growing noise at small 
-scales.
-We choose $k_c=0.5\ h/\mr{Mpc}$ and $0.32 h/\mr{Mpc}$ respectively for $z=1$ and $z=2$ , which corresponds
-to $\ell\sim1150$. 
-This is generally realistic, judging from ongoing 21 cm experiments like
-CHIME \cite{2014SPIE.9145E..22B}\cite{2014SPIE.9145E..4VN}
-and Tianlai \cite{2012IJMPS..12..256C}\cite{2015ApJ...798...40X}.
+The finite spacial and velocity resolution of facilities 
+prevent us from resolving infinitely small structures in both parallel and perpendicular directions. 
+Therefore we import a cut off scale $k_{max}$ with a Heaviside Function 
+$H(k_{max}-k)$, dropping all the modes with k larger than $k_{max}$. 
+We choose a realistic $k_{max}$ based on baselines of ongoing experiments 
+\cite{HIRAX,2014SPIE.9145E..22B,2014SPIE.9145E..4VN,2012IJMPS..12..256C,2015ApJ...798...40X}, 
+and an ideal $k_{max}$ based on noise status of Planck Satellite.
 
 2. For foreground noises:
 
-Use a high pass filter $W_{fs}(k_\parallel)=1-e^{-k_\parallel^2R_\parallel^2/2}$ to imitate the substraction. 
-We choose 
-$R_\parallel=15\ \mr{Mpc}/h$ for $z=1$ and $R_\parallel=8\ \mr{Mpc}/h$ for $z=2$, which gives
-$W_{fs}=0.5$ at
-$k_\parallel=0.08\ \mr{Mpc}/h$ and $0.15\ \mr{Mpc}/h$ respectively. 
+Foregrounds coming from Galactic emissions, telescope noise, 
+extragalactic radio sources and Radio recombination lines, 
+could be three orders brighter than actual signals\cite{DiMatteo04,Masui13}. 
+The process of foreground removal, taking advantage of its low spectral
+degrees of freedom \cite{Switzer15}, 
+will inevitably contaminates the smooth large scale structure in radial direction.  
+To imitate the loss, a high pass filter $W_{fs}(k_\parallel)=1-e^{-k_\parallel^2R_\parallel^2/2}$ is applied to density contraction. 
+We again test a realistic case \cite{2013ApJ...763L..20M,Switzer13}
+with 
+only half of the signal resolved at $k_\parallel=0.08$ Mpc/h and $0.15$ Mpc/h 
+for redshift 1 and 2 respectively. 
+And a theoretical case \cite{15Shaw} with half of the signal lost 
+at $k_\parallel=0.02$ Mpc/h and $0.04$ Mpc/h for redshift 1 and 2. 
+%$R_\parallel=15\ \mr{Mpc}/h$ for $z=1$ and $R_\parallel=8\ \mr{Mpc}/h$ for $z=2$, which gives
+%$W_{fs}=0.5$ at
+%$k_\parallel=0.08\ \mr{Mpc}/h$ and $0.15\ \mr{Mpc}/h$ respectively. 
+%And a good yet still realistic case \cite{15Shaw} with 
+%$R_\parallel=60\ \mr{Mpc}/h$ for $z=1$ and $R_\parallel=32\ \mr{Mpc}/h$ for $z=2$, which gives
+%$W_{fs}=0.5$ at
+%$k_\parallel=0.02\ \mr{Mpc}/h$ and $0.04\ \mr{Mpc}/h$. 
 %This is realistic according to the condition of current 21 cm observations 
-%\cite{2013ApJ...763L..20M}\cite{Switzer13}.
+%\cite{2013ApJ...763L..20M,Switzer13}.
 
-The observed 21 cm field after noises subtraction is then given by 
+3. For spatial loss of inteferometers:
+
+Large scale structure in perpendicular plane, due to the smoothness, 
+will appear sharp in the visibility function of interferometers 
+after Fourier Transformation. 
+Unfortunately that sharp peak could not be resolved by interferometers 
+due to the incomplete sampling  
+caused by the finite length of the shortest baselines. 
+Therefore, structures with angular sizes greater than a threshold of $l_{min}=300$ 
+are assumed to be lost in our simulations. 
+%We do not assume worse cases there, since baselines as short as 20m 
+%are already able to filter most of the important modes for velocity reconstruction. 
+We do not assume different cases here, 
+since most of the important modes dropped can be retrieved using cosmic tidal reconstruction. 
+
+In sum, the observed 21 cm density contrasts after all the loss will appear as 
 \begin{eqnarray}
 \label{eq:ns}
-\delta_{ns}(\bm{k})=\delta(\bm{k})W_{fs}(k_\parallel)H(k_c-k),
+    \delta_{nf}(\bm{k})=\delta(\bm{k})H(k_{max}-k)W_{fs}(k_\parallel)H(l-l_{min}),
 \end{eqnarray}
+The detailed filtering parameters are presented in Table. \ref{tab:para}.
 
-With the noise filtered density contrast $\delta_{ns}$, we follow the procedure described in 
-section \ref{sec:kszRecon} to generate a mock kSZ signal $\hat \Theta_{ns}$  
-and calculate cross correlation $r_{\Theta\hat\Theta_{ns}}$.
+With the noise filtered density contrast $\delta_{nf}$, we follow the procedure described in
+section \ref{sec:kszRecon} to generate a mock kSZ signal $\hat \Theta_{nf}$  
+and calculate cross correlation $r_{\Theta\hat\Theta_{nf}}$.
+
+\begin{table}
+\begin{tabular}{|m{3cm}|m{1cm}|m{1cm}|m{1cm}|m{1cm}|}
+    \hline
+     & \multicolumn{2}{|c|}{z=1} &\multicolumn{2}{|c|}{z=2}\\
+     \hline
+     $R_\parallel$  Mpc/h & 15 & 60 & 8 & 32 \\
+     \hline
+     $k_{max}$ h/Mpc & 0.5 & 1 & 0.32 & 0.64 \\
+     \hline
+     $l_{min}$ & \multicolumn{4}{|c|}{300} \\
+     \hline
+\end{tabular}
+     \caption{Parameter of different noise filtering.}
+     \label{tab:para}
+\end{table}

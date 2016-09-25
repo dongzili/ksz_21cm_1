@@ -9,6 +9,7 @@
 \usepackage{verbatim}
 \usepackage{times}
 %what I add
+\usepackage{tabu}
 \usepackage{hyperref}
 \usepackage{url}
 \usepackage{microtype}
@@ -52,7 +53,7 @@
 % the following line is for submission, including submission to the arXiv!!
 %\hspace{5.2in} \mbox{Fermilab-Pub-04/xxx-E}
 
-\title{Cross Correlating 21 cm Signal with Kinematic Sunyaev-Zel'dovich Effect: A New Probe for Missing Baryons at $z\sim1-2$}
+\title{Cross Correlating 21 cm Intensity Mapping fields with Kinematic Sunyaev-Zel'dovich Effect: Probing Missing Baryons at $z\sim1-2$}
 %\title{Cross Correlating Tidal Reconstructed 21 cm Signal with Kinematic Sunyaev-Zel'dovich Effect: A New Probe for Missing Baryons at $z\sim1-2$}
 \input content/author.tex
 \input content/abstract.tex
@@ -63,26 +64,28 @@
 \section{Introduction}
 \input content/introduction.tex
 %\section{Velocity Reconstruction and kSZ signals Cross Correlation}
-\section{kSZ Reconstruction}
+\section{Algorithm: kSZ Cross Correlation}
 \input content/kszRecon.tex
-\section{Cross Correlation with Noise Substracted 21 cm Field} 
-\subsection{Mimic Noise Substraction}
+\section{Analysis: Requirements for Cross Correlation}
+\input content/kszAnalysis.tex
+\section{Condition: 21 cm Intensity Mapping} 
+%\subsection{Noisy }
 \input content/noiseSubstraction.tex
-\subsection{Cross Correlation with Noise Substracted Field}
-\input content/controlResult.tex
-\subsection{Explanation of Correlation Coefficient Fluctuations}
-\input content/controlExplanation.tex
-\section{Cross Correlation after Cosmic Tidal Reconstruction}
+%\subsection{Cross Correlation with Noise Substracted Field}
+%\input content/controlResult.tex
+%\subsection{Explanation of Correlation Coefficient Fluctuations}
+%\input content/controlExplanation.tex
+\section{Algorithm: Cosmic Tidal Reconstruction}
 %\subsection{3D Cosmic Tidal Reconstruction}
 \input content/tide.tex
-\subsection{Cross Correlation with Tidal Reconstructed Field}
+\section{Result: Cross Correlation}
 \input content/tideResult.tex
-\subsection{Possible Improvements on Tidal Reconstruction}
-\input content/tideImprove.tex
+%\subsection{Possible Improvements on Tidal Reconstruction}
+%\input content/tideImprove.tex
 %\section{Discussion and error estimates}
-\section{Redshift Space Distortions}
-\input content/rsd.tex
-\section{Statistical Error}
+%\section{Redshift Space Distortions}
+%\input content/rsd.tex
+\section{Analysis: Expected S/N}
 \input content/error.tex
 \section{Conclusion}
 \input content/conclusion.tex

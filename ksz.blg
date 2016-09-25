@@ -1,4 +1,4 @@
-This is BibTeX, Version 0.99d (TeX Live 2013/Debian)
+This is BibTeX, Version 0.99d (TeX Live 2015/Debian)
 Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
 The top-level auxiliary file: ksz.aux
 The style file: apsrev.bst
@@ -6,44 +6,44 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ksz.bib
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 28 entries,
+You've used 25 entries,
             3411 wiz_defined-function locations,
-            1345 strings with 16993 characters,
-and the built_in function-call counts, 24942 in all, are:
-= -- 1188
-> -- 1201
-< -- 159
-+ -- 1087
-- -- 298
-* -- 3636
-:= -- 2489
-add.period$ -- 28
-call.type$ -- 28
-change.case$ -- 112
-chr.to.int$ -- 27
-cite$ -- 30
-duplicate$ -- 2253
-empty$ -- 1946
-format.name$ -- 673
-if$ -- 4549
+            1327 strings with 16807 characters,
+and the built_in function-call counts, 22295 in all, are:
+= -- 1074
+> -- 1057
+< -- 140
++ -- 955
+- -- 262
+* -- 3245
+:= -- 2222
+add.period$ -- 25
+call.type$ -- 25
+change.case$ -- 100
+chr.to.int$ -- 24
+cite$ -- 27
+duplicate$ -- 2008
+empty$ -- 1743
+format.name$ -- 594
+if$ -- 4081
 int.to.chr$ -- 2
-int.to.str$ -- 29
-missing$ -- 338
-newline$ -- 99
-num.names$ -- 81
-pop$ -- 468
+int.to.str$ -- 26
+missing$ -- 303
+newline$ -- 90
+num.names$ -- 72
+pop$ -- 417
 preamble$ -- 1
-purify$ -- 112
+purify$ -- 100
 quote$ -- 0
-skip$ -- 1034
+skip$ -- 924
 stack$ -- 0
-substring$ -- 443
-swap$ -- 1932
-text.length$ -- 151
+substring$ -- 423
+swap$ -- 1728
+text.length$ -- 133
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 168
+type$ -- 150
 warning$ -- 0
-while$ -- 68
+while$ -- 63
 width$ -- 0
-write$ -- 312
+write$ -- 281
