@@ -11,23 +11,11 @@ and real kSZ $P_{\Theta_{kSZ}}$.
 }
 \label{fig:r}
 \end{figure}
-With noise substracted 21 cm density field, we are able to have detectable cross correlations for $\ell\gtrsim 800$. 
-However, we are also interested in large scale baryon distributions, 
-which is free from the complicated activities happen in smaller scales.  
-We use Cosmic Tidal Reconstruction to recover correlations for small $\ell$ 
-and improve correlations for intermediate $\ell$.
-%Since the loss of large scale information in z dDDddirection will reduce the cross correlation with small $\ell$ and influence the performance on large $\ell$. 
-This is one of the first application of its 3D version. 
-\subsection{3D Cosmic Tidal Reconstruction}
-The fundamental idea of Cosmic Tidal Reconstruction is that 
-the evolution of small scale structure is modulated by large scale 
+The evolution of small scale structure is modulated by large scale 
 gravitational force. We can select this effect and solve for the large scale potential. 
 
-
-Main Procedure:\noindent
-
 Consider only the anisotropic influence from tidal force, 
-the distortions on power spectrum \cite{2015:zhu} can linearly be calculated as  
+the distortions on power spectrum can linearly be calculated as  
 \begin{eqnarray}
 \label{eq:powerdistort}
 \delta P(\bm{k},\tau)|_{t_{ij}}&=&
@@ -59,7 +47,7 @@ Therefore, the method mainly use the quadratic statistics on small scales to rec
 It works best for close linear regions.
 
 
-Detailed steps:\noindent
+Programming steps:\noindent
 
 (1) Gaussianize the field, taking 
 $\delta_g=\mathrm{ln}(1+\delta)$. 
@@ -131,5 +119,5 @@ is the cross powerspectra between reconstructed field $\kappa\mathrm{3D}$ and or
 Wiener filter $W(k_\perp,k_\parallel)=P_\delta/(P_{\mathrm{k3D}}/b^2)$.
 
 Here $\hat \kappa_{c}$ is the output large scale density contrast we obtain from tidal reconstruction.
-We use it to calculate velocity $\hat v_z^{\mathrm{tide}}$ and mock kSZ signal $\hat \Theta_{\mathrm{tide}}$ following identical procedure as to noise filtered field.
+We use it to calculate velocity $\hat v_z^{\mathrm{tide}}$.
 

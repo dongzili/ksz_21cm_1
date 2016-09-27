@@ -1,10 +1,12 @@
-As mentioned before, there are three main disadvantages for ongoing 21cm intensity mapping experiments: 
+After understanding the essential modes for kSZ signal, 
+we discuss the current situation ongoing 21cm Intensity Mapping 
+experiments. 
+As mentioned before, the density contrasts obtained from  
+ongoing 21cm intensity mapping experiments maybe degraded by 
 the relatively low resolution, 
 the strong foreground noises 
 and the spatial loss of interferometers. 
-To discuss how they will influence the cross correlation kSZ, 
-we reprocess the density contrasts obtained in simulation to 
-assemble the loss. 
+Several simple filters could be used to demonstrate the loss.
 
 1. For small scale noises:
 
@@ -12,9 +14,9 @@ The finite spacial and velocity resolution of facilities
 prevent us from resolving infinitely small structures in both parallel and perpendicular directions. 
 Therefore we import a cut off scale $k_{max}$ with a Heaviside Function 
 $H(k_{max}-k)$, dropping all the modes with k larger than $k_{max}$. 
-We choose a realistic $k_{max}$ based on baselines of ongoing experiments 
-\cite{HIRAX,2014SPIE.9145E..22B,2014SPIE.9145E..4VN,2012IJMPS..12..256C,2015ApJ...798...40X}, 
-and an ideal $k_{max}$ based on noise status of Planck Satellite.
+%We choose a realistic $k_{max}$ based on baselines of ongoing experiments 
+%\cite{HIRAX,2014SPIE.9145E..22B,2014SPIE.9145E..4VN,2012IJMPS..12..256C,2015ApJ...798...40X}, 
+%and an ideal $k_{max}$ based on noise status of Planck Satellite.
 
 2. For foreground noises:
 
@@ -25,12 +27,12 @@ The process of foreground removal, taking advantage of its low spectral
 degrees of freedom \cite{Switzer15}, 
 will inevitably contaminates the smooth large scale structure in radial direction.  
 To imitate the loss, a high pass filter $W_{fs}(k_\parallel)=1-e^{-k_\parallel^2R_\parallel^2/2}$ is applied to density contraction. 
-We again test a realistic case \cite{2013ApJ...763L..20M,Switzer13}
-with 
-only half of the signal resolved at $k_\parallel=0.08$ Mpc/h and $0.15$ Mpc/h 
-for redshift 1 and 2 respectively. 
-And a theoretical case \cite{15Shaw} with half of the signal lost 
-at $k_\parallel=0.02$ Mpc/h and $0.04$ Mpc/h for redshift 1 and 2. 
+%We again test a realistic case \cite{2013ApJ...763L..20M,Switzer13}
+%with 
+%only half of the signal resolved at $k_\parallel=0.08$ Mpc/h and $0.15$ Mpc/h 
+%for redshift 1 and 2 respectively. 
+%And a theoretical case \cite{15Shaw} with half of the signal lost 
+%at $k_\parallel=0.02$ Mpc/h and $0.04$ Mpc/h for redshift 1 and 2. 
 %$R_\parallel=15\ \mr{Mpc}/h$ for $z=1$ and $R_\parallel=8\ \mr{Mpc}/h$ for $z=2$, which gives
 %$W_{fs}=0.5$ at
 %$k_\parallel=0.08\ \mr{Mpc}/h$ and $0.15\ \mr{Mpc}/h$ respectively. 
@@ -49,34 +51,58 @@ after Fourier Transformation.
 Unfortunately that sharp peak could not be resolved by interferometers 
 due to the incomplete sampling  
 caused by the finite length of the shortest baselines. 
-Therefore, structures with angular sizes greater than a threshold of $l_{min}=300$ 
+Therefore, structures with angular sizes greater than a threshold $l_{min}$ 
 are assumed to be lost in our simulations. 
 %We do not assume worse cases there, since baselines as short as 20m 
 %are already able to filter most of the important modes for velocity reconstruction. 
-We do not assume different cases here, 
-since most of the important modes dropped can be retrieved using cosmic tidal reconstruction. 
 
 In sum, the observed 21 cm density contrasts after all the loss will appear as 
 \begin{eqnarray}
 \label{eq:ns}
     \delta_{nf}(\bm{k})=\delta(\bm{k})H(k_{max}-k)W_{fs}(k_\parallel)H(l-l_{min}),
 \end{eqnarray}
-The detailed filtering parameters are presented in Table. \ref{tab:para}.
 
-With the noise filtered density contrast $\delta_{nf}$, we follow the procedure described in
-section \ref{sec:kszRecon} to generate a mock kSZ signal $\hat \Theta_{nf}$  
-and calculate cross correlation $r_{\Theta\hat\Theta_{nf}}$.
+The chosen parameters and reasons are presented in Table. \ref{tab:para}.
+
+The demonstration of a worst case for $z=1$ is shown in Fig.\ref{fig:}. 
+As we could see, essential modes for density field are partly resolved. 
+However, the reconstruction of velocity field will be a total failure 
+due to the spatial loss of inteferometers. 
+
+If we directly use this density contrast to generate mock kSZ signal, 
+its correlation r (Eq.(\ref{eq:r})) with real kSZ will be at most 0.2.
+Luckily, till now we only use the linear theory for reconstruction, 
+while nonlinearly modes of different scales are coupled. 
+If we could identify a relatively clean nonlinear effect in density field, 
+we would be able to retrieve the information needed for velocity reconstruction. 
+The effect we choose is the tidal influence of large scale structure on small 
+scales, following \cite{2015:zhu,2012:pen}.  
+
+
+
+
+
+%With the noise filtered density contrast $\delta_{nf}$, we follow the procedure described in
+%section \ref{sec:kszRecon} to generate a mock kSZ signal $\hat \Theta_{nf}$  
+%and calculate cross correlation $r_{\Theta\hat\Theta_{nf}}$.
 
 \begin{table}
 \begin{tabular}{|m{3cm}|m{1cm}|m{1cm}|m{1cm}|m{1cm}|}
     \hline
      & \multicolumn{2}{|c|}{z=1} &\multicolumn{2}{|c|}{z=2}\\
      \hline
-     $R_\parallel$  Mpc/h & 15 & 60 & 8 & 32 \\
+     \footnote{Foreground: smear $k_z\lesssim 0.08,0.02,0.12,0.03$ h/Mpc respectively. Parameters based on \cite{2013ApJ...763L..20M,Switzer13,15Shaw}}
+     $R_\parallel$
+     Mpc/h & 15 & 60 & 10 & 40 \\
      \hline
-     $k_{max}$ h/Mpc & 0.5 & 1 & 0.32 & 0.64 \\
+     \footnote{Small scale noises: based on CHIME\cite{2014CHIME} and HIRAX\cite{HIRAX} 
+     with 100m and 200m longest baseline respectively.}
+     $k_{max}$
+     h/Mpc & 0.6 & 1.2 & 0.4 & 0.8 \\
      \hline
-     $l_{min}$ & \multicolumn{4}{|c|}{300} \\
+     \footnote{Spatial loss of inteferomenter: assume shortest baseline of 20m.}
+     $\ell_{min}$
+     & \multicolumn{4}{|c|}{300} \\
      \hline
 \end{tabular}
      \caption{Parameter of different noise filtering.}

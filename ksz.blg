@@ -4,46 +4,48 @@ The top-level auxiliary file: ksz.aux
 The style file: apsrev.bst
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: ksz.bib
+Warning--I didn't find a database entry for "2014SPIE.9145E..22B"
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
-You've used 25 entries,
+You've used 23 entries,
             3411 wiz_defined-function locations,
-            1327 strings with 16807 characters,
-and the built_in function-call counts, 22295 in all, are:
-= -- 1074
-> -- 1057
-< -- 140
-+ -- 955
-- -- 262
-* -- 3245
-:= -- 2222
-add.period$ -- 25
-call.type$ -- 25
-change.case$ -- 100
-chr.to.int$ -- 24
-cite$ -- 27
-duplicate$ -- 2008
-empty$ -- 1743
-format.name$ -- 594
-if$ -- 4081
+            1315 strings with 15909 characters,
+and the built_in function-call counts, 20194 in all, are:
+= -- 971
+> -- 962
+< -- 125
++ -- 867
+- -- 238
+* -- 2951
+:= -- 2025
+add.period$ -- 23
+call.type$ -- 23
+change.case$ -- 92
+chr.to.int$ -- 22
+cite$ -- 25
+duplicate$ -- 1814
+empty$ -- 1579
+format.name$ -- 542
+if$ -- 3683
 int.to.chr$ -- 2
-int.to.str$ -- 26
-missing$ -- 303
-newline$ -- 90
-num.names$ -- 72
-pop$ -- 417
+int.to.str$ -- 24
+missing$ -- 273
+newline$ -- 84
+num.names$ -- 66
+pop$ -- 383
 preamble$ -- 1
-purify$ -- 100
+purify$ -- 92
 quote$ -- 0
-skip$ -- 924
+skip$ -- 821
 stack$ -- 0
-substring$ -- 423
-swap$ -- 1728
-text.length$ -- 133
+substring$ -- 379
+swap$ -- 1555
+text.length$ -- 119
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 150
+type$ -- 138
 warning$ -- 0
-while$ -- 63
+while$ -- 57
 width$ -- 0
-write$ -- 281
+write$ -- 258
+(There was 1 warning)
