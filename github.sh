@@ -1,6 +1,6 @@
 git add *
-git commit -m "9.26 with plots of 21cm_cmb"
+git commit -m "9.27 with new plots cl,sn"
 
-git remote add 9.26 https://github.com/fleaf5/ksz_21cm_1.git
-git push -u 9.26 master
+git remote add 9.27 https://github.com/fleaf5/ksz_21cm_1.git
+git push -u 9.27 master
 

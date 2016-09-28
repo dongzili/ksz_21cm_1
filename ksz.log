@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.13)  26 SEP 2016 22:25
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.13)  27 SEP 2016 22:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -410,7 +410,14 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@pps=\count125
 \c@@ppsavesec=\count126
 \c@@ppsaveapp=\count127
-) (./ksz.aux)
+) (./ksz.aux
+
+LaTeX Warning: Label `fig:r' multiply defined.
+
+
+LaTeX Warning: Label `fig:r@cref' multiply defined.
+
+)
 \openout1 = `ksz.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
@@ -430,8 +437,7 @@ LaTeX Font Info:    ... okay on input line 50.
 Class revtex4 Info: Patching array package. on input line 50.
 Class revtex4 Info: cite was not loaded (OK!) on input line 50.
 Class revtex4 Info: multicol was not loaded (OK!) on input line 50.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count128
 \scratchdimen=\dimen132
@@ -606,31 +612,36 @@ Package hyperref Warning: Ignoring empty anchor on input line 99.
 Package hyperref Warning: Ignoring empty anchor on input line 103.
 
 ) (./content/tide.tex
-Package epstopdf Info: Source file: <figure/cl_correlation_z1_z2.eps>
-(epstopdf)                    date: 2016-08-19 03:11:57
-(epstopdf)                    size: 15381 bytes
-(epstopdf)             Output file: <figure/cl_correlation_z1_z2-eps-converted-
-to.pdf>
-(epstopdf)                    date: 2016-08-19 03:11:57
-(epstopdf)                    size: 11748 bytes
-(epstopdf)             Command: <repstopdf --outfile=figure/cl_correlation_z1_z
-2-eps-converted-to.pdf figure/cl_correlation_z1_z2.eps>
+Package epstopdf Info: Source file: <figure/powv2d_z1z2_r15r10.eps>
+(epstopdf)                    date: 2016-09-27 22:21:09
+(epstopdf)                    size: 55193 bytes
+(epstopdf)             Output file: <figure/powv2d_z1z2_r15r10-eps-converted-to
+.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figure/powv2d_z1z2_r15r10-
+eps-converted-to.pdf figure/powv2d_z1z2_r15r10.eps>
 (epstopdf)             \includegraphics on input line 3.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figure/powv2d_z1z2_r15r10-eps-converted-to.pdf fi
+gure/powv2d_z1z2_r15r10.eps)...executed safely (allowed).
 
-<figure/cl_correlation_z1_z2-eps-converted-to.pdf, id=159, 578.16pt x 867.24pt>
-File: figure/cl_correlation_z1_z2-eps-converted-to.pdf Graphic file (type pdf)
-<use figure/cl_correlation_z1_z2-eps-converted-to.pdf>
-Package pdftex.def Info: figure/cl_correlation_z1_z2-eps-converted-to.pdf used 
-on input line 3.
-(pdftex.def)             Requested size: 244.79782pt x 367.18929pt.
+Package epstopdf Info: Result file: <figure/powv2d_z1z2_r15r10-eps-converted-to
+.pdf>
+(epstopdf)                    date: 2016-09-27 22:48:00
+(epstopdf)                    size: 11827 bytes.
+
+<figure/powv2d_z1z2_r15r10-eps-converted-to.pdf, id=159, 662.475pt x 1127.21124
+pt>
+File: figure/powv2d_z1z2_r15r10-eps-converted-to.pdf Graphic file (type pdf)
+ <use figure/powv2d_z1z2_r15r10-eps-converted-to.pdf>
+Package pdftex.def Info: figure/powv2d_z1z2_r15r10-eps-converted-to.pdf used on
+ input line 3.
+(pdftex.def)             Requested size: 244.79782pt x 416.52844pt.
  [4]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 63.
+ on input line 60.
 
 
-Underfull \hbox (badness 1365) in paragraph at lines 75--83
+Underfull \hbox (badness 1365) in paragraph at lines 72--80
 \OT1/ptm/m/n/10 (+20) where i in-di-cates $[]\OML/cmm/m/it/10 ; []; []$ \OT1/pt
 m/m/n/10 (+20) di-rec-tions, $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/
 10 k\OT1/cmr/m/n/10 ) = 2\OML/cmm/m/it/10 \OT1/cmr/m/n/10 (\OML/cmm/m/it/10 ^^
@@ -638,39 +649,69 @@ m/m/n/10 (+20) di-rec-tions, $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/
  []
 
 ) (./content/tideResult.tex
+Package epstopdf Info: Source file: <figure/cl_correlation_z1_z2.eps>
+(epstopdf)                    date: 2016-09-27 20:55:30
+(epstopdf)                    size: 13009 bytes
+(epstopdf)             Output file: <figure/cl_correlation_z1_z2-eps-converted-
+to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figure/cl_correlation_z1_z
+2-eps-converted-to.pdf figure/cl_correlation_z1_z2.eps>
+(epstopdf)             \includegraphics on input line 3.
+runsystem(repstopdf --outfile=figure/cl_correlation_z1_z2-eps-converted-to.pdf 
+figure/cl_correlation_z1_z2.eps)...executed safely (allowed).
 
-LaTeX Warning: Reference `fig:v' on page 5 undefined on input line 2.
+Package epstopdf Info: Result file: <figure/cl_correlation_z1_z2-eps-converted-
+to.pdf>
+(epstopdf)                    date: 2016-09-27 22:48:01
+(epstopdf)                    size: 8045 bytes.
+
+<figure/cl_correlation_z1_z2-eps-converted-to.pdf, id=183, 578.16pt x 867.24pt>
+File: figure/cl_correlation_z1_z2-eps-converted-to.pdf Graphic file (type pdf)
+<use figure/cl_correlation_z1_z2-eps-converted-to.pdf>
+Package pdftex.def Info: figure/cl_correlation_z1_z2-eps-converted-to.pdf used 
+on input line 3.
+(pdftex.def)             Requested size: 244.79782pt x 367.18929pt.
+
+
+LaTeX Warning: Reference `fig:v' on page 5 undefined on input line 13.
 
 ) (./content/error.tex
-Package epstopdf Info: Source file: <figure/Cl_rsd_sn_z1z2.eps>
-(epstopdf)                    date: 2016-08-19 03:11:57
-(epstopdf)                    size: 59663 bytes
-(epstopdf)             Output file: <figure/Cl_rsd_sn_z1z2-eps-converted-to.pdf
->
-(epstopdf)                    date: 2016-08-19 03:11:57
-(epstopdf)                    size: 52861 bytes
-(epstopdf)             Command: <repstopdf --outfile=figure/Cl_rsd_sn_z1z2-eps-
-converted-to.pdf figure/Cl_rsd_sn_z1z2.eps>
+Package epstopdf Info: Source file: <figure/sn_z1_z2.eps>
+(epstopdf)                    date: 2016-09-27 22:25:07
+(epstopdf)                    size: 12469 bytes
+(epstopdf)             Output file: <figure/sn_z1_z2-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=figure/sn_z1_z2-eps-conver
+ted-to.pdf figure/sn_z1_z2.eps>
 (epstopdf)             \includegraphics on input line 3.
-Package epstopdf Info: Output file is already uptodate.
+runsystem(repstopdf --outfile=figure/sn_z1_z2-eps-converted-to.pdf figure/sn_z1
+_z2.eps)...executed safely (allowed).
 
-<figure/Cl_rsd_sn_z1z2-eps-converted-to.pdf, id=184, 433.62pt x 722.7pt>
-File: figure/Cl_rsd_sn_z1z2-eps-converted-to.pdf Graphic file (type pdf)
+Package epstopdf Info: Result file: <figure/sn_z1_z2-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-09-27 22:48:01
+(epstopdf)                    size: 8484 bytes.
 
-<use figure/Cl_rsd_sn_z1z2-eps-converted-to.pdf>
-Package pdftex.def Info: figure/Cl_rsd_sn_z1z2-eps-converted-to.pdf used on inp
-ut line 3.
-(pdftex.def)             Requested size: 244.79782pt x 407.99542pt.
+<figure/sn_z1_z2-eps-converted-to.pdf, id=185, 578.16pt x 867.24pt>
+File: figure/sn_z1_z2-eps-converted-to.pdf Graphic file (type pdf)
+
+<use figure/sn_z1_z2-eps-converted-to.pdf>
+Package pdftex.def Info: figure/sn_z1_z2-eps-converted-to.pdf used on input lin
+e 3.
+(pdftex.def)             Requested size: 244.79782pt x 367.18929pt.
  [5pdfTeX warning (ext4): destination with the same identifier (name{equation.4
 .14}) has been already used, duplicate ignored
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.13 W
+l.12 W
       e use the statistical error to estimate the S/N ratio for real surveys, <
-./figure/cl_correlation_z1_z2-eps-converted-to.pdf>]) (./content/conclusion.tex
-) (./content/acknowledge.tex) (./ksz.bbl [6 <./figure/Cl_rsd_sn_z1z2-eps-conver
-ted-to.pdf>])
+./figure/powv2d_z1z2_r15r10-eps-converted-to.pdf>]
+
+LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
+ on input line 12.
+
+) (./content/conclusion.tex [6 <./figure/cl_correlation_z1_z2-eps-converted-to.
+pdf> <./figure/sn_z1_z2-eps-converted-to.pdf>]) (./content/acknowledge.tex)
+(./ksz.bbl)
 
 Package natbib Warning: There were undefined citations.
 
@@ -685,15 +726,18 @@ Package rerunfilecheck Info: File `ksz.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
+
+LaTeX Warning: There were multiply-defined labels.
+
  ) 
 Here is how much of TeX's memory you used:
- 12055 strings out of 493029
- 186038 string characters out of 6136234
- 348799 words of memory out of 5000000
- 15125 multiletter control sequences out of 15000+600000
- 41395 words of font info for 213 fonts, out of 8000000 for 9000
+ 12065 strings out of 493029
+ 186282 string characters out of 6136234
+ 349799 words of memory out of 5000000
+ 15130 multiletter control sequences out of 15000+600000
+ 41514 words of font info for 215 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 39i,18n,35p,515b,474s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,18n,35p,515b,442s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf
@@ -719,10 +763,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on ksz.pdf (7 pages, 433003 bytes).
+Output written on ksz.pdf (7 pages, 393256 bytes).
 PDF statistics:
- 330 PDF objects out of 1000 (max. 8388607)
- 279 compressed objects within 3 object streams
- 62 named destinations out of 1000 (max. 500000)
- 28781 words of extra memory for PDF output out of 29859 (max. 10000000)
+ 337 PDF objects out of 1000 (max. 8388607)
+ 284 compressed objects within 3 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 28786 words of extra memory for PDF output out of 29859 (max. 10000000)
 
