@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.13)  27 SEP 2016 22:47
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.13)  28 SEP 2016 21:37
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -597,19 +597,19 @@ LaTeX Warning: Reference `fig:CMB' on page 3 undefined on input line 86.
 [3 <./figure/k3pd_k3pv_z1-eps-converted-to.pdf> <./figure/cmb_21cm-eps-converte
 d-to.pdf>]) (./content/noiseSubstraction.tex
 
-LaTeX Warning: Reference `fig:' on page 4 undefined on input line 67.
+LaTeX Warning: Reference `fig:' on page 4 undefined on input line 60.
 
 
-LaTeX Warning: Reference `eq:r' on page 4 undefined on input line 73.
+LaTeX Warning: Reference `eq:r' on page 4 undefined on input line 66.
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 94.
+Package hyperref Warning: Ignoring empty anchor on input line 87.
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 99.
+Package hyperref Warning: Ignoring empty anchor on input line 92.
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 103.
+Package hyperref Warning: Ignoring empty anchor on input line 96.
 
 ) (./content/tide.tex
 Package epstopdf Info: Source file: <figure/powv2d_z1z2_r15r10.eps>
@@ -617,16 +617,12 @@ Package epstopdf Info: Source file: <figure/powv2d_z1z2_r15r10.eps>
 (epstopdf)                    size: 55193 bytes
 (epstopdf)             Output file: <figure/powv2d_z1z2_r15r10-eps-converted-to
 .pdf>
+(epstopdf)                    date: 2016-09-27 22:48:00
+(epstopdf)                    size: 11827 bytes
 (epstopdf)             Command: <repstopdf --outfile=figure/powv2d_z1z2_r15r10-
 eps-converted-to.pdf figure/powv2d_z1z2_r15r10.eps>
 (epstopdf)             \includegraphics on input line 3.
-runsystem(repstopdf --outfile=figure/powv2d_z1z2_r15r10-eps-converted-to.pdf fi
-gure/powv2d_z1z2_r15r10.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <figure/powv2d_z1z2_r15r10-eps-converted-to
-.pdf>
-(epstopdf)                    date: 2016-09-27 22:48:00
-(epstopdf)                    size: 11827 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <figure/powv2d_z1z2_r15r10-eps-converted-to.pdf, id=159, 662.475pt x 1127.21124
 pt>
@@ -638,7 +634,7 @@ Package pdftex.def Info: figure/powv2d_z1z2_r15r10-eps-converted-to.pdf used on
  [4]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 60.
+ on input line 65.
 
 
 Underfull \hbox (badness 1365) in paragraph at lines 72--80
@@ -650,22 +646,18 @@ m/m/n/10 (+20) di-rec-tions, $\OML/cmm/m/it/10 f\OT1/cmr/m/n/10 (\OML/cmm/m/it/
 
 ) (./content/tideResult.tex
 Package epstopdf Info: Source file: <figure/cl_correlation_z1_z2.eps>
-(epstopdf)                    date: 2016-09-27 20:55:30
-(epstopdf)                    size: 13009 bytes
+(epstopdf)                    date: 2016-09-28 21:02:45
+(epstopdf)                    size: 10524 bytes
 (epstopdf)             Output file: <figure/cl_correlation_z1_z2-eps-converted-
 to.pdf>
+(epstopdf)                    date: 2016-09-28 21:12:46
+(epstopdf)                    size: 10587 bytes
 (epstopdf)             Command: <repstopdf --outfile=figure/cl_correlation_z1_z
 2-eps-converted-to.pdf figure/cl_correlation_z1_z2.eps>
 (epstopdf)             \includegraphics on input line 3.
-runsystem(repstopdf --outfile=figure/cl_correlation_z1_z2-eps-converted-to.pdf 
-figure/cl_correlation_z1_z2.eps)...executed safely (allowed).
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <figure/cl_correlation_z1_z2-eps-converted-
-to.pdf>
-(epstopdf)                    date: 2016-09-27 22:48:01
-(epstopdf)                    size: 8045 bytes.
-
-<figure/cl_correlation_z1_z2-eps-converted-to.pdf, id=183, 578.16pt x 867.24pt>
+<figure/cl_correlation_z1_z2-eps-converted-to.pdf, id=184, 578.16pt x 867.24pt>
 File: figure/cl_correlation_z1_z2-eps-converted-to.pdf Graphic file (type pdf)
 <use figure/cl_correlation_z1_z2-eps-converted-to.pdf>
 Package pdftex.def Info: figure/cl_correlation_z1_z2-eps-converted-to.pdf used 
@@ -673,24 +665,24 @@ on input line 3.
 (pdftex.def)             Requested size: 244.79782pt x 367.18929pt.
 
 
-LaTeX Warning: Reference `fig:v' on page 5 undefined on input line 13.
+LaTeX Warning: Reference `fig:v' on page 5 undefined on input line 12.
+
+
+LaTeX Warning: Reference `fig:k3p' on page 5 undefined on input line 13.
 
 ) (./content/error.tex
 Package epstopdf Info: Source file: <figure/sn_z1_z2.eps>
-(epstopdf)                    date: 2016-09-27 22:25:07
-(epstopdf)                    size: 12469 bytes
+(epstopdf)                    date: 2016-09-28 20:54:20
+(epstopdf)                    size: 8560 bytes
 (epstopdf)             Output file: <figure/sn_z1_z2-eps-converted-to.pdf>
+(epstopdf)                    date: 2016-09-28 21:12:46
+(epstopdf)                    size: 9688 bytes
 (epstopdf)             Command: <repstopdf --outfile=figure/sn_z1_z2-eps-conver
 ted-to.pdf figure/sn_z1_z2.eps>
 (epstopdf)             \includegraphics on input line 3.
-runsystem(repstopdf --outfile=figure/sn_z1_z2-eps-converted-to.pdf figure/sn_z1
-_z2.eps)...executed safely (allowed).
+Package epstopdf Info: Output file is already uptodate.
 
-Package epstopdf Info: Result file: <figure/sn_z1_z2-eps-converted-to.pdf>
-(epstopdf)                    date: 2016-09-27 22:48:01
-(epstopdf)                    size: 8484 bytes.
-
-<figure/sn_z1_z2-eps-converted-to.pdf, id=185, 578.16pt x 867.24pt>
+<figure/sn_z1_z2-eps-converted-to.pdf, id=186, 578.16pt x 867.24pt>
 File: figure/sn_z1_z2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figure/sn_z1_z2-eps-converted-to.pdf>
@@ -702,12 +694,11 @@ e 3.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.12 W
-      e use the statistical error to estimate the S/N ratio for real surveys, <
-./figure/powv2d_z1z2_r15r10-eps-converted-to.pdf>]
+l.21 \end{eqnarray}
+                    <./figure/powv2d_z1z2_r15r10-eps-converted-to.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 12.
+ on input line 21.
 
 ) (./content/conclusion.tex [6 <./figure/cl_correlation_z1_z2-eps-converted-to.
 pdf> <./figure/sn_z1_z2-eps-converted-to.pdf>]) (./content/acknowledge.tex)
@@ -721,7 +712,7 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 107.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 107.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 107.
 Package rerunfilecheck Info: File `ksz.out' has not changed.
-(rerunfilecheck)             Checksum: B43E6850E61AE5CE4AF8ACA1D1A9F292;670.
+(rerunfilecheck)             Checksum: 3580076B04BDAAD8F7D40900139CDA94;652.
 
 
 LaTeX Warning: There were undefined references.
@@ -731,10 +722,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 12065 strings out of 493029
- 186282 string characters out of 6136234
+ 12068 strings out of 493029
+ 186307 string characters out of 6136234
  349799 words of memory out of 5000000
- 15130 multiletter control sequences out of 15000+600000
+ 15133 multiletter control sequences out of 15000+600000
  41514 words of font info for 215 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  39i,18n,35p,515b,442s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -763,7 +754,7 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on ksz.pdf (7 pages, 393256 bytes).
+Output written on ksz.pdf (7 pages, 396671 bytes).
 PDF statistics:
  337 PDF objects out of 1000 (max. 8388607)
  284 compressed objects within 3 object streams
