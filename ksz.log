@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.13)  28 SEP 2016 21:37
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.13)  29 SEP 2016 22:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -410,14 +410,7 @@ Package: appendix 2009/09/02 v1.2b extra appendix facilities
 \c@@pps=\count125
 \c@@ppsavesec=\count126
 \c@@ppsaveapp=\count127
-) (./ksz.aux
-
-LaTeX Warning: Label `fig:r' multiply defined.
-
-
-LaTeX Warning: Label `fig:r@cref' multiply defined.
-
-)
+) (./ksz.aux)
 \openout1 = `ksz.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 50.
@@ -437,7 +430,8 @@ LaTeX Font Info:    ... okay on input line 50.
 Class revtex4 Info: Patching array package. on input line 50.
 Class revtex4 Info: cite was not loaded (OK!) on input line 50.
 Class revtex4 Info: multicol was not loaded (OK!) on input line 50.
- (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+
+(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count128
 \scratchdimen=\dimen132
@@ -603,13 +597,38 @@ LaTeX Warning: Reference `fig:' on page 4 undefined on input line 60.
 LaTeX Warning: Reference `eq:r' on page 4 undefined on input line 66.
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 87.
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+[]|\OT1/ptm/m/n/9 (+20) high
+ []
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 92.
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+[]|\OT1/ptm/m/n/9 (+20) low
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--87
+[]|\OT1/ptm/m/n/9 (+20) high
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 87--88
+[]|\OT1/ptm/m/n/9 (+20) low
+ []
+
+
+Package hyperref Warning: Ignoring empty anchor on input line 89.
 
 
 Package hyperref Warning: Ignoring empty anchor on input line 96.
+
+
+Package hyperref Warning: Ignoring empty anchor on input line 100.
+
+
+Overfull \hbox (4.02196pt too wide) in paragraph at lines 83--105
+ []$[]$ 
+ []
 
 ) (./content/tide.tex
 Package epstopdf Info: Source file: <figure/powv2d_z1z2_r15r10.eps>
@@ -634,7 +653,7 @@ Package pdftex.def Info: figure/powv2d_z1z2_r15r10-eps-converted-to.pdf used on
  [4]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 65.
+ on input line 60.
 
 
 Underfull \hbox (badness 1365) in paragraph at lines 72--80
@@ -657,7 +676,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 3.
 Package epstopdf Info: Output file is already uptodate.
 
-<figure/cl_correlation_z1_z2-eps-converted-to.pdf, id=184, 578.16pt x 867.24pt>
+<figure/cl_correlation_z1_z2-eps-converted-to.pdf, id=183, 578.16pt x 867.24pt>
 File: figure/cl_correlation_z1_z2-eps-converted-to.pdf Graphic file (type pdf)
 <use figure/cl_correlation_z1_z2-eps-converted-to.pdf>
 Package pdftex.def Info: figure/cl_correlation_z1_z2-eps-converted-to.pdf used 
@@ -665,10 +684,7 @@ on input line 3.
 (pdftex.def)             Requested size: 244.79782pt x 367.18929pt.
 
 
-LaTeX Warning: Reference `fig:v' on page 5 undefined on input line 12.
-
-
-LaTeX Warning: Reference `fig:k3p' on page 5 undefined on input line 13.
+LaTeX Warning: Reference `fig:k3p' on page 5 undefined on input line 18.
 
 ) (./content/error.tex
 Package epstopdf Info: Source file: <figure/sn_z1_z2.eps>
@@ -694,11 +710,12 @@ e 3.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.21 \end{eqnarray}
-                    <./figure/powv2d_z1z2_r15r10-eps-converted-to.pdf>]
+l.12 T
+      aking into account primary CMB and facility noises, <./figure/powv2d_z1z2
+_r15r10-eps-converted-to.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 21.
+ on input line 12.
 
 ) (./content/conclusion.tex [6 <./figure/cl_correlation_z1_z2-eps-converted-to.
 pdf> <./figure/sn_z1_z2-eps-converted-to.pdf>]) (./content/acknowledge.tex)
@@ -717,15 +734,12 @@ Package rerunfilecheck Info: File `ksz.out' has not changed.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: There were multiply-defined labels.
-
  ) 
 Here is how much of TeX's memory you used:
- 12068 strings out of 493029
- 186307 string characters out of 6136234
- 349799 words of memory out of 5000000
- 15133 multiletter control sequences out of 15000+600000
+ 12066 strings out of 493029
+ 186289 string characters out of 6136234
+ 350799 words of memory out of 5000000
+ 15131 multiletter control sequences out of 15000+600000
  41514 words of font info for 215 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
  39i,18n,35p,515b,442s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -754,10 +768,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on ksz.pdf (7 pages, 396671 bytes).
+Output written on ksz.pdf (7 pages, 397689 bytes).
 PDF statistics:
- 337 PDF objects out of 1000 (max. 8388607)
- 284 compressed objects within 3 object streams
+ 338 PDF objects out of 1000 (max. 8388607)
+ 285 compressed objects within 3 object streams
  63 named destinations out of 1000 (max. 500000)
  28786 words of extra memory for PDF output out of 29859 (max. 10000000)
 
