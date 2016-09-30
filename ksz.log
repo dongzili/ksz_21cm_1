@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.13)  30 SEP 2016 14:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.7.13)  30 SEP 2016 18:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -524,11 +524,11 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <9> not available
 
 (./content/introduction.tex
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <10> not available
-(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 59.
+(Font)              Font shape `OT1/ptm/b/n' tried instead on input line 74.
 
 
 Package natbib Warning: Citation `2014SPIE.9145E..22B' on page 1 undefined on i
-nput line 59.
+nput line 74.
 
 [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]) (./content/kszRecon.tex
 ) (./content/kszAnalysis.tex
@@ -543,7 +543,7 @@ nverted-to.pdf figure/k3pd_k3pv_z1.eps>
 (epstopdf)             \includegraphics on input line 3.
 Package epstopdf Info: Output file is already uptodate.
 
-<figure/k3pd_k3pv_z1-eps-converted-to.pdf, id=91, 662.475pt x 1127.21124pt>
+<figure/k3pd_k3pv_z1-eps-converted-to.pdf, id=93, 662.475pt x 1127.21124pt>
 File: figure/k3pd_k3pv_z1-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figure/k3pd_k3pv_z1-eps-converted-to.pdf>
@@ -561,7 +561,7 @@ ted-to.pdf figure/cmb_21cm.eps>
 (epstopdf)             \includegraphics on input line 18.
 Package epstopdf Info: Output file is already uptodate.
 
-<figure/cmb_21cm-eps-converted-to.pdf, id=92, 662.475pt x 1127.21124pt>
+<figure/cmb_21cm-eps-converted-to.pdf, id=94, 662.475pt x 1127.21124pt>
 File: figure/cmb_21cm-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figure/cmb_21cm-eps-converted-to.pdf>
@@ -571,62 +571,50 @@ e 18.
  [2]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 48.
+ on input line 57.
 
 
-LaTeX Warning: Command \l invalid in math mode on input line 61.
-
-
-LaTeX Warning: Reference `' on page 3 undefined on input line 80.
-
-
-LaTeX Warning: Reference `' on page 3 undefined on input line 80.
-
-
-LaTeX Warning: Reference `15Plank' on page 3 undefined on input line 81.
-
-
-LaTeX Warning: Reference `fig:CMB' on page 3 undefined on input line 86.
+LaTeX Warning: Reference `fig:CMB' on page 3 undefined on input line 90.
 
 [3 <./figure/k3pd_k3pv_z1-eps-converted-to.pdf> <./figure/cmb_21cm-eps-converte
 d-to.pdf>]) (./content/noiseSubstraction.tex
 
-LaTeX Warning: Reference `fig:' on page 4 undefined on input line 60.
+LaTeX Warning: Reference `fig:' on page 4 undefined on input line 63.
 
 
-LaTeX Warning: Reference `eq:r' on page 4 undefined on input line 66.
+LaTeX Warning: Reference `eq:r' on page 4 undefined on input line 69.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--87
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
 []|\OT1/ptm/m/n/9 (+20) high
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--87
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
 []|\OT1/ptm/m/n/9 (+20) low
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--87
+Underfull \hbox (badness 10000) in paragraph at lines 90--90
 []|\OT1/ptm/m/n/9 (+20) high
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 87--88
+Underfull \hbox (badness 10000) in paragraph at lines 90--91
 []|\OT1/ptm/m/n/9 (+20) low
  []
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 89.
+Package hyperref Warning: Ignoring empty anchor on input line 92.
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 96.
+Package hyperref Warning: Ignoring empty anchor on input line 99.
 
 
-Package hyperref Warning: Ignoring empty anchor on input line 100.
+Package hyperref Warning: Ignoring empty anchor on input line 103.
 
 
-Overfull \hbox (4.02196pt too wide) in paragraph at lines 83--105
+Overfull \hbox (4.02196pt too wide) in paragraph at lines 86--108
  []$[]$ 
  []
 
@@ -643,7 +631,7 @@ eps-converted-to.pdf figure/powv2d_z1z2_r15r10.eps>
 (epstopdf)             \includegraphics on input line 3.
 Package epstopdf Info: Output file is already uptodate.
 
-<figure/powv2d_z1z2_r15r10-eps-converted-to.pdf, id=159, 662.475pt x 1127.21124
+<figure/powv2d_z1z2_r15r10-eps-converted-to.pdf, id=166, 662.475pt x 1127.21124
 pt>
 File: figure/powv2d_z1z2_r15r10-eps-converted-to.pdf Graphic file (type pdf)
  <use figure/powv2d_z1z2_r15r10-eps-converted-to.pdf>
@@ -653,7 +641,7 @@ Package pdftex.def Info: figure/powv2d_z1z2_r15r10-eps-converted-to.pdf used on
  [4]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 60.
+ on input line 65.
 
 
 Underfull \hbox (badness 1365) in paragraph at lines 72--80
@@ -676,7 +664,7 @@ to.pdf>
 (epstopdf)             \includegraphics on input line 3.
 Package epstopdf Info: Output file is already uptodate.
 
-<figure/cl_correlation_z1_z2-eps-converted-to.pdf, id=183, 578.16pt x 867.24pt>
+<figure/cl_correlation_z1_z2-eps-converted-to.pdf, id=191, 578.16pt x 867.24pt>
 File: figure/cl_correlation_z1_z2-eps-converted-to.pdf Graphic file (type pdf)
 <use figure/cl_correlation_z1_z2-eps-converted-to.pdf>
 Package pdftex.def Info: figure/cl_correlation_z1_z2-eps-converted-to.pdf used 
@@ -698,7 +686,7 @@ ted-to.pdf figure/sn_z1_z2.eps>
 (epstopdf)             \includegraphics on input line 3.
 Package epstopdf Info: Output file is already uptodate.
 
-<figure/sn_z1_z2-eps-converted-to.pdf, id=186, 578.16pt x 867.24pt>
+<figure/sn_z1_z2-eps-converted-to.pdf, id=194, 578.16pt x 867.24pt>
 File: figure/sn_z1_z2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use figure/sn_z1_z2-eps-converted-to.pdf>
@@ -710,12 +698,11 @@ e 3.
 
 \AtBegShi@Output ...ipout \box \AtBeginShipoutBox 
                                                   \fi \fi 
-l.12 T
-      aking into account primary CMB and facility noises, <./figure/powv2d_z1z2
-_r15r10-eps-converted-to.pdf>]
+l.22 \end{eqnarray}
+                    <./figure/powv2d_z1z2_r15r10-eps-converted-to.pdf>]
 
 LaTeX Warning: A float is stuck (cannot be placed); try class option [floatfix]
- on input line 12.
+ on input line 22.
 
 ) (./content/conclusion.tex [6 <./figure/cl_correlation_z1_z2-eps-converted-to.
 pdf> <./figure/sn_z1_z2-eps-converted-to.pdf>]) (./content/acknowledge.tex)
@@ -736,13 +723,13 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 12059 strings out of 493029
- 186231 string characters out of 6136234
- 350799 words of memory out of 5000000
- 15130 multiletter control sequences out of 15000+600000
- 41276 words of font info for 211 fonts, out of 8000000 for 9000
+ 12066 strings out of 493029
+ 186351 string characters out of 6136234
+ 351799 words of memory out of 5000000
+ 15138 multiletter control sequences out of 15000+600000
+ 41157 words of font info for 209 fonts, out of 8000000 for 9000
  1144 hyphenation exceptions out of 8191
- 39i,18n,35p,515b,442s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 39i,18n,35p,562b,442s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmbsy7.pfb></usr/share/texlive
 /texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texmf
@@ -768,10 +755,10 @@ hare/texlive/texmf-dist/fonts/type1/public/amsfonts/symbols/msam10.pfb></usr/sh
 are/texlive/texmf-dist/fonts/type1/urw/times/utmb8a.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/times/utmri8a.pfb>
-Output written on ksz.pdf (7 pages, 394097 bytes).
+Output written on ksz.pdf (7 pages, 393980 bytes).
 PDF statistics:
- 338 PDF objects out of 1000 (max. 8388607)
- 285 compressed objects within 3 object streams
- 63 named destinations out of 1000 (max. 500000)
+ 344 PDF objects out of 1000 (max. 8388607)
+ 291 compressed objects within 3 object streams
+ 65 named destinations out of 1000 (max. 500000)
  28786 words of extra memory for PDF output out of 29859 (max. 10000000)
 

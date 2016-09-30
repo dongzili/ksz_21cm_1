@@ -1,4 +1,4 @@
-\begin{thebibliography}{23}
+\begin{thebibliography}{25}
 \expandafter\ifx\csname natexlab\endcsname\relax\def\natexlab#1{#1}\fi
 \expandafter\ifx\csname bibnamefont\endcsname\relax
   \def\bibnamefont#1{#1}\fi
@@ -82,6 +82,26 @@
   \bibinfo{journal}{\mnras} \textbf{\bibinfo{volume}{443}},
   \bibinfo{pages}{2311} (\bibinfo{year}{2014}), \eprint{1404.0007}.
 
+\bibitem[{\citenamefont{{Hill} et~al.}(2016)\citenamefont{{Hill}, {Ferraro},
+  {Battaglia}, {Liu}, and {Spergel}}}]{Hill16}
+\bibinfo{author}{\bibfnamefont{J.~C.} \bibnamefont{{Hill}}},
+  \bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{{Ferraro}}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{{Battaglia}}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Liu}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.~N.} \bibnamefont{{Spergel}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2016}),
+  \eprint{1603.01608}.
+
+\bibitem[{\citenamefont{{Ferraro} et~al.}(2016)\citenamefont{{Ferraro}, {Hill},
+  {Battaglia}, {Liu}, and {Spergel}}}]{Ferraro16}
+\bibinfo{author}{\bibfnamefont{S.}~\bibnamefont{{Ferraro}}},
+  \bibinfo{author}{\bibfnamefont{J.~C.} \bibnamefont{{Hill}}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{{Battaglia}}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Liu}}}, \bibnamefont{and}
+  \bibinfo{author}{\bibfnamefont{D.~N.} \bibnamefont{{Spergel}}},
+  \bibinfo{journal}{ArXiv e-prints}  (\bibinfo{year}{2016}),
+  \eprint{1605.02722}.
+
 \bibitem[{\citenamefont{{Xu} et~al.}(2015)\citenamefont{{Xu}, {Wang}, and
   {Chen}}}]{2015ApJ...798...40X}
 \bibinfo{author}{\bibfnamefont{Y.}~\bibnamefont{{Xu}}},
@@ -150,6 +170,23 @@
   \bibinfo{author}{\bibfnamefont{V.}~\bibnamefont{{Desjacques}}},
   \bibinfo{journal}{\mnras} \textbf{\bibinfo{volume}{436}},
   \bibinfo{pages}{540} (\bibinfo{year}{2013}), \eprint{1208.5098}.
+
+\bibitem[{\citenamefont{{Planck Collaboration}
+  et~al.}(2015)\citenamefont{{Planck Collaboration}, {Adam}, {Ade}, {Aghanim},
+  {Arnaud}, {Ashdown}, {Aumont}, {Baccigalupi}, {Banday}, {Barreiro}
+  et~al.}}]{Planck2015}
+\bibinfo{author}{\bibnamefont{{Planck Collaboration}}},
+  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{{Adam}}},
+  \bibinfo{author}{\bibfnamefont{P.~A.~R.} \bibnamefont{{Ade}}},
+  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{{Aghanim}}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Arnaud}}},
+  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Ashdown}}},
+  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Aumont}}},
+  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{{Baccigalupi}}},
+  \bibinfo{author}{\bibfnamefont{A.~J.} \bibnamefont{{Banday}}},
+  \bibinfo{author}{\bibfnamefont{R.~B.} \bibnamefont{{Barreiro}}},
+  \bibnamefont{et~al.}, \bibinfo{journal}{ArXiv e-prints}
+  (\bibinfo{year}{2015}), \eprint{1502.01587}.
 
 \bibitem[{\citenamefont{{Switzer} et~al.}(2015)\citenamefont{{Switzer},
   {Chang}, {Masui}, {Pen}, and {Voytek}}}]{Switzer15}
@@ -232,22 +269,5 @@
   \bibnamefont{and} \bibinfo{author}{\bibfnamefont{A.}~\bibnamefont{Lasenby}},
   \bibinfo{journal}{Astrophys. J.} \textbf{\bibinfo{volume}{538}},
   \bibinfo{pages}{473} (\bibinfo{year}{2000}), \eprint{astro-ph/9911177}.
-
-\bibitem[{\citenamefont{{Planck Collaboration}
-  et~al.}(2015)\citenamefont{{Planck Collaboration}, {Adam}, {Ade}, {Aghanim},
-  {Arnaud}, {Ashdown}, {Aumont}, {Baccigalupi}, {Banday}, {Barreiro}
-  et~al.}}]{Planck2015}
-\bibinfo{author}{\bibnamefont{{Planck Collaboration}}},
-  \bibinfo{author}{\bibfnamefont{R.}~\bibnamefont{{Adam}}},
-  \bibinfo{author}{\bibfnamefont{P.~A.~R.} \bibnamefont{{Ade}}},
-  \bibinfo{author}{\bibfnamefont{N.}~\bibnamefont{{Aghanim}}},
-  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Arnaud}}},
-  \bibinfo{author}{\bibfnamefont{M.}~\bibnamefont{{Ashdown}}},
-  \bibinfo{author}{\bibfnamefont{J.}~\bibnamefont{{Aumont}}},
-  \bibinfo{author}{\bibfnamefont{C.}~\bibnamefont{{Baccigalupi}}},
-  \bibinfo{author}{\bibfnamefont{A.~J.} \bibnamefont{{Banday}}},
-  \bibinfo{author}{\bibfnamefont{R.~B.} \bibnamefont{{Barreiro}}},
-  \bibnamefont{et~al.}, \bibinfo{journal}{ArXiv e-prints}
-  (\bibinfo{year}{2015}), \eprint{1502.01587}.
 
 \end{thebibliography}

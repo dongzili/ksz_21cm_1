@@ -17,19 +17,18 @@ Due to the cancellation of positive and negative velocity, its direct cross corr
 To take advantage of the known redshift and better maintain the one to one multiplication between velocity field and density contrast,   
 we generate a mock kSZ signal from calculation of linear peculiar velocity. 
 %\cite{Shao11}.
-In this way, we can at most maximize the correlation.
+%In this way, we can at most maximize the correlation.
 
 Assume we have a density contrast field $\delta=(\rho-\bar{\rho})/\bar{\rho}$, where $\bar\rho$ is the average density of a certain redshift slice. 
-
-Detailed steps are as follows.
+%Detailed steps are as follows.
 
 (1) Estimate the velocity field:
 
 In linear region, the continuity equation goes like:
 $\dot \delta+\nabla \cdot \bm{v}=0$, 
 where $\bm{v}$ is the peculiar velocity and $\delta$ is the matter overdensity. 
-
-Therefore, we obtain an estimator of velocity distribution from the density contract $\delta$:
+%Therefore, we obtain an estimator of velocity distribution from the density contract $\delta$:
+Therefore, linear velocity is estimated as: 
 \begin{eqnarray}
 	\label{eq:v}
 \hat v_z(\bm{k})=i a H f\delta(\bm{k})\frac{k_z}{k^2}\,
@@ -39,22 +38,24 @@ $a$ is the scale factor, $H$ is the Hubble parameter.
 
 $v_z \propto k_z/k^2$, indicating the most prominent signal comes from small k mode, which corresponds to large scale structure. 
 
-(2) Suppress the noise in velocity field with a Wiener filter. 
-This is because the term $k_z/k^2$ in Eq.(\ref{eq:v}) will strongly amplify noises in small k modes. 
+(2) Filter the noise: 
+The term $k_z/k^2$ in Eq.(\ref{eq:v}) will amplify noises in small k, 
+which should be suppressed. 
 \begin{eqnarray}
 	\label{eq:wienerv}
 \hat v_z^c(\bm{k})=\frac{\hat v_z(\bm{k})}{b(k_\perp,k_\parallel)}W(k_\perp,k_\parallel)\ ,
 \end{eqnarray}
 Bias $b=P_{\hat v_z,v_z}/P_{v_z}$, Wiener filter $W=P_{v_z}/(P_{\hat v_z}/b^2)$.
 
-(3) Calculate 2D kSZ map follow Eq.(\ref{eq:ksz}).
+(3) Calculate 2D kSZ map following Eq.(\ref{eq:ksz}).
 
-(4) Calculate correlation coefficients.
+(4) Calculate correlation coefficients:
 
-We compare reconstructed kSZ signals $\hat \Theta_{kSZ}$ with kSZ signals $\Theta_{kSZ}$ directly from simulations. 
-To quantify the tightness of correlation, we employ a quantity r: 
+Quantify tightness of correlation with: 
 \begin{eqnarray}
 	r\equiv \frac{P_{recon,real}}{\sqrt{P_{recon}P_{real}}}\,
 \end{eqnarray}
+Where $\hat \Theta_{kSZ}$ is reconstructed signal 
+and $\Theta_{kSZ}$ is original signal directly from simulations.
 
 

@@ -1,19 +1,20 @@
-Main drawbacks of ongoing 21cm Intensity Mapping 
-experiments are demonstrated with simple filters. 
+Main modes loss of ongoing 21cm intensity mapping 
+experiments are demonstrated in this chapter with simple filters. 
 
 1. Small scale noises:
 
 The finite spacial and velocity resolution of facilities 
-prevent us from resolving infinitely small structures in both parallel and perpendicular directions. 
-Therefore we import a cut off scale $k_{max}$ with a Heaviside Function 
-$H(k_{max}-k)$, dropping all the modes with k larger than $k_{max}$. 
+import a cut off scale $k_{max}$ on both parallel and perpendicular 
+directions, filtering out information of smaller scales. 
+It is resembled with a Heaviside Function 
+$H(k_{max}-k)$, dropping $k>k_{max}$. 
 %We choose a realistic $k_{max}$ based on baselines of ongoing experiments 
 %\cite{HIRAX,2014SPIE.9145E..22B,2014SPIE.9145E..4VN,2012IJMPS..12..256C,2015ApJ...798...40X}, 
 %and an ideal $k_{max}$ based on noise status of Planck Satellite.
 
 2. Foreground noises:
 
-Foregrounds coming from Galactic emissions, telescope noise, 
+Foregrounds from Galactic emissions, telescope noises, 
 extragalactic radio sources and Radio recombination lines, 
 could be three orders brighter than actual signals\cite{DiMatteo04,Masui13}. 
 The process of foreground removal, taking advantage of its low spectral
@@ -57,14 +58,16 @@ In sum, the observed 21 cm density contrasts after all the loss will appear as
 
 The chosen parameters and reasons are presented in Table. \ref{tab:para}.
 
-The demonstration of a worst case for $z=1$ is shown in Fig.\ref{fig:}. 
-As we could see, essential modes for density field are partly resolved. 
-However, the reconstruction of velocity field will be a total failure 
+Demonstration of a filtered density field corresponding to 
+$R_\parallel=15$ Mpc/h, $k_{max}=0.6$ h/Mpc 
+in $z=1$ is shown in Fig.\ref{fig:}. 
+Essential modes for density field are partly left,  
+while the modes for velocity field are completely gone 
 due to the spatial loss of inteferometers. 
 
-If we directly use this density contrast to generate mock kSZ signal, 
-its correlation r (Eq.(\ref{eq:r})) with real kSZ will be at most 0.2.
-Luckily, till now we only use the linear theory for reconstruction, 
+Directly using the filtered density contrast to 
+generate mock kSZ signal will yield $r<0.2$ in Eq.(\ref{eq:r}) 
+Luckily, till now only linear theories are considered in reconstruction, 
 while nonlinearly modes of different scales are coupled. 
 If we could identify a relatively clean nonlinear effect in density field, 
 we would be able to retrieve the information needed for velocity reconstruction. 

@@ -21,7 +21,8 @@
 \caption{
     (Top) Relative strength of angular powerspectrum between primary CMB, Planck noise in 217 GHz band, and kSZ effect in redshift 1 and 2.
     (Bottom) Demonstrate available modes of density contrasts obtained 
-    in realistic 21cm Intensity Mapping experiments. 
+    in realistic 21cm Intensity Mapping experiments, 
+    with resolution of CHIME and high foregrounds. 
     $P_{21cm}$ is the remaining density powerspectrum after noise substraction; 
     $P_\delta$ indicates the powerspectrum of a comtact density field.
 }
@@ -32,67 +33,72 @@
 %it is essential to understand which scales contribute most to the kSZ signals. 
 To understand what role each scale plays in generating kSZ signal, we write Eq.(\ref{eq:ksz}) in Fourier space. 
 
-The finite box size of $1200$ Mpc will only have obvious influence on modes with $k\lesssim0.005$, 
-we can safely assume the integration on $z$ direction to be from minus infinity to plus infinity. 
+The finite box size of $1200$ Mpc only has notable influence on modes with $k\lesssim0.005$. 
+It is safe to assume 
+minus infinity to plus infinity 
+integration on $z$ direction for small scale modes. 
+
 Moreover, the term $a(z)H(z)f(z)$ in Eq.(\ref{eq:v}) does not vary much in one box, we assume it to be a constant for simplicity. 
 Then the Fourier transformation is just the $k_z=0$ mode of the momentum 
 $p_\parallel(\bm{k})$ in Fourier space. 
 \begin{eqnarray}
     \label{eq:thetak}
-    \Theta(\bm{l})\equiv&\Theta&({k}_x\chi,{k}_y\chi,0)\propto\int\, 
-    d^3k^\prime\delta(\bm{l}/\chi-\bm{k}_\perp^\prime,k_\parallel^\prime) v_z(\bm{k^\prime})\nonumber\\
-    %
-    %
+    \Theta(\bm{\ell})&\equiv&\Theta({k}_x\chi,{k}_y\chi,0)\\
+    &\propto&\int 
+    d^3k^\prime\delta(\bm{\ell}/\chi-\bm{k}_\perp^\prime,k_\parallel^\prime) v_z(\bm{k^\prime})\nonumber
 %    \xrightarrow[region]{linear}&\int& 
 %d^3k^\prime\delta({\bm{k}}_\perp-\bm{k}_\perp^\prime,k_\parallel^\prime)\delta(\bm{k}^\prime)\frac{k_z^\prime}{k'^2}
     \end{eqnarray}
 An essential feature of Eq.(\ref{eq:thetak}) is that
-in transverse plane, density and velocity field of different scales are multiplied together;
- while in parallel direction, only $\delta$ and $v_z$ with identical $k_z$ are coupled together.  
+in transverse plane, density and velocity field of different scales are multiplied together, 
+ while in parallel direction, only $\delta$ and $v_z$ of 
+ identical $k_z$ are coupled together.  
 
 The relative strength of $|\delta(\bm{k})|$ and $|v_z(\bm{k})|$ in different scales 
 are implied in Fig.\ref{fig:k3v}. 
-%and also implicit at Eq.(\ref{eq:v}), 
-It is obvious that the velocity field contributes almost dominantly from large scale structures, 
-leaving little contribution from $k_z>0.2 h/Mpc$ with $k_\perp> 0.02 h/Mpc$. 
+and also implicit at Eq.(\ref{eq:v}), 
+The velocity field contributes almost dominantly from large scale structures, 
+leaving little contribution from $k_z>0.2 h/Mpc$, $k_\perp> 0.02 h/Mpc$. 
 %ignoring the vast k modes in this region. 
 This makes it roughly an ellipitical selection functions in the convolution
 ---
-It selects $\delta$ with similar range of $k_z$ and $k_\perp\sim\l/\chi-0.01$ h/Mpc.  
-To see it clearly, let us assume that $|v(\bm{k})|$ drops fast enough for 
-large k and could be demonstrated as a Delta Function centered at 
+It selects $\delta$ with similar range of $k_z$ and $k_\perp\sim(\ell/\chi-0.01)$ h/Mpc.  
+Actually, the sharper $|v(\bm{k})|$ is 
+the more it ressembles a Delta Function peaked at 
 $(k_\perp,k_\parallel)=(0.01,0.1)$ h/Mpc. 
-then it is immediately shown that 
+Then 
 \begin{eqnarray}
-    \Theta(\bm{l}) &\propto \int\, 
-    d^3k^\prime\delta(\bm{l}/\chi-\bm{k}_\perp^\prime,k_\parallel^\prime) 
+    \Theta(\bm{l}) &\propto& \int\, 
+    d^3k^\prime\delta(\bm{\ell}/\chi-\bm{k}_\perp^\prime,k_\parallel^\prime) 
     \delta^D(0.01,0.1) \\
-    & \sim \delta(\bm{l}/\chi-0.01,0.1).
+    &\sim& \delta(\ell/\chi-0.01,0.1).
 \end{eqnarray}
 Therefore, when generating kSZ signals, 
 it is crucial to have large scale modes for $v_z$. 
-However, which scale matters most for $\delta(\bm{k})$ 
+However, which scales matter most for $\delta(\bm{k})$ 
 depends on the $\ell$ we look at.  
 
 To decide the targeted $\ell$ range, 
-there are many factors to consider:  
+many factors needs to be taken into account:  
 the strength of the primary CMB, facility limits and 
-other fluctuations on CMB such as thermal SZ effect\ref{} and CMB lensing\ref{}.
-Consider using Plank\ref{15Plank} data 
+other fluctuations on CMB such as thermal SZ effect\cite{} and CMB lensing\cite{}.
+Consider using Planck \cite{Planck2015} data 
 in the 217 GHz band, where the tSZ signal vanishes, 
 we demonstrate the angular powerspectrum of primary CMB, 
-facility noises, 
-and kSZ of redshift 1 and 2. 
-As shown in Fig.\ref{fig:CMB}, 
-only in the range of $\ell \sim 500-3000$, 
+facility noises (detailed calculations in Section VI), 
+and kSZ of redshift 1 and 2 
+in Fig.\ref{fig:CMB}. 
+Only in the range of $\ell \sim 500-3000$, 
 there is a chance for us to distinguish the kSZ signal.  
 
-In Fig.\ref{fig:k3v}, we demonstrate the essential modes 
-for mock kSZ signal in both $v_z(\bm{k})$ and $\delta(\bm{k})$ fields with red lines. 
+Therefore, in Fig.\ref{fig:k3v}, we roughly sketch the essential modes 
+for $v_z(\bm{k})$ and $\delta(\bm{k})$ 
+in red lines. 
 Linearly, velocity field of a certain scale only relates to 
 identical scale of density field, see Eq.(\ref{eq:v}). 
-Therefore, an ideal cross correlation density field should be comtact in both regions. 
+Therefore, an ideal cross correlation density field should be intact in both regions. 
 
 Note: all the demonstration figures are towards redshift 1, 
-however there is no distinctive difference for quantitive analysis 
-at redshift 2.
+however, there is only slight difference  
+in redshift 2, 
+which should not influence the qualitive analysis.

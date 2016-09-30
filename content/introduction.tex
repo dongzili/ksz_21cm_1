@@ -1,18 +1,18 @@
 For $z\lesssim 2$, large fractions of predicted baryon contents are missing in observations.  
 The majority of them are believed to reside in warm-hot intergalactic mediums (WHIM) with typical temperature of $10^5$ K to $10^7$ K \cite{Pen1999,Soltan06}. 
-High temperature and low density in the medium make us difficult to derive information from metal absroption lines, 
-and uncertainties in ionization states and metalicity will also reduce the reliability. 
-We are looking for signals that not only trace the majority of the baryons, but also easy to interprete.
+High temperature and low density in the medium, 
+as well as uncertainties in ionization states and metalicities, 
+make it difficult to derive information from metal absroption lines. 
+It is expected urgently for signals that not only trace the majority of the baryons, but also easy to interprete.
 
-Among the proposed candidates, the kinematic Sunyaev-Zel'dovich (kSZ) effect \cite{Sunyaev72,Sunyaev80,Vishniac87} is a promising one.  
+Among proposed probes, the kinematic Sunyaev-Zel'dovich (kSZ) effect \cite{Sunyaev72,Sunyaev80,Vishniac87} is a promising one.  
 kSZ effect results from Compton scattering of cosmic microwave background (CMB) off free electrons. 
 The radial velocity of electrons will give photon a Doppler shift 
 and hence leads to a 
 secondary anisotropy in CMB temperature.
-
 %The kSZ signal could satisfy all three conditions listed before. 
 %Consider kSZ as tracer has lots of advantages for this problem. 
-KSZ signal is ideal to tackle this problem for three reasons. 
+It is ideal to tackle this problem for three reasons: 
 First, it contributes from all the free electrons, indicating the distribution of $90\%$ of the baryons in ionized states,   
 leaving alone only less than $10\%$ of baryons that 
 reside in stars, remnants, atomic and molecular gases \cite{Fukugita04}. 
@@ -22,22 +22,32 @@ regardless the temperature, pressure and metalicity,
 so no extra assumptions are needed to estimate baryon abundance.  
 %
 Third, the peculiar velocity is dominantly related to large scale structures, 
-therefore the signal is less biased towards local mass contraction.  
+therefore the signal is less biased towards local mass contraction, 
+and more indicative about diffusive distributions.  
 
-Attractive as it is, two big drawbacks largely reduce the feasibility of harnessing kSZ signal.  
-First, the signal is very weak 
+Attractive as it is, two drawbacks largely reduce the feasibility of harnessing kSZ signal.  
+First, the signal is weak 
 and hence suffers seriously from contaminations 
 from primary CMB, facility noises, 
 thermal SZ effect, CMB lensing, etc.  
 Second, it is an integrated effect along line of sight, therefore, kSZ itself does not contain redshift information.
 
-A straight-forward mitigation of the two disadvantages is to cross-correlate 
+A straight-forward mitigation of the disadvantages is to cross correlate 
 kSZ signal with another tracer, which has both large scale structure and redshift information. 
 Previous work has proposed optical spectroscopic survey as an ideal tool \cite{Hand12,Shao11,Li14}. 
 %However, lack of spectral lines in redshift $1.4-2.5$, and low survey speed has limited the application.  
 However, first, it lacks detectable spectral lines in redshift $1.4-2.5$, 
-therefore unable to consistently measure until $z\sim2$. 
-Moreover we need large sky coverage to compensate for the weakness of kSZ signal, and the low efficiency of spectroscopic survey will make it unaccessible for near future.  
+therefore unable to consistently measure until $z<2$ sky. 
+Moreover, kSZ signal is more prominent in higher redshift, 
+while it is extremely inefficient for spectroscopic surveys to cover 
+large sky area for $z>1$. 
+Therefore this method is not immediately accessible. 
+%
+Methods with lower facility requirements, such as 
+cross correlating photo-z galaxies with kSZ \cite{Hill16,Ferraro16}, 
+depends on models of velocity fields, 
+and demands next generation CMB facilities to achieve 
+convincing S/N.
 %Optical spectroscopic surveys have been proposed as an ideal candidate. 
 %Opitical spectroscopic surveys are one popular candidate. 
 %However, they are not accessible on redshift $1.4-2.5$ 
@@ -46,19 +56,23 @@ Moreover we need large sky coverage to compensate for the weakness of kSZ signal
 %Rather than distinguishing individual galaxies, 
 %we discuss the possibility of using integrated signals of each pixel 
 %(intensity mapping) 
-In this paper we discuss a new possibility for cross correlation---HI density field from 21 cm intensity mapping. 
+
+In this paper, a new possibility of cross correlating HI density field from 21 cm intensity mapping to kSZ signal is discussed. 
 HI 21 cm spectra have accurate redshift information, 
 and are fully accessible for $z\lesssim2$.  
 %which enables us to reconstruct velocity field and 
 %get better correlation with kSZ powerspectra. 
-Intensity mapping is a kind of survey that 
-integrates all the signals in a pixel,  
-rather than distinguishing individual galaxies.  
-It can reach high S/N much faster, hence is very efficient for large sky surveys. 
-There are already several ongoing experiments aim at large sky coverage and claim to be able to reach $z\gtrsim2$ in very near future, such as
-CHIME \cite{2014SPIE.9145E..22B}, Tianlai \cite{2015ApJ...798...40X}, 
-HIRAX \cite{HIRAX} etc.
-%Therefore, this correlator is much more feasible than galaxy spectroscopic surveys.  
+Intensity mapping survey, 
+rather than distinguishing individual galaxies, 
+integrates all weak signals in a pixel,  
+which enables it to reach high S/N and cover large sky area 
+in much shorter period of time. 
+In the following few years, there will be several experiments 
+producing data of large sky area for redshift $\lesssim2.5$ 
+%CHIME \cite{2014SPIE.9145E..22B}, Tianlai \cite{2015ApJ...798...40X}, 
+%HIRAX \cite{HIRAX} etc.
+\cite{2014SPIE.9145E..22B,2015ApJ...798...40X, HIRAX}.
+%HIRAX \cite{HIRAX} etc.
 
 However, as feasibility is usually traded from data quality, 
 there are three main challenges for the upcoming H~I surveys  
@@ -73,28 +87,25 @@ due to the finite length of the shortest baseline.
 
 %Since the kSZ signal is proposional to the convolution of density field and velocity field in Fourier space, 
 On the other hand, the most prominate kSZ signal that could be distinguished from noises  
-contributes mainly from largest structure in radial direction 
-with $l < 100$ and $l \sim 1000$. 
-These modes are seriously damaged in intensity mapping due to the three challenges. 
-
-%In this paper, we discuss the requirements
-In this paper, we discuss the level of correlation we will get 
-between kSZ and 21cm intensity mappings of different conditions. 
-To lower the requirements on observational experiments, we use a method, cosmic tidal reconstruction \cite{2012:pen,2015:zhu}, 
-to recover some of the large scale structure from its tidal force on small scales. 
- 
+%is mainly from largest structure in radial direction 
+is mainly from $k_z\lesssim0.1 h/Mpc$ in radial direction 
+with $l < 100$ and $l \sim 1000-2000$. 
+These modes are partly damaged in intensity mapping due to the three challenges. 
+In this paper, we discuss the 
+influence of the lost 
+and partly recover the missing large scale modes 
+from their nonlinear tidal influence on small scales\cite{2012:pen,2015:zhu}. 
+Final correlation is presented against different conditions.
 
 The paper is organized as follows: 
-In section II, we demonstrate given a density field, how to correlate it with kSZ signal with velocity reconstruction, similar to \cite{Shao11}; 
-we then estimate which modes dominates the produced signal; 
-In section III, we present the result of cross correlation with foreground filtered field, different resolutions, and different shortest baselines  
-and discuss the behavior; 
-Then in section IV, we introduce the method of 3D tidal reconstruction, 
-and present the correlation results after small $k$ modes recovered, 
-%In section V, we discuss redshift space distortions; 
-In section VI, we estimate statistical error and calculate S/N; 
-%discuss redshift distortion and possible improvements; 
-and we conclude at section VII.
+In section II, we demonstrate given a density field, how to correlate it with kSZ signal in a holographic way similar to \cite{Shao11}; 
+In section III, the importance of different Fourier modes on kSZ signal 
+is discussed and compared with modes in 21cm intensity fields;
+%then estimate which modes dominates the produced signal; 
+In section IV, the method of 3D tidal reconstruction is introduced; 
+Results of the reconstruction and cross correlation are presented in section V; 
+And S/N is estimated via statistical error in section VI;
+Finally we conclude at section VII.
 
 
 Notes: 
@@ -104,6 +115,3 @@ Simulation parameters are as follows: Hubble parameter $h=0.678$, baryon
 density $\Omega_{b}=0.049$, dark matter density $\Omega_{c}=0.259$,
 amplitude of primordial curvature power spectrum $A_s=2.139\times10^{-9}$ at 
 $k_0=0.05\;\mr{Mpc}^{-1}$ and scalar spectral index $n_s=0.968$.
-
-we use "$\wedge$" to denote recontructed fields as 
-oppose to fields directly from simulations.
