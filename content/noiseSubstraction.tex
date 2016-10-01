@@ -41,12 +41,12 @@ To imitate the loss, a high pass filter $W_{fs}(k_\parallel)=1-e^{-k_\parallel^2
 
 Large scale structure in perpendicular plane, due to the smoothness, 
 will appear sharp in the visibility function of interferometers 
-after Fourier Transformation. 
+after Fourier transformation. 
 Unfortunately that sharp peak could not be resolved by interferometers 
 due to the incomplete sampling  
 caused by the finite length of the shortest baselines. 
 Therefore, structures with angular sizes greater than a threshold $l_{min}$ 
-are assumed to be lost in our simulations. 
+will be lost. 
 %We do not assume worse cases there, since baselines as short as 20m 
 %are already able to filter most of the important modes for velocity reconstruction. 
 
@@ -64,15 +64,17 @@ in $z=1$ is shown in Fig.\ref{fig:}.
 Essential modes for density field are partly left,  
 while the modes for velocity field are completely gone 
 due to the spatial loss of inteferometers. 
-
 Directly using the filtered density contrast to 
 generate mock kSZ signal will yield $r<0.2$ in Eq.(\ref{eq:r}) 
+
 Luckily, till now only linear theories are considered in reconstruction, 
-while nonlinearly modes of different scales are coupled. 
-If we could identify a relatively clean nonlinear effect in density field, 
-we would be able to retrieve the information needed for velocity reconstruction. 
-The effect we choose is the tidal influence of large scale structure on small 
-scales, following \cite{2015:zhu,2012:pen}.  
+while there are couplings between different scales in nonlinear theories. 
+Identifying a single nonlinear effect will help 
+us retrieve important modes for velocity reconstruction. 
+Here, we present an algorithm to employ 
+distortions from second order tidal coupling 
+to solve for large scale structures 
+\cite{2015:zhu,2012:pen}.  
 
 
 

@@ -13,11 +13,14 @@ where $\eta(z)$ is the comoving distance at redshift z, $g(\eta)=e^{-\tau} d\tau
 We assume that $g(\eta)$ doesn't change significally in one redshift bin, 
 and integrate $\bm{p}_\parallel$ along radial axis to get $\hat \Theta_{kSZ}$
 
-Due to the cancellation of positive and negative velocity, its direct cross correlation between kSZ signal will vanish.
-To take advantage of the known redshift and better maintain the one to one multiplication between velocity field and density contrast,   
-we generate a mock kSZ signal from calculation of linear peculiar velocity. 
+Due to the cancellation of positive and negative velocity, direct cross correlation between kSZ signals and density contrast will vanish.
+However, taking advantage of the known redshift, 
+we could at most maintain the one to one multiplication between velocity field and density contrast   
+by linearly calculating the peculiar velocity 
+and generating a mock kSZ signal. 
 %\cite{Shao11}.
 %In this way, we can at most maximize the correlation.
+The basic procedure is as follows:
 
 Assume we have a density contrast field $\delta=(\rho-\bar{\rho})/\bar{\rho}$, where $\bar\rho$ is the average density of a certain redshift slice. 
 %Detailed steps are as follows.

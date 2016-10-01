@@ -4,11 +4,12 @@
 \end{center}
 \vspace{-0.7cm}
 \caption{
-    Illustrating weights of different scales after integration for redshift 1.
+    Illustrating weights of different scales after integration. 
+    Demonstrated with data of redshift 1.
     (Top) The density variance $2\pi^2\Delta_\delta^2\equiv k^3P_\delta$. 
     (Bottom) The velocity variance $2\pi^2\Delta_{v_z}^2\equiv k^3P_{v_z}$. 
-    Red lines: indicate the most essential modes for generating kSZ signal in 
-    $\ell~500-3000$.
+    (Red lines): Indicate most essential modes for generating kSZ signal in 
+    $\ell\sim 500-3000$.
 }
 \label{fig:k3v}
 \end{figure}
@@ -20,11 +21,12 @@
 \vspace{-0.7cm}
 \caption{
     (Top) Relative strength of angular powerspectrum between primary CMB, Planck noise in 217 GHz band, and kSZ effect in redshift 1 and 2.
-    (Bottom) Demonstrate available modes of density contrasts obtained 
+    (Bottom) Available modes of density contrasts obtained 
     in realistic 21cm Intensity Mapping experiments, 
-    with resolution of CHIME and high foregrounds. 
+    with resolution of CHIME and high foregrounds ($R_\parallel=15$ h/Mpc) 
+    in redshift 1. 
     $P_{21cm}$ is the remaining density powerspectrum after noise substraction; 
-    $P_\delta$ indicates the powerspectrum of a comtact density field.
+    $P_\delta$ indicates the powerspectrum of a intact density field.
 }
 \label{fig:cmb_21cm}
 \end{figure}
@@ -51,22 +53,22 @@ $p_\parallel(\bm{k})$ in Fourier space.
     \end{eqnarray}
 An essential feature of Eq.(\ref{eq:thetak}) is that
 in transverse plane, density and velocity field of different scales are multiplied together, 
- while in parallel direction, only $\delta$ and $v_z$ of 
- identical $k_z$ are coupled together.  
+ while in parallel direction, 
+ there is no coupling between different scales.  
 
 The relative strength of $|\delta(\bm{k})|$ and $|v_z(\bm{k})|$ in different scales 
 are implied in Fig.\ref{fig:k3v}. 
 and also implicit at Eq.(\ref{eq:v}), 
 The velocity field contributes almost dominantly from large scale structures, 
-leaving little contribution from $k_z>0.2 h/Mpc$, $k_\perp> 0.02 h/Mpc$. 
+leaving little contribution from $k_z>0.2$ h/Mpc, $k_\perp> 0.02$ h/Mpc. 
 %ignoring the vast k modes in this region. 
 This makes it roughly an ellipitical selection functions in the convolution
 ---
 It selects $\delta$ with similar range of $k_z$ and $k_\perp\sim(\ell/\chi-0.01)$ h/Mpc.  
-Actually, the sharper $|v(\bm{k})|$ is 
+Actually, the sharper $|v(\bm{k})|$ is, 
 the more it ressembles a Delta Function peaked at 
 $(k_\perp,k_\parallel)=(0.01,0.1)$ h/Mpc. 
-Then 
+If we go into extreme:  
 \begin{eqnarray}
     \Theta(\bm{l}) &\propto& \int\, 
     d^3k^\prime\delta(\bm{\ell}/\chi-\bm{k}_\perp^\prime,k_\parallel^\prime) 
@@ -80,23 +82,23 @@ depends on the $\ell$ we look at.
 
 To decide the targeted $\ell$ range, 
 many factors needs to be taken into account:  
-the strength of the primary CMB, facility limits and 
-other fluctuations on CMB such as thermal SZ effect\cite{} and CMB lensing\cite{}.
+the strength of the primary CMB, facility limits, 
+other fluctuations on CMB such as thermal SZ effect and CMB lensing.
 Consider using Planck \cite{Planck2015} data 
 in the 217 GHz band, where the tSZ signal vanishes, 
 we demonstrate the angular powerspectrum of primary CMB, 
-facility noises (detailed calculations in Section VI), 
+facility noises (detailed calculations are shown in Section VI), 
 and kSZ of redshift 1 and 2 
 in Fig.\ref{fig:CMB}. 
 Only in the range of $\ell \sim 500-3000$, 
 there is a chance for us to distinguish the kSZ signal.  
 
-Therefore, in Fig.\ref{fig:k3v}, we roughly sketch the essential modes 
+In Fig.\ref{fig:k3v}, we roughly sketch the essential modes 
 for $v_z(\bm{k})$ and $\delta(\bm{k})$ 
 in red lines. 
-Linearly, velocity field of a certain scale only relates to 
-identical scale of density field, see Eq.(\ref{eq:v}). 
-Therefore, an ideal cross correlation density field should be intact in both regions. 
+In linear theory, velocity field of a certain scale only relates to 
+identical scale of density field (see Eq.(\ref{eq:v})). 
+Therefore, an ideal density field should be intact in both regions. 
 
 Note: all the demonstration figures are towards redshift 1, 
 however, there is only slight difference  
