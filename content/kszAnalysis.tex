@@ -62,19 +62,19 @@ and also implicit at Eq.(\ref{eq:v}),
 The velocity field contributes almost dominantly from large scale structures, 
 leaving little contribution from $k_z>0.2$ h/Mpc, $k_\perp> 0.02$ h/Mpc. 
 %ignoring the vast k modes in this region. 
-This makes it roughly an ellipitical selection functions in the convolution
----
-It selects $\delta$ with similar range of $k_z$ and $k_\perp\sim(\ell/\chi-0.01)$ h/Mpc.  
-Actually, the sharper $|v(\bm{k})|$ is, 
-the more it ressembles a Delta Function peaked at 
-$(k_\perp,k_\parallel)=(0.01,0.1)$ h/Mpc. 
-If we go into extreme:  
+This makes it roughly an ellipitical selection functions in the convolution. 
+$|v_z(\bm{k})|$ selects $\delta$ with similar range of $k_z$ and $k_\perp\sim(\ell/\chi-0.01)$ h/Mpc.  
+Actually, the sharper $|v_z(\bm{k})|$ is, 
+the more it ressembles a Delta Function, 
+then the convolution will simply be:
 \begin{eqnarray}
     \Theta(\bm{l}) &\propto& \int\, 
     d^3k^\prime\delta(\bm{\ell}/\chi-\bm{k}_\perp^\prime,k_\parallel^\prime) 
-    \delta^D(0.01,0.1) \\
-    &\sim& \delta(\ell/\chi-0.01,0.1).
+    \delta^D(0.01,0.1)e^{\psi(\bm{k\prime})} \\
+    &\sim& \delta(\ell/\chi-0.01,0.1)e^{\psi(0.01,0.1)}.
 \end{eqnarray}
+Here $e^{\psi(\bm{k})}=v_z(\bm{k})/|v_z(\bm{k})|$ denotes the phase of $v$.
+
 Therefore, when generating kSZ signals, 
 it is crucial to have large scale modes for $v_z$. 
 However, which scales matter most for $\delta(\bm{k})$ 
