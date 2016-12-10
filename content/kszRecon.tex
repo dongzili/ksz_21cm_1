@@ -1,64 +1,46 @@
-In this section, we present a holographic method 
-to cross correlate kSZ with a density field, 
-following \cite{Shao11}. 
-
 \label{sec:kszRecon}
-The CMB temperature fluctuations caused by kSZ effect is:
+The CMB temperature fluctuations caused by kSZ effect is simply an integral of the 
+momentum field of free electrons:
 \begin{eqnarray}
 \label{eq:ksz}
 \Theta_{kSZ}(\hat n)\equiv\frac{\Delta T_{kSZ}}{T_{\mr{CMB}}}
 =-\frac{1}{c}\int d\eta  g(\eta)  \bm{p}_\parallel\ ,
 \end{eqnarray}
-where $\eta(z)$ is the comoving distance at redshift z, $g(\eta)=e^{-\tau} d\tau/d\eta$ is the visibility function, $\tau$ is the optical depth to Thomson scattering, $\bm{p}_\parallel=(1+\delta)\bm{v}_\parallel$, with $\delta$ the electron overdensity, $\parallel$ indicates direction parallel to line of sight. 
-We assume that $g(\eta)$ doesn't change significally in one redshift bin, 
-and integrate $\bm{p}_\parallel$ along radial axis to get $\hat \Theta_{kSZ}$
+where $\eta(z)$ is the comoving distance at redshift z, $g(\eta)=e^{-\tau} d\tau/d\eta$ is the visibility function, $\tau$ is the optical depth to Thomson scattering, 
+$p_\parallel=(1+\delta_e)v_\parallel$ 
+is the momentum field parallel to the line of sight, 
+$\delta_e=(\rho-\bar{\rho})/\bar{\rho}$ 
+is the electron overdensity, 
+with $\bar\rho$ denotes the average density. 
+It is assumed that electron overdensity are closely 
+related to baryon overdensity $\delta$ at $z<2$. 
 
-Due to the cancellation of positive and negative velocity, direct cross correlation between kSZ signals and density contrast will vanish.
-However, taking advantage of the known redshift, 
-we could at most maintain the one to one multiplication between velocity field and density contrast   
-by linearly calculating the peculiar velocity 
-and generating a mock kSZ signal. 
-%\cite{Shao11}.
-%In this way, we can at most maximize the correlation.
-The basic procedure is as follows:
-
-Assume we have a density contrast field $\delta=(\rho-\bar{\rho})/\bar{\rho}$, where $\bar\rho$ is the average density of a certain redshift slice. 
-%Detailed steps are as follows.
-
-(1) Estimate the velocity field:
-
-In linear region, the continuity equation goes like:
-$\dot \delta+\nabla \cdot \bm{v}=0$, 
-where $\bm{v}$ is the peculiar velocity and $\delta$ is the matter overdensity. 
-%Therefore, we obtain an estimator of velocity distribution from the density contract $\delta$:
-Therefore, linear velocity is estimated as: 
+The direct correlation between kSZ and density field vanishes due to the cancellation of positive and negative velocity.
+To at most retrieve the correlation,  
+we first linearly calculate the peculiar velocity fields $\bm{v_z}$ 
+from continuity equation:
 \begin{eqnarray}
 	\label{eq:v}
 \hat v_z(\bm{k})=i a H f\delta(\bm{k})\frac{k_z}{k^2}\,
 \end{eqnarray}
-where $f=d\mathrm{ln}D/d\mathrm{ln}a$, $D(a)$ is the linear growth function, 
-$a$ is the scale factor, $H$ is the Hubble parameter.
+where $a$ is the scale factor, $f=d\mathrm{ln}D/d\mathrm{ln}a$, $D(a)$ is the linear growth function, 
+$H$ is the Hubble parameter.
 
-$v_z \propto k_z/k^2$, indicating the most prominent signal comes from small k mode, which corresponds to large scale structure. 
-
-(2) Filter the noise: 
-The term $k_z/k^2$ in Eq.(\ref{eq:v}) will amplify noises in small k, 
-which should be suppressed. 
-\begin{eqnarray}
-	\label{eq:wienerv}
-\hat v_z^c(\bm{k})=\frac{\hat v_z(\bm{k})}{b(k_\perp,k_\parallel)}W(k_\perp,k_\parallel)\ ,
-\end{eqnarray}
-Bias $b=P_{\hat v_z,v_z}/P_{v_z}$, Wiener filter $W=P_{v_z}/(P_{\hat v_z}/b^2)$.
-
-(3) Calculate 2D kSZ map following Eq.(\ref{eq:ksz}).
-
-(4) Calculate correlation coefficients:
-
-Quantify tightness of correlation with: 
+We then reconstruct a 2D kSZ field with $v_z$ and $\delta$ 
+following Eq.(\ref{eq:ksz}), 
+%In linear region, the continuity equation goes like:
+%$\dot \delta+\nabla \cdot \bm{v}=0$, 
+%where $\bm{v}$ is the peculiar velocity and $\delta$ is the matter overdensity. 
+%Therefore, we obtain an estimator of velocity distribution from the density contract $\delta$:
+%Therefore the real fields $v_z(\bm{x})$ contain mainly information of small k mode, large scale structure. 
+%The linear theory works well in these scales.  
+%(relative contributions of different scales in reverse Fourier transformation 
+%indicated in Fig.\ref{fig:k3v}).
+and quantify the tightness of correlation between reconstructed kSZ and real kSZ 
+with a coefficient r: 
 \begin{eqnarray}
 	r\equiv \frac{P_{recon,real}}{\sqrt{P_{recon}P_{real}}}\,
 \end{eqnarray}
-Where $\hat \Theta_{kSZ}$ is reconstructed signal 
-and $\Theta_{kSZ}$ is original signal directly from simulations.
-
+%Where $\hat \Theta_{kSZ}$ is reconstructed kSZ map, 
+%and $\Theta_{kSZ}$ is real kSZ map.
 

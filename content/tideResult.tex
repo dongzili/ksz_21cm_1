@@ -9,6 +9,18 @@ and reconstructed kSZ $P_{\hat \Theta_{kSZ}}$.
 \label{fig:r}
 \end{figure}
 \label{ssec:tide}
+
+To test the algorithm, six $N$-body simulations are performed with the
+$\mr{CUBEP}^3\mr{M}$ code \cite{2013:code}, each evolving $1024^3$ particles in a $(1.2\mr{Gpc}/h)^3$ box. 
+Simulation parameters are set as: Hubble parameter $h=0.678$, baryon
+density $\Omega_{b}=0.049$, dark matter density $\Omega_{c}=0.259$,
+amplitude of primordial curvature power spectrum $A_s=2.139\times10^{-9}$ at 
+$k_0=0.05\;\mr{Mpc}^{-1}$ and scalar spectral index $n_s=0.968$.
+
+Simulated density and velocity fields at $z=1,2$ are output 
+and used to generate kSZ signal. 
+
+
 To avoid manipulating noises, 
 we perform tidal reconstruction on most conservative estimates, i.e. 
 $R_\parallel=15$ Mpc/h, $k_{max}=0.6$ h/Mpc, $\ell_{max}=100$ for $z=1$; 

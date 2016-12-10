@@ -1,26 +1,65 @@
-Main modes loss of ongoing 21cm intensity mapping 
-experiments are demonstrated in this chapter with simple filters. 
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{figure/k3pd_k3pv_z1.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{
+    Illustrating weights of different scales after integration. 
+    Demonstrated with data of redshift 1.
+    (Top) The density variance $2\pi^2\Delta_\delta^2\equiv k^3P_\delta$. 
+    (Bottom) The velocity variance $2\pi^2\Delta_{v_z}^2\equiv k^3P_{v_z}$. 
+    (Red lines): Indicate most essential modes for generating kSZ signal in 
+    $\ell\sim 500-3000$.
+}
+\label{fig:k3v}
+\end{figure}
 
-1. Small scale noises:
+\begin{figure}[tbp]
+\begin{center}
+\includegraphics[width=0.48\textwidth]{figure/cmb_21cm.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{
+    (Top) Relative strength of angular powerspectrum between primary CMB, Planck noise in 217 GHz band, and kSZ effect in redshift 1 and 2.
+    (Bottom) Available modes of density contrasts obtained 
+    in realistic 21cm Intensity Mapping experiments, 
+    with resolution of CHIME and high foregrounds ($R_\parallel=15$ h/Mpc) 
+    in redshift 1. 
+    $P_{21cm}$ is the remaining density powerspectrum after noise substraction; 
+    $P_\delta$ indicates the powerspectrum of a intact density field.
+}
+\label{fig:cmb_21cm}
+\end{figure}
 
-The finite spacial and velocity resolution of facilities 
-import a cut off scale $k_{max}$ on both parallel and perpendicular 
-directions, filtering out information of smaller scales. 
-It is resembled with a Heaviside Function 
-$H(k_{max}-k)$, dropping $k>k_{max}$. 
-%We choose a realistic $k_{max}$ based on baselines of ongoing experiments 
+%$v_z \propto k_z/k^2$ indicates that $v_z(k)$ increases as $k$ decreases. 
+%Therefore the contribution mainly from large scales 
+%where linear theories work well.
+Ideally, this velocity reconstruction method should 
+retrieve $>90\%$ kSZ signals \ref{11Shao}. 
+However, realistic 21cm intensity mapping experiments 
+can only detect density fluctuations at certain scales, 
+as illustrated in Fig.\ref{fig:CMB-21cm}. 
+How much cross correlation we could construct is mainly affected 
+by three conditions of the experiments:
+
+1. The spacial and velocity resolution of facilities. 
+
+It decides the smallest scale to be observed, 
+and the effect could roughly be resembled with a Heaviside Function 
+$H(k_\mr{max}-k)$. 
+%We choose a realistic $k_\mr{max}$ based on baselines of ongoing experiments 
 %\cite{HIRAX,2014SPIE.9145E..22B,2014SPIE.9145E..4VN,2012IJMPS..12..256C,2015ApJ...798...40X}, 
-%and an ideal $k_{max}$ based on noise status of Planck Satellite.
+%and an ideal $k_\mr{max}$ based on noise status of Planck Satellite.
 
-2. Foreground noises:
+2. Foreground noise level:
 
 Foregrounds from Galactic emissions, telescope noises, 
 extragalactic radio sources and Radio recombination lines, 
-could be three orders brighter than actual signals\cite{DiMatteo04,Masui13}. 
+could be three orders brighter than targeted signals\cite{DiMatteo04,Masui13}. 
 The process of foreground removal, taking advantage of its low spectral
 degrees of freedom \cite{Switzer15}, 
 will inevitably contaminates the smooth large scale structure in radial direction.  
-To imitate the loss, a high pass filter $W_{fs}(k_\parallel)=1-e^{-k_\parallel^2R_\parallel^2/2}$ is applied to density contraction. 
+To imitate the loss, we apply a high pass filter $W(k_\parallel)=1-e^{-k_\parallel^2R_\parallel^2/2}$. 
 %We again test a realistic case \cite{2013ApJ...763L..20M,Switzer13}
 %with 
 %only half of the signal resolved at $k_\parallel=0.08$ Mpc/h and $0.15$ Mpc/h 
@@ -37,48 +76,40 @@ To imitate the loss, a high pass filter $W_{fs}(k_\parallel)=1-e^{-k_\parallel^2
 %This is realistic according to the condition of current 21 cm observations 
 %\cite{2013ApJ...763L..20M,Switzer13}.
 
-3. Spatial loss of inteferometers:
+3. The shortest baseline of inteferometers:
 
-Large scale structure in perpendicular plane, due to the smoothness, 
-will appear sharp in the visibility function of interferometers 
-after Fourier transformation. 
-Unfortunately that sharp peak could not be resolved by interferometers 
-due to the incomplete sampling  
-caused by the finite length of the shortest baselines. 
-Therefore, structures with angular sizes greater than a threshold $l_{min}$ 
-will be lost. 
+Current 21cm IM experiments are all carried on inteferometers. 
+To avoid interactions, two beams of a interferometer 
+cannot be placed infinitely close. 
+The shortest baseline length decides the largest 
+angular scale it could probe.  
+Structures with angular scale greater than a threshhold of 
+$l_\mr{min}$ will be drained out 
+in the visibility function 
+when cross correlating two beams. 
+We again use a Heaviside function to assemble the effect. 
 %We do not assume worse cases there, since baselines as short as 20m 
 %are already able to filter most of the important modes for velocity reconstruction. 
 
-In sum, the observed 21 cm density contrasts after all the loss will appear as 
+Therefore, a realistic 21 cm density contrasts will appear as 
 \begin{eqnarray}
 \label{eq:ns}
-    \delta_{nf}(\bm{k})=\delta(\bm{k})H(k_{max}-k)W_{fs}(k_\parallel)H(l-l_{min}),
+    \delta_\mr{IM}(\bm{k})=\delta(\bm{k})H(k_\mr{max}-k)W(k_\parallel)H(l-l_{min}),
 \end{eqnarray}
 
-The chosen parameters and reasons are presented in Table. \ref{tab:para}.
+Table.(\ref{tab:para}) 
+lists several representive values for different parameters 
+based on previous observations and predictions. 
+Fig.\ref{fig:} 
+is a demonstration of density contrasts corresponding to 
+$R_\parallel=15$ Mpc/h, $k_\mr{max}=0.6$ h/Mpc 
+in $z=1$. 
 
-Demonstration of a filtered density field corresponding to 
-$R_\parallel=15$ Mpc/h, $k_{max}=0.6$ h/Mpc 
-in $z=1$ is shown in Fig.\ref{fig:}. 
-Essential modes for density field are partly left,  
-while the modes for velocity field are completely gone 
-due to the spatial loss of inteferometers. 
-Directly using the filtered density contrast to 
-generate mock kSZ signal will yield $r<0.2$ in Eq.(\ref{eq:r}) 
-
-Luckily, till now only linear theories are considered in reconstruction, 
-while there are couplings between different scales in nonlinear theories. 
-Identifying a single nonlinear effect will help 
-us retrieve important modes for velocity reconstruction. 
-Here, we present an algorithm to employ 
-distortions from second order tidal coupling 
-to solve for large scale structures 
-\cite{2015:zhu,2012:pen}.  
-
-
-
-
+Directly using $\delta_\mr{IM}$ of any of the parameters 
+to reconstruct kSZ signal will 
+yields a correlation coeffcient $r<0.2$ 
+with observable kSZ, 
+indicating the loss of essential scales in kSZ generation.
 
 %With the noise filtered density contrast $\delta_{nf}$, we follow the procedure described in
 %section \ref{sec:kszRecon} to generate a mock kSZ signal $\hat \Theta_{nf}$  
@@ -99,7 +130,7 @@ to solve for large scale structures
      \cline{2-5}
      \footnote{Small scale noises: based on CHIME\cite{2014CHIME} and HIRAX\cite{HIRAX} 
      with 100 m and 200 m longest baseline respectively.}
-     $k_{max}$ h/Mpc 
+     $k_\mr{max}$ h/Mpc 
      & 0.6 & 1.2 & 0.4 & 0.8 \\
      \hline
      \footnote{Spatial loss of inteferomenter: assuming shortest baseline of 20 m.}
