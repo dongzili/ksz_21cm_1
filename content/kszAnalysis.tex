@@ -31,12 +31,14 @@ given $g(\eta)$ varies slowly.
 The convolution of $\delta$ and $v_z$ 
 indicates the signal comes from the cross talk of 
 $\bm{\ell}/\chi-\bm{k}_\perp^\prime$ and $\bm{k}_\perp$, 
-sum over all $k\prime$. 
+sum over all $k^\prime$. 
 
 Since $v_z \propto k_z/k^3$, 
 it drops fast at small scales. 
-Boldly analogize it to a Dirac delta function $\delta^D(\bm{k}\prime)$, 
-$\Theta(\bm{\ell})$ will reduce to $\propto\delta(\bm{\ell}/\chi,0)$. 
+Boldly analogize $v_z$ to a Dirac delta function $\delta^D(\bm{k}^\prime)$, 
+$\Theta(\bm{\ell})$ will reduce to $\propto\delta(\bm{\ell}/\chi,0) v_z(0,0)$, 
+with integration of other $k^\prime$ negligible due to the faintness of 
+$v_z(k^\prime\neq0)$. 
 Although in reality, $v_z(\bm{k})$ 
 wouldn't be as sharp as $\delta^D$, 
 and the peak will be more close to 
@@ -44,15 +46,15 @@ and the peak will be more close to
 rather than (0,0),
 it is still safe to say 
 that most of the kSZ signals are 
-generated from the cross talk between a narrow box of k 
-surrounding (0.01,0.1) h/Mpc for $v_z$ 
-and a narrow box of k close to 
-$\delta(\bm{\ell}/\chi,0.1)$ h/Mpc 
-for $\delta$.
-
-The strenth of $|\delta(k)|$ and $|v_z(k)|$, 
-as well as the important modes for each fields 
-are indicated in Fig.\ref{fig:k3v}. 
+generated from the cross talk between a narrow box of 
+$v_z(\bm{k})$ with k  
+surrounding (0.01,0.1) h/Mpc 
+and a narrow box of $\delta(k)$ with k close to 
+$\delta(\bm{\ell}/\chi,0.1)$ h/Mpc. 
+The essential modes for both fields are marked with 
+red lines in Fig.\ref{fig:k3v}. 
+Background color denote the contribution of $|\delta(k)|$ and $|v_z(k)|$ 
+at different scales in Fourier transform. 
 Comparing it with Fig.\ref{fig:21cm-CMB}, 
 we notice that while the 
 essential modes for $\delta$ are partly resolved, 
