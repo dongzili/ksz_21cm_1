@@ -1,8 +1,46 @@
-We want to pinpoint the missing essential modes for generating kSZ signal. 
+\begin{figure*}
+\captionsetup{width=0.25\linewidth,justification=raggedright}
+\begin{minipage}[t]{0.3\linewidth}
+\begin{center}
+\includegraphics[width=\textwidth,height=1.7\textwidth]{figure/k3pd_k3pv_z1_note.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{
+    Illustrating how different scales of density and velocity 
+    fields contribute to kSZ signal at $\ell\sim 500-3000$. 
+    Red lines circle the most essential modes. 
+}
+\label{fig:k3v}
+\end{minipage}
+\begin{minipage}[t]{0.3\linewidth}
+\begin{center}
+\includegraphics[width=\textwidth,height=1.7\textwidth]{figure/powv2d_z1z2_r15r10.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{The correlation coefficient between reconstructed $v_z$  and actual $v_z$ 
+assuming a baseline of 100m, foregrounds 
+    smear $k_z$ below $~0.08$ h/Mpc and $~0.12$ h/Mpc 
+    at $z=1,2$ respectively. }
+\label{fig:v}
+\end{minipage}
+\begin{minipage}[t]{0.3\linewidth}
+\begin{center}
+\includegraphics[width=\textwidth,height=1.7\textwidth]{figure/powmomen_before_after_tide.eps}
+\end{center}
+\vspace{-0.7cm}
+\label{fig:p}
+\caption{The correlation coefficient for $p_\parallel=(1+\delta)v_z$ before and 
+after tidal reconstruction. 
+The kSZ is roughly $p_\parallel$ integrated over line of sight, 
+corresponding to $k_z=0$ modes.}
+\end{minipage}
+\end{figure*}
+To search for compensations, 
+it is important to pinpoint the missing modes for generating kSZ signals. 
 
 The first step is to clarify which angular scale of the kSZ signal 
-we look at. 
-As demonstrated in Fig.\ref{fig:CMB}, 
+we are interested in. 
+As demonstrated in Fig.\ref{fig:cmb_21cm}, 
 the kSZ effect is too faint to 
 be distinguished until 
 primary CMB starts to fade away, 
@@ -18,8 +56,8 @@ ACTpol and CMB-S4.
 The next step is to understand what role each scale plays in generating kSZ signal 
 at $\ell \sim 500-3000$. 
 Write Eq.(\ref{eq:ksz}) in Fourier space. 
-$\Theta(\bm{\ell})$ is propotional to the $k_z=0$ mode of the momentum field, 
-given $g(\eta)$ varies slowly. 
+Given $g(\eta)$ varies slowly. 
+$\Theta(\bm{\ell})$ is propotional to the $k_z=0$ mode of the momentum field, as marked in Fig.\ref{fig:p}, 
 %$p_\parallel(\bm{k})$. 
 \begin{eqnarray}
     \label{eq:thetak}
@@ -39,23 +77,23 @@ Boldly analogize $v_z$ to a Dirac delta function $\delta^D(\bm{k}^\prime)$,
 $\Theta(\bm{\ell})$ will reduce to $\propto\delta(\bm{\ell}/\chi,0) v_z(0,0)$, 
 with integration of other $k^\prime$ negligible due to the faintness of 
 $v_z(k^\prime\neq0)$. 
-Although in reality, $v_z(\bm{k})$ 
-wouldn't be as sharp as $\delta^D$, 
+Adapt the analogy into reality, 
+where $v_z(\bm{k})$ 
+is not as sharp as $\delta^D$, 
 and the peak will be more close to 
 ($k_\perp$,$k_\parallel$)=($0.01$,$0.1$) h/Mpc 
 rather than (0,0),
-it is still safe to say 
+we will see  
 that most of the kSZ signals are 
-generated from the cross talk between a narrow box of 
-$v_z(\bm{k})$ with k  
+generated from the cross talk between the part of 
+$v_z(\bm{k})$ with k in a small ball  
 surrounding (0.01,0.1) h/Mpc 
-and a narrow box of $\delta(k)$ with k close to 
+and the part of $\delta(k)$ with k close to 
 $\delta(\bm{\ell}/\chi,0.1)$ h/Mpc. 
-The essential modes for both fields are marked with 
-red lines in Fig.\ref{fig:k3v}. 
-Background color denote the contribution of $|\delta(k)|$ and $|v_z(k)|$ 
-at different scales in Fourier transform. 
-Comparing it with Fig.\ref{fig:21cm-CMB}, 
+This is demonstrated in Fig.\ref{fig:k3v}. 
+%Background color indicates the contribution of $|\delta(k)|$ and $|v_z(k)|$ 
+%during Fourier transform. 
+Comparing it with Fig.\ref{fig:cmb_21cm}, 
 we notice that while the 
 essential modes for $\delta$ are partly resolved, 
 the large scale information dominating $v_z$ is 
