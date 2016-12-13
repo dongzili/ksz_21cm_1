@@ -1,7 +1,7 @@
 \begin{figure}[tbp]
 \centering
 \includegraphics[width=0.4\textwidth]{figure/cmb_21cm.eps}
-\vspace{-0.7cm}
+\vspace{-0.3cm}
 \caption{
     (Top) Constraints on  
     21cm Intensity Mapping and the resolvable modes at $z=1$  
@@ -12,15 +12,16 @@
 \end{figure}
 
 Ideally, this velocity reconstruction method should 
-retrieve $>90\%$ kSZ signals \citet{Shao11}. 
+retrieve $>90\%$ kSZ signals \cite{Shao11}. 
 However, realistic 21cm IM experiments 
 can only detect density fluctuations at certain scales, 
 as illustrated in Fig.\ref{fig:cmb_21cm}. 
-How much cross correlation we could construct is mainly affected 
-by three conditions of the experiments:
+Three main factors lead to the loss of modes. 
 
 1. The spacial and velocity resolution of facilities. 
 
+Unlike galaxy surveys, the resolution of IM is confined to 
+the resolution of facilities. 
 It decides the smallest scale to be observed, 
 and the effect could roughly be resembled with a Heaviside Function 
 $H(k_\mr{max}-k)$. 
@@ -56,7 +57,7 @@ To imitate the loss, we apply a high pass filter $W(k_\parallel)=1-e^{-k_\parall
 3. The shortest baseline of inteferometers:
 
 Current 21cm IM experiments are all carried on inteferometers. 
-To avoid interactions, two beams of a interferometer 
+To avoid disturbance, two beams of a interferometer 
 cannot be placed infinitely close. 
 The shortest baseline length decides the largest 
 angular scale it could probe.  
@@ -81,17 +82,19 @@ Fig.\ref{fig:cmb_21cm}
 is a demonstration of density contrasts corresponding to 
 $R_\parallel=15$ Mpc/h, $k_\mr{max}=0.6$ h/Mpc 
 at $z=1$. 
+With this field, 
+we construct a momentum field $p_\parallel$ following Eq.(\ref{eq:ksz}). 
+As demonstrated in Fig.\ref{fig:p}, 
+it does not cover the modes related to kSZ signals. 
 
-Directly using $\delta_\mr{IM}$ of any of the parameters 
+Actually, directly using $\delta_\mr{IM}$ of any of the parameters 
 to reconstruct kSZ signal will 
 yields a correlation coeffcient $r<0.2$ 
 with observable kSZ signals 
-as demonstrated in Fig.\ref{fig:p}.
 
 %With the noise filtered density contrast $\delta_{nf}$, we follow the procedure described in
 %section \ref{sec:kszRecon} to generate a mock kSZ signal $\hat \Theta_{nf}$  
 %and calculate cross correlation $r_{\Theta\hat\Theta_{nf}}$.
-
 \begin{table}
 \begin{tabular}{|m{2cm}|m{1.5cm}|m{1.5cm}|m{1.5cm}|m{1.5cm}|}
     \hline
@@ -115,6 +118,6 @@ as demonstrated in Fig.\ref{fig:p}.
      & \multicolumn{4}{|c|}{300} \\
      \hline
 \end{tabular}
-     \caption{Parameter of different noise filtering.}
+     \caption{Parameters related to resolvable modes in 21cm IM}
      \label{tab:para}
 \end{table}

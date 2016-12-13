@@ -1,27 +1,29 @@
 \label{sec:kszRecon}
 The CMB temperature fluctuations caused by kSZ effect is simply an integral of the 
-momentum field of free electrons:
+free electron momentum fields:
 \begin{eqnarray}
 \label{eq:ksz}
-\Theta_{kSZ}(\hat n)\equiv\frac{\Delta T_{kSZ}}{T_{\mr{CMB}}}
+\Theta_\mr{kSZ}(\bm{n})\equiv\frac{\Delta T_\mr{kSZ}}{T_{\mr{CMB}}}
 =-\frac{1}{c}\int d\eta  g(\eta)  \bm{p}_\parallel\ ,
 \end{eqnarray}
-where $\eta(z)$ is the comoving distance at redshift z, $g(\eta)=e^{-\tau} d\tau/d\eta$ is the visibility function, $\tau$ is the optical depth to Thomson scattering, 
+where $\eta(z)$ is the comoving distance, 
+$g(\eta)=e^{-\tau} d\tau/d\eta$ is the visibility function, $\tau$ is the optical depth for Thomson scattering, 
 $p_\parallel=(1+\delta_e)v_\parallel$ 
 is the momentum field parallel to the line of sight, 
 $\delta_e=(\rho-\bar{\rho})/\bar{\rho}$ 
-is the electron overdensity, 
+is the free electron overdensity, 
 with $\bar\rho$ denotes the average density. 
-It is assumed that electron overdensity are closely 
-related to baryon overdensity $\delta$ at $z<2$. 
+It is assumed that electron overdensity $\delta_e$ are closely 
+related to baryon overdensity at $z<2$, 
+therefore we use $\delta$ to denote both here after. 
 
 The direct correlation between kSZ and density field vanishes due to the cancellation of positive and negative velocity.
 To at most retrieve the correlation,  
-we first linearly calculate the peculiar velocity fields $\bm{v_z}$ 
+we first reconstruct the peculiar velocity fields $v_z$ 
 from continuity equation:
 \begin{eqnarray}
 	\label{eq:v}
-\hat v_z(\bm{k})=i a H f\delta(\bm{k})\frac{k_z}{k^2}\,
+v_z(\bm{k})=i a H f\delta(\bm{k})\frac{k_z}{k^2}\,
 \end{eqnarray}
 where $a$ is the scale factor, $f=d\mathrm{ln}D/d\mathrm{ln}a$, $D(a)$ is the linear growth function, 
 $H$ is the Hubble parameter.
@@ -37,11 +39,12 @@ following Eq.(\ref{eq:ksz}),
 %(relative contributions of different scales in reverse Fourier transformation 
 %indicated in Fig.\ref{fig:k3v}).
 and quantify the tightness of correlation between reconstructed kSZ and real kSZ 
-with a coefficient r: 
+with a correlation coefficient $r$: 
 \begin{eqnarray}
 \label{eq:r}
 	r\equiv \frac{P_{recon,real}}{\sqrt{P_{recon}P_{real}}}\,
 \end{eqnarray}
-%Where $\hat \Theta_{kSZ}$ is reconstructed kSZ map, 
-%and $\Theta_{kSZ}$ is real kSZ map.
+where $P_{recon,real}$ is the cross powerspectrum.
+%Where $\hat \Theta_\mr{kSZ}$ is reconstructed kSZ map, 
+%and $\Theta_\mr{kSZ}$ is real kSZ map.
 
