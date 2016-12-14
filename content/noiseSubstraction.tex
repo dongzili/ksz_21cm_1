@@ -31,8 +31,9 @@ $H(k_\mr{max}-k)$.
 
 2. Foreground noise level:
 
-Foregrounds from Galactic emissions, telescope noises, 
+Foregrounds from Galactic emissions, 
 extragalactic radio sources and Radio recombination lines, 
+together with telescope noises 
 could be three orders brighter than targeted signals\cite{DiMatteo04,Masui13}. 
 The process of foreground removal, taking advantage of its low spectral
 degrees of freedom \cite{Switzer15}, 
@@ -61,10 +62,10 @@ To avoid disturbance, two beams of a interferometer
 cannot be placed infinitely close. 
 The shortest baseline length decides the largest 
 angular scale it could probe.  
-Structures with angular scale greater than a threshhold of 
+Structures with angular scale greater than a threshold of 
 $l_\mr{min}$ will be drained out 
 in the visibility function 
-when cross correlating two beams. 
+when cross correlating signals received from different spots. 
 We again use a Heaviside function to assemble the effect. 
 %We do not assume worse cases there, since baselines as short as 20m 
 %are already able to filter most of the important modes for velocity reconstruction. 
@@ -102,19 +103,19 @@ with observable kSZ signals
      \hline
      & high foreground &low foreground&high foreground& low foreground\\
      \cline{2-5}
-     \footnote{Foreground: smear $k_z\lesssim 0.08,0.02,0.12,0.03$ h/Mpc respectively. Parameters based on \cite{2013ApJ...763L..20M,Switzer13,15Shaw}}
      $R_\parallel$ Mpc/h
+     \footnote{Foreground: smear $k_z\lesssim 0.08,0.02,0.12,0.03$ h/Mpc respectively. Parameters based on \cite{2013ApJ...763L..20M,Switzer13,15Shaw}}
       & 15 & 60 & 10 & 40 \\
      \hline
      & CHIME & HIRAX & CHIME &HIRAX\\
      \cline{2-5}
+     $k_\mr{max}$ h/Mpc 
      \footnote{Small scale noises: based on CHIME\cite{2014CHIME} and HIRAX\cite{HIRAX} 
      with 100 m and 200 m longest baseline respectively.}
-     $k_\mr{max}$ h/Mpc 
      & 0.6 & 1.2 & 0.4 & 0.8 \\
      \hline
-     \footnote{Spatial loss of inteferomenter: assuming shortest baseline of 20 m.}
      $\ell_\mr{min}$
+     \footnote{Spatial loss of inteferomenter: assuming shortest baseline of 20 m.}
      & \multicolumn{4}{|c|}{300} \\
      \hline
 \end{tabular}
