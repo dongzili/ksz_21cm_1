@@ -80,32 +80,30 @@ producing data of large sky area for redshift $\lesssim2.5$
 \cite{2014CHIME, TIANLAI, HIRAX}.
 %HIRAX \cite{HIRAX} etc.
 
-However, as feasibility is usually traded from data quality, 
-there are three main challenges for the upcoming H~I surveys  
-in terms of cross correlation with kSZ. 
-First, accepting all kinds of weak signals will cause complicated foregrounds, 
-which smear the large scale structure in radial direction\cite{DiMatteo04,Masui13}. 
-Second, the resolution is confined by facility resolutions, 
-droping information of small scale fluctuations. 
-Third, till now, the proposed experiments all work on interferometers, 
-which drain the large angular scale structure  
-due to the finite length of the shortest baseline. 
-The influence of these effects are demonstrated in Fig.\ref{fig:cmb_21cm}.
-
-%Since the kSZ signal is proposional to the convolution of density field and velocity field in Fourier space, 
-On the other hand, the most prominate kSZ signals that could be distinguished from noises  
-%is mainly from largest structure in radial direction 
-are mainly from $k_z\lesssim0.1$ h/Mpc in radial direction 
-with $\ell < 100$ and $\ell > 500$. 
-These modes are partly damaged in IM due to the three challenges. 
-In this paper, we evaluate the 
-influence of the incompelete modes on kSZ cross correlation 
-and partially recover the smeared large scale structures 
-from their tidal influence on small scales\cite{2012:pen,2015:zhu}. 
+Promising as it seems, 
+lack of large scale modes have always been a dark cloud 
+on cross correlating IM field with large scale signals. 
+The main challenge comes from the complicated foregrounds, 
+which contaminate small $k_\parallel$ modes. 
+Besides, in the kSZ case, the relatively low resolution 
+and spatial loss from inteferometers 
+will also downgrade the results. 
+The final resolvable modes of density fields are demonstrated in Fig.\ref{fig:cmb_21cm}.
+Compare it with the essential modes for generating kSZ in Fig.\ref{fig:k3v}, 
+a deficiency of $\ell<100$ modes in 
+reconstructing velocity fields is noticed. 
+As addressed at the bottom of Fig.\ref{fig:cmb_21cm}, 
+we first employ nonlinear tidal couplings 
+to reconstruct 
+large scale modes following \cite{2012:pen,2015:zhu}. 
+With it, velocity fields can be well reproduced. 
+Convolving it with 
+large $\ell$ density fields, 
+we could at most assemble resolvable kSZ signals. 
 Final correlation is presented against different conditions.
 
 The paper is organized as follows: 
-Section II introduces a holographic way to 
+Section II introduces the way to 
 cross correlate density fields with kSZ signals similar to \cite{Shao11}; 
 Section III discusses the constraints of 21cm IM and the properties of observed fields; 
 Section IV clarifies the important scales on density and velocity fields in terms of generating 
@@ -115,3 +113,29 @@ to reconstruct missing large scale modes in IM fields;
 Results are presented in section V, 
 while S/N is estimated in section VI; 
 We conclude at section VII.
+
+\begin{figure}[tbp]
+\begin{minipage}[t]{\linewidth}
+\vspace{-0.8cm}
+\includegraphics[width=\textwidth]{figure/cmb_21cm.eps}
+\vspace{-0.6cm}
+\label{fig:cmb_21cm}
+\end{minipage}
+\begin{minipage}[t]{\linewidth}
+\vspace{-0.8cm}
+\includegraphics[width=\textwidth]{figure/demo_convolution.eps}
+\vspace{-0.6cm}
+\end{minipage}
+\caption{
+%    All the $k$ and $\ell$ are matched for $z=1$ 
+    (Top) Expected density fields from    
+    21cm Intensity Mapping at $z=1$ with  
+    CHIME, assuming high foregrounds ($R_\parallel=15$ h/Mpc). 
+    (Middle) Window for kSZ measurements based on Planck noises at 217 GHz band. level of KSZ is calculated for a box of 1.2 Gpc.
+    (Bottom) %Demonstration of cross correlation algorithm, 
+    kSZ signal comes from the cross talk of 
+     $v_z($small $k_\perp)$ with $\delta($large $k_\perp)$. 
+    Since large scale modes are lost in $\delta_\mr{21cm}$, 
+    we first reconstruct it with tidal reconstruction. 
+}
+\end{figure}
