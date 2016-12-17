@@ -4,7 +4,7 @@ free electron momentum fields:
 \begin{eqnarray}
 \label{eq:ksz}
 \Theta_\mr{kSZ}(\bm{n})\equiv\frac{\Delta T_\mr{kSZ}}{T_{\mr{CMB}}}
-=-\frac{1}{c}\int d\eta  g(\eta)  \bm{p}_\parallel\ ,
+=-\frac{1}{c}\int d\eta  g(\eta)  \bm{p}_\parallel(\eta,\bm{n})\ ,
 \end{eqnarray}
 where $\eta(z)$ is the comoving distance, 
 $g(\eta)=e^{-\tau} d\tau/d\eta$ is the visibility function, $\tau$ is the optical depth for Thomson scattering, 
@@ -15,12 +15,12 @@ is the free electron overdensity,
 with $\bar\rho$ denotes the average density. 
 It is assumed that electron overdensity $\delta_e$ are closely 
 related to baryon overdensity at $z<2$, 
-therefore we use $\delta$ to denote both here after. 
+therefore we use $\delta$ to denote both hereafter. 
 
 The direct correlation between kSZ and density field vanishes due to the cancellation of positive and negative velocity.
 To at most retrieve the correlation,  
 we first reconstruct the peculiar velocity fields $v_z$ 
-from continuity equation:
+from linear continuity equation:
 \begin{eqnarray}
 	\label{eq:v}
 v_z(\bm{k})=i a H f\delta(\bm{k})\frac{k_z}{k^2}\,
@@ -42,9 +42,48 @@ and quantify the tightness of correlation between reconstructed kSZ and real kSZ
 with a correlation coefficient $r$: 
 \begin{eqnarray}
 \label{eq:r}
-	r\equiv \frac{P_{recon,real}}{\sqrt{P_{recon}P_{real}}}\,
+	r\equiv \frac{P_\mr{recon,real}}{\sqrt{P_\mr{recon}P_\mr{real}}}\,
 \end{eqnarray}
-where $P_{recon,real}$ is the cross powerspectrum.
+where $P_\mr{recon,real}$ is the cross power spectrum.
 %Where $\hat \Theta_\mr{kSZ}$ is reconstructed kSZ map, 
 %and $\Theta_\mr{kSZ}$ is real kSZ map.
 
+\begin{figure*}[btp]
+\captionsetup{width=0.28\linewidth,justification=raggedright}
+\begin{minipage}[t]{0.33\linewidth}
+\begin{center}
+\includegraphics[width=\textwidth,height=1.7\textwidth]{figure/k3pd_k3pv_z1_note.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{
+       The variance $2\pi^2\Delta^2\equiv k^3P$ 
+       indicate how Fourier modes of different scales 
+       contribute to real space fields, i.e.
+    $\delta(\bm{x})$ and $v_z(\bm{x})$. 
+    Golden modes for kSZ at $\ell\sim 500-3000$ are marked out.
+}
+\label{fig:k3v}
+\end{minipage}
+\begin{minipage}[t]{0.33\linewidth}
+\begin{center}
+\includegraphics[width=\textwidth,height=1.7\textwidth]{figure/powv2d_z1z2_r15r10.eps}
+\end{center}
+\vspace{-0.7cm}
+\caption{The correlation coefficient between reconstructed $v_z$  and actual $v_z$ 
+assuming a baseline of 100 m, foregrounds 
+    seriously contaminate $k_z$ below $\sim0.08$ h/Mpc and $\sim0.12$ h/Mpc 
+    at $z=1\&2$, respectively. }
+\label{fig:v}
+\end{minipage}
+\begin{minipage}[t]{0.33\linewidth}
+\begin{center}
+\includegraphics[width=\textwidth,height=1.7\textwidth]{figure/powmomen_before_after_tide.eps}
+\end{center}
+\vspace{-0.7cm}
+\label{fig:p}
+\caption{The correlation coefficient for $p_\parallel=(1+\delta)v_z$ before and 
+after tidal reconstruction. 
+The kSZ is roughly $p_\parallel$ integrated over line of sight, 
+corresponding to $k_z=0$ modes.}
+\end{minipage}
+\end{figure*}

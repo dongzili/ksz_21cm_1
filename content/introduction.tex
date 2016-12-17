@@ -49,8 +49,8 @@ with very low level of primary CMB.
 Methods trying to relax requirements on density fields, such as 
 cross correlating photo-z galaxies with kSZ \cite{Hill16,Ferraro16}, 
 depend on models of velocity fields and   
-demand next generation CMB facilities, eg. 
-ACTpol, CMB-S4 
+demand next generation CMB facilities, such as  
+ACTpol, CMB-S4, 
 to achieve 
 convincing S/N.
 
@@ -89,17 +89,20 @@ Besides, in the kSZ case, the relatively low resolution
 and spatial loss from inteferometers 
 will also downgrade the results. 
 The final resolvable modes of density fields are demonstrated in Fig.\ref{fig:cmb_21cm}.
-Compare it with the essential modes for generating kSZ in Fig.\ref{fig:k3v}, 
-a deficiency of $\ell<100$ modes in 
-reconstructing velocity fields is noticed. 
-As addressed at the bottom of Fig.\ref{fig:cmb_21cm}, 
-we first employ nonlinear tidal couplings 
-to reconstruct 
-large scale modes following \cite{2012:pen,2015:zhu}. 
+%Consider the contamination from promary CMB 
+%and noise scale of Planck
+Comparing it with the essential modes for generating kSZ in Fig.\ref{fig:k3v}, 
+the deficiency of $\ell<100$ modes for 
+constructing velocity fields is identified as the main obstacle. 
+Therefore an algorithm of using nonlinear tidal distortions 
+on small scales to solve for large scale fields 
+\cite{2012:pen,2015:zhu}
+is employed in this paper. 
 With it, velocity fields can be well reproduced. 
-Convolving it with 
+Convolving $v_z$ with 
 large $\ell$ density fields, 
 we could at most assemble resolvable kSZ signals. 
+This procedure is depicted at the bottom of Fig.\ref{fig:cmb_21cm}. 
 Final correlation is presented against different conditions.
 
 The paper is organized as follows: 
@@ -131,10 +134,11 @@ We conclude at section VII.
     (Top) Expected density fields from    
     21cm Intensity Mapping at $z=1$ with  
     CHIME, assuming high foregrounds ($R_\parallel=15$ h/Mpc). 
-    (Middle) Window for kSZ measurements based on Planck noises at 217 GHz band. level of KSZ is calculated for a box of 1.2 Gpc.
+    (Middle) Window for kSZ measurements based on Planck noises at 217 GHz band. level of kSZ is calculated for boxes of 1.2 Gpc.
     (Bottom) %Demonstration of cross correlation algorithm, 
     kSZ signal comes from the cross talk of 
-     $v_z($small $k_\perp)$ with $\delta($large $k_\perp)$. 
+    $v_z(\ell_\mr{low})$ with $\delta(\ell_\mr{high})$, 
+    with $\ell_\mr{high}-\ell_\mr{low}\sim1000-2000$. 
     Since large scale modes are lost in $\delta_\mr{21cm}$, 
     we first reconstruct it with tidal reconstruction. 
 }
