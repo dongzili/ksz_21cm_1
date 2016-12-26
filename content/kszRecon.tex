@@ -1,35 +1,21 @@
 \label{sec:kszRecon}
-The CMB temperature fluctuations caused by kSZ effect is simply an integral of the 
-free electron momentum fields:
+The CMB temperature fluctuation caused by the kSZ effect is simply a line-of-sight integral of the free electron momentum field:
 \begin{eqnarray}
 \label{eq:ksz}
 \Theta_\mr{kSZ}(\bm{n})\equiv\frac{\Delta T_\mr{kSZ}}{T_{\mr{CMB}}}
 =-\frac{1}{c}\int d\eta  g(\eta)  \bm{p}_\parallel(\eta,\bm{n})\ ,
 \end{eqnarray}
-where $\eta(z)$ is the comoving distance, 
-$g(\eta)=e^{-\tau} d\tau/d\eta$ is the visibility function, $\tau$ is the optical depth for Thomson scattering, 
-$p_\parallel=(1+\delta_e)v_\parallel$ 
-is the momentum field parallel to the line of sight, 
-$\delta_e=(\rho-\bar{\rho})/\bar{\rho}$ 
-is the free electron overdensity, 
-with $\bar\rho$ denotes the average density. 
-It is assumed that electron overdensity $\delta_e$ are closely 
-related to baryon overdensity at $z<2$, 
-therefore we use $\delta$ to denote both hereafter. 
+where $\eta(z)$ is the comoving distance, $g(\eta)=e^{-\tau} d\tau/d\eta$ is the visibility function, $\tau$ is the optical depth to Thomson scattering, 
+$p_\parallel=(1+\delta_e)v_\parallel$ is the momentum field parallel to the line of sight, and $\delta_e=(\rho-\bar{\rho})/\bar{\rho}$ is the free electron overdensity, with $\bar\rho$ denoting the average density. It is assumed that electron overdensity $\delta_e$ is closely related to baryon overdensity at $z<2$, therefore we simply use $\delta$ to denote both hereafter.
 
-The direct correlation between kSZ and density field vanishes due to the cancellation of positive and negative velocity.
-To at most retrieve the correlation,  
-we first reconstruct the peculiar velocity fields $v_z$ 
-from linear continuity equation:
+The direct correlation between kSZ and density fields vanishes due to the cancellation of positive and negative velocities. To at most retrieve the correlation, \philnote{not sure what you mean by `to at most', how about: To produce a quantity which can correlate non-trivially,} we first reconstruct the peculiar velocity fields $v_z$, using the linearized continuity equation:
 \begin{eqnarray}
 	\label{eq:v}
 v_z(\bm{k})=i a H f\delta(\bm{k})\frac{k_z}{k^2}\,
 \end{eqnarray}
-where $a$ is the scale factor, $f=d\mathrm{ln}D/d\mathrm{ln}a$, $D(a)$ is the linear growth function, 
-$H$ is the Hubble parameter.
+where $a$ is the scale factor, $f=d\mathrm{ln}D/d\mathrm{ln}a$, $D(a)$ is the linear growth function, $H$ is the Hubble parameter. \philnote{z is redshift or the third direction?}
 
-We then reconstruct a 2D kSZ field with $v_z$ and $\delta$ 
-following Eq.(\ref{eq:ksz}), 
+We then reconstruct a 2D kSZ field with $v_z$ and $\delta$ following Eq (\ref{eq:ksz}) \philnote{Out of curiosity, why not construct a kSZ field in each redshift bin?}, 
 %In linear region, the continuity equation goes like:
 %$\dot \delta+\nabla \cdot \bm{v}=0$, 
 %where $\bm{v}$ is the peculiar velocity and $\delta$ is the matter overdensity. 
@@ -39,7 +25,7 @@ following Eq.(\ref{eq:ksz}),
 %(relative contributions of different scales in reverse Fourier transformation 
 %indicated in Fig.\ref{fig:k3v}).
 and quantify the tightness of correlation between reconstructed kSZ and real kSZ 
-with a correlation coefficient $r$: 
+with a correlation coefficient $r$:
 \begin{eqnarray}
 \label{eq:r}
 	r\equiv \frac{P_\mr{recon,real}}{\sqrt{P_\mr{recon}P_\mr{real}}}\,
@@ -56,11 +42,7 @@ where $P_\mr{recon,real}$ is the cross power spectrum.
 \end{center}
 \vspace{-0.7cm}
 \caption{
-       The variance $2\pi^2\Delta^2\equiv k^3P$ 
-       indicate how Fourier modes of different scales 
-       contribute to real space fields, i.e.
-    $\delta(\bm{x})$ and $v_z(\bm{x})$. 
-    Golden modes for kSZ at $\ell\sim 500-3000$ are marked out.
+The variances $2\pi^2\Delta^2\equiv k^3P$ indicate how Fourier modes of different scales contribute to real space fields, i.e. $\delta(\bm{x})$ and $v_z(\bm{x})$. Golden modes \philnote{what are golden modes?} for kSZ at $\ell\sim 500-3000$ are marked out.
 }
 \label{fig:k3v}
 \end{minipage}
@@ -69,10 +51,7 @@ where $P_\mr{recon,real}$ is the cross power spectrum.
 \includegraphics[width=\textwidth,height=1.7\textwidth]{figure/powv2d_z1z2_r15r10.eps}
 \end{center}
 \vspace{-0.7cm}
-\caption{The correlation coefficient between reconstructed $v_z$  and actual $v_z$ 
-assuming a baseline of 100 m, foregrounds 
-    seriously contaminate $k_z$ below $\sim0.08$ h/Mpc and $\sim0.12$ h/Mpc 
-    at $z=1\&2$, respectively. }
+\caption{The correlation coefficient between the reconstructed $v_z$  and actual $v_z$, assuming a \philnote{longest?} baseline of 100 m. Foregrounds seriously contaminate $k_z$ below $\sim0.08$ h/Mpc and $\sim0.12$ h/Mpc at $z=1~\&~2$, respectively \philnote{Have you shown this somewhere or referenced?}.}
 \label{fig:v}
 \end{minipage}
 \begin{minipage}[t]{0.33\linewidth}
@@ -82,8 +61,7 @@ assuming a baseline of 100 m, foregrounds
 \vspace{-0.7cm}
 \label{fig:p}
 \caption{The correlation coefficient for $p_\parallel=(1+\delta)v_z$ before and 
-after tidal reconstruction. 
-The kSZ is roughly $p_\parallel$ integrated over line of sight, 
-corresponding to $k_z=0$ modes.}
+after tidal reconstruction \philnote{between what and what?}. The kSZ signal is roughly $p_\parallel$ integrated over line of sight, 
+corresponding to $k_z=0$ modes. \philnote{Titles should say correlation coefficient of \dots or have no title.}}
 \end{minipage}
 \end{figure*}

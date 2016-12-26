@@ -1,31 +1,15 @@
-Ideally, this velocity reconstruction method should 
-retrieve $>90\%$ kSZ signals \cite{Shao11}. 
-However, realistic 21cm IM experiments 
-can only detect density fluctuations at certain scales, 
-as illustrated in Fig.\ref{fig:cmb_21cm}. 
-Three main factors lead to the loss of modes. 
-
-1. The spacial and velocity resolution of facilities. 
-
-Unlike galaxy surveys, the resolution of IM is confined to 
-the resolution of facilities. 
-It decides the smallest scale to be observed, 
-and the effect could roughly be resembled with a Heaviside Function 
-$H(k_\mr{max}-k)$. 
+Ideally, the velocity reconstruction method discussed in the previous section should retrieve a $>90\%$ cross-correlation with the real kSZ signal \cite{Shao11}. However, realistic 21 cm IM experiments can only detect density fluctuations at certain scales, as illustrated in Fig.\ref{fig:cmb_21cm}. Three main factors lead to the loss of modes. \philnote{Use enumerate environment for lists:}
+\begin{enumerate}
+\item The angular resolution of the telescope:
+ 
+In comparison to galaxy surveys, IM surveys sacrifice angular resolution in exchange for sky coverage and survey speed. The effect of this finite angular resolution on S/N of the cross-correlation can be roughly taken in to account with a Heaviside Function in $k_\perp$ space, $H(k_\mr{max}-k)$.
 %We choose a realistic $k_\mr{max}$ based on baselines of ongoing experiments 
 %\cite{HIRAX,2014SPIE.9145E..22B,2014SPIE.9145E..4VN,2012IJMPS..12..256C,2015ApJ...798...40X}, 
 %and an ideal $k_\mr{max}$ based on noise status of Planck Satellite.
 
-2. Foreground noise level:
+\item Foreground noise level:
 
-Foregrounds from Galactic emissions, 
-extragalactic radio sources and Radio recombination lines, 
-together with telescope noises 
-could be three orders brighter than targeted signals\cite{DiMatteo04,Masui13}. 
-The process of foreground removal, taking advantage of its low spectral
-degrees of freedom \cite{Switzer15}, 
-will inevitably contaminates the smooth large scale structure in radial direction.  
-To imitate the loss, we apply a high pass filter $W(k_\parallel)=1-e^{-k_\parallel^2R_\parallel^2/2}$. 
+Foregrounds from Galactic emission, extragalactic radio sources and Radio recombination lines, together with the noise of the telescope could be three orders brighter than the targeted signal \cite{DiMatteo04,Masui13}. The process of foreground removal, which takes advantage of the low spectral degrees of freedom of the forgegrounds \cite{Switzer15}, requires the removal of the corresponding large-scale structure in the radial direction, as well. To imitate the loss, we apply a high pass filter $W(k_\parallel)=1-e^{-k_\parallel^2R_\parallel^2/2}$.
 %We again test a realistic case \cite{2013ApJ...763L..20M,Switzer13}
 %with 
 %only half of the signal resolved at $k_\parallel=0.08$ Mpc/h and $0.15$ Mpc/h 
@@ -42,44 +26,21 @@ To imitate the loss, we apply a high pass filter $W(k_\parallel)=1-e^{-k_\parall
 %This is realistic according to the condition of current 21 cm observations 
 %\cite{2013ApJ...763L..20M,Switzer13}.
 
-3. The shortest baseline of inteferometers:
+\item The shortest baseline of inteferometers:
 
-Current 21cm IM experiments are all carried on inteferometers. 
-To avoid disturbance, two beams of a interferometer 
-cannot be placed infinitely close. 
-The shortest baseline length decides the largest 
-angular scale it could probe.  
-Structures with angular scale greater than a threshold of 
-$\ell_\mr{min}$ will be drained out 
-in the visibility function 
-when cross correlating signals received from different spots. 
-We again use a Heaviside function to assemble the effect. 
+Current 21cm IM experiments are all carried on inteferometers. To avoid disturbance, two beams of a interferometer cannot be placed infinitely close. The shortest baseline length decides the largest angular scale it could probe. Structures with angular scale greater than a threshold of $\ell_\mr{min}$ will be lost in the 21 cm data when cross-correlating signals from distinct antennas with some minimum spacing. We again use a Heaviside function to mimick this effect. \philnote{I've already mentioned before that I don't agree with this point. CHIME is sensitive to the $\ell = 0$ mode even without auto-correlations. You lose it with forgeground filtering only.}
 %We do not assume worse cases there, since baselines as short as 20m 
 %are already able to filter most of the important modes for velocity reconstruction. 
-
-Therefore, a realistic 21 cm density contrasts will appear as 
+\end{enumerate}
+\philnote{In Fig. 1 Small scale noises $\rightarrow$ Small scale noise. But actually I think you should not have this there, since the noise curve is part of the Planck data, not the 21 cm data, which you can assume to be confusion limited. The real limit on the largest $k_\parallel$ for a radio telescope is the size of its frequency bins (spectral resolution).}
+Therefore, a realistic 21 cm density contrast will appear as 
 \begin{eqnarray}
 \label{eq:ns}
-    \delta_\mr{IM}(\bm{k})=\delta(\bm{k})H(k_\mr{max}-k)W(k_\parallel)H(\ell-\ell_\mr{min}),
+    \delta_\mr{IM}(\bm{k})=\delta(\bm{k})H(k_\mr{max}-k)W(k_\parallel)H(\ell-\ell_\mr{min}).
 \end{eqnarray}
+\philnote{Maybe say "where $k = \ell / \chi$".} Table.\ref{tab:para} lists several representive values for the different parameters introduced above, based on previous observations and predictions. Fig. \ref{fig:cmb_21cm} is an illustration of the relevant scales for the various observables, corresponding to $R_\parallel=15$ Mpc/h, $k_\mr{max}=0.6$ h/Mpc at $z=1$. With this 21 cm IM field, we construct a momentum field $p_\parallel$ following Eq.(\ref{eq:ksz}). As demonstrated in Fig.\ref{fig:p}, it does not cover the modes necessary for a cross-correlation with kSZ.
 
-Table.\ref{tab:para} 
-lists several representive values for different parameters 
-based on previous observations and predictions. 
-Fig.\ref{fig:cmb_21cm} 
-is a demonstration of density contrasts corresponding to 
-$R_\parallel=15$ Mpc/h, $k_\mr{max}=0.6$ h/Mpc 
-at $z=1$. 
-With this field, 
-we construct a momentum field $p_\parallel$ following Eq.(\ref{eq:ksz}). 
-As demonstrated in Fig.\ref{fig:p}, 
-it does not cover the modes related to kSZ signals. 
-
-Actually, directly using $\delta_\mr{IM}$ of any of the parameters 
-to reconstruct kSZ signal will 
-yields a correlation coeffcient $r<0.2$ 
-with observable kSZ signals 
-
+Actually, directly using $\delta_\mr{IM}$ with any combination of the parameters above to yields a correlation coeffcient $r<0.2$ with observable kSZ signals \philnote{do you mean from current (i.e. Planck) data?}.
 %With the noise filtered density contrast $\delta_{nf}$, we follow the procedure described in
 %section \ref{sec:kszRecon} to generate a mock kSZ signal $\hat \Theta_{nf}$  
 %and calculate cross correlation $r_{\Theta\hat\Theta_{nf}}$.
@@ -97,7 +58,7 @@ with observable kSZ signals
      & CHIME & HIRAX & CHIME &HIRAX\\
      \cline{2-5}
      $k_\mr{max}$ h/Mpc 
-     \footnote{Small scale noises: based on CHIME\cite{2014CHIME} and HIRAX\cite{HIRAX} 
+     \footnote{Small scale noise: based on CHIME\cite{2014CHIME} and HIRAX\cite{HIRAX} 
      with 100 m and 200 m longest baseline respectively.}
      & 0.6 & 1.2 & 0.4 & 0.8 \\
      \hline

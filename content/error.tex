@@ -9,36 +9,23 @@
 \end{figure}
 %In real surveys, when we calculate the cross angular power spectrum $C_\ell$ between reconstructed kSZ signals and CMB measurements, we will have to face statistical errors. 
 %They can be approximated as:
-Consider primary CMB and facility noises, 
-the chances to seperate kSZ signal from statistical errors could be estimated 
-with:
+In this Section, we consider our ability to distinguish the kSZ effect from the primary CMB and instrumental noise. We estimate the signal-to-noise for the kSZ effect as:
 %\begin{eqnarray}
  %   \frac{\Delta C_\ell}{C_\ell}\simeq \frac{1}{r\sqrt{(2l+1)\Delta l f_{sky}}}\sqrt{\frac{C_\ell^{\mr{CMB}}+C_\ell^{kSZ}+C_\ell^{\mr{CMB},N}}{C_\ell^{kSZ,\Delta z}}(1+\frac{C^N_{\hat \Theta}}{C_{\hat \Theta}})}\,
 %\end{eqnarray}
-\begin{eqnarray}
+\begin{eqnarray} 
+\label{eq:sn}
     \frac{S}{N}&=&\frac{C_\ell}{\Delta C_\ell}\\\nonumber
                &\simeq&
     r\sqrt{(2\ell+1)\Delta l f_\mathrm{sky}}\sqrt{\frac{C_\ell^{\mathrm{kSZ},\Delta z}}{C_\ell^{\mr{CMB}}+C_\ell^\mathrm{kSZ}+C_\ell^{\mr{CMB},N}}},
 \end{eqnarray}
-where $C_\ell^\mathrm{CMB}$ is the angular power spectrum of primary CMB 
-;
-$C_\ell^\mathrm{CMB,N}$ indicates the facility noises; 
-$C_\ell^{\mathrm{kSZ},\Delta z}$ is the kSZ signal from a certain redshift bin; 
-$r$ is the correlation coefficients from Eq.(\ref{eq:r}); 
-$f_\mathrm{sky}$ is the percent of sky area covered by both surveys.
+\philnote{Use align.} \philnote{Why are you using an approx. equal to? What are the assumptions that go into this estimate for S/N?}
+where $C_\ell^\mathrm{CMB}$ is the angular power spectrum of primary CMB, $C_\ell^\mathrm{CMB,N}$ is the contribution to the covariance from instrumental noise, $C_\ell^{\mathrm{kSZ},\Delta z}$ is the kSZ signal from within a certain redshift bin,  
+$r$ is the correlation coefficient defined in Eq.(\ref{eq:r}), and $f_\mathrm{sky}$ is the percent of sky area covered by both the CMB and 21 cm IM surveys.
 
-In our case, $C_\ell^\mr{CMB}$ is calculated from CAMB \cite{CAMB}. 
-$C_\ell^\mr{CMB,N}$ is estimated with Planck data \cite{Planck2015} at 217GHz, with 
-sensitivity per beam solid angle $\sigma_{p,T}=8.7\mu K_\mathrm{CMB}$  
-and effective beam FWHM $\theta_\mathrm{FWHM}\sim 5'$. 
-We choose $f_\mathrm{sky}=0.8$ according to claimed 21 cm IM survey area. 
-$C_\ell^{\mathrm{kSZ},\Delta z}$ is calculated within two bins of size 1200 Mpc/h, centered at redshift 1 $\&$ 2, respectively.
+In our case, $C_\ell^\mr{CMB}$ is calculated using CAMB \cite{CAMB}. $C_\ell^\mr{CMB,N}$ is estimated with Planck data \cite{Planck2015} at 217GHz, with sensitivity per beam solid angle given by $\sigma_{p,T}=8.7\mu K_\mathrm{CMB}$ and an effective beam full-width-half-maximum of $\theta_\mathrm{FWHM}\sim 5'$. 
+We choose $f_\mathrm{sky}=0.8$ according to the reported 21 cm IM survey area \philnote{reference?}. $C_\ell^{\mathrm{kSZ},\Delta z}$ is calculated within two bins of size 1200 Mpc/h, centered at redshift 1 $\&$ 2, respectively. \philnote{Its not clear to me where the 21 cm IM comes in to the above.}
 
-The cumulative S/N is demonstrated in Fig.\ref{fig:sn}. 
-The low correlation in $z=2$ is compensated by the high electron density 
-and the overall S/N could well reach 50 with HIRAX.
-
-With noise level of Planck, 
-the resolution of HIRAX already cover most important $\ell$. 
+The cumulative S/N \philnote{calculated using Eq. \eqref{eq:sn}} is shown in Fig.\ref{fig:sn}. The low correlation \philnote{Do you mean the lower power from the less structure growth?} at $z=2$ is compensated by the high electron density, and the overall S/N should well reach 50 with HIRAX. With Planck noise levels, the resolution of HIRAX already covers the most important $\ell$. 
 %It goes into larger scale of baryon distribution than 
 %other tracers proposed. 
