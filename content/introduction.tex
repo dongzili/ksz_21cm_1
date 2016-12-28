@@ -3,14 +3,14 @@ For $z\lesssim 2$, a large fraction of the predicted baryon content is missing i
 Among proposed probes, the kinematic Sunyaev-Zel'dovich (kSZ) effect \cite{Sunyaev72,Sunyaev80,Vishniac87} is a promising one. The kSZ effect results from Compton scattering of Cosmic Microwave Background (CMB) photons off of free electrons. The radial velocity of the electrons provides a Doppler shift to the photons causing a secondary anisotropy in CMB temperature. 
 %The kSZ signal could satisfy all three conditions listed before. 
 %Consider kSZ as tracer has lots of advantages for this problem. 
-It is an ideal probe to tackle the missing baryon problem: First, it recieves a contribution from all the free electrons, 
+It is an ideal probe to tackle the missing baryon problem: First, it recieves a contribution from all the free electrons. 
 %in all temperature and dynamic range. 
-and hence contains information from $\gtrsim 90\%$ of baryons which are in ionized states. \philnote{Do you mean its sensitive to 90\% of the ionized photons or that the ionization fraction is 90\% at the redshifts we are interested in?}
-%First, it contributes from all the free electrons, indicating the distribution of $90\%$ of the baryons in ionized states,   
+For low redshift, $\gtrsim 90\%$ of baryons are in ionized states \cite{Fukugita04}, 
+and can be traced by free electrons. %First, it contributes from all the free electrons, indicating the distribution of $90\%$ of the baryons in ionized states,   
 %leaving alone only less than $10\%$ of baryons that 
 %reside in stars, remnants, atomic and molecular gases \cite{Fukugita04}. 
 %
-Second, the signal is mainly influenced by the electron density and radial velocity, regardless of the temperature, pressure, and metalicity, so no extra assumptions are needed to estimate the baryon abundance. Third, the dominant piece of the peculiar velocity signal comes fromt the large-scale structure, and therefore the signal is less biased by the local environment, and more indicative of the diffuse distribution.
+Second, the signal is mainly influenced by the electron density and radial velocity, regardless of the temperature, pressure, and metalicity, so no extra assumptions are needed to estimate the baryon abundance. Third, the dominant piece of the peculiar velocity signal comes from the large-scale structure, and therefore the signal is less biased by the local environment, and more indicative of the diffuse distribution.
 
 Attractive as it is, two drawbacks largely reduce the feasibility of harnessing the kSZ signal. First, the signal is weak compared to the primary CMB anisotropies and hence suffers seriously from contaminations from the primary, instrumental noise, the thermal SZ effect, CMB lensing, etc \dots Second, it is an integrated effect along the line of sight and does not contain redshift information.
 
@@ -19,7 +19,7 @@ Cross correlation of the kSZ signal with another tracer, which has both large-sc
 However, the lack of prominent spectral lines at redshift $1.4-2.5$ makes it difficult to consistently measure evolution from $z=2$ to $z=0$. 
 %And kSZ signal is more prominent at $z\sim2$ than $z<1.4$, 
 %making it painful to leave out this stretch.
-Moreover, the difficult technical specifications required for source detection, especially at high redshift, largely constrain the sky coverage and limit such surveys to relatively small angular scales, where the power from the primary CMB is low. Methods which relax requirements on density fields \philnote{not sure what you mean here}, such as cross-correlation of photo-z galaxies with kSZ \cite{Hill16,Ferraro16}, depend on models of velocity fields and demand next generation CMB facilities, such as ACTpol, CMB-S4, to achieve convincing S/N.
+Moreover, the difficult technical specifications required for source detection, especially at high redshift, largely constrain the sky coverage and limit such surveys to relatively small angular scales, where the power from the primary CMB is low. Methods with lower requirements on facilities such as cross-correlation of photo-z galaxies with kSZ \cite{Hill16,Ferraro16}, depend on models of velocity fields and demand next generation CMB facilities, such as ACTpol, CMB-S4, to achieve convincing S/N.
 %Optical spectroscopic surveys have been proposed as an ideal candidate. 
 %Opitical spectroscopic surveys are one popular candidate. 
 %However, they are not accessible on redshift $1.4-2.5$ 
@@ -29,20 +29,30 @@ Moreover, the difficult technical specifications required for source detection, 
 %we discuss the possibility of using integrated signals of each pixel 
 %(intensity mapping) 
 
-In this paper, the new possibility of cross-correlating the neutral hydrogen (HI) density field from 21 cm intensity mapping (IM) experiments with the kSZ signal is discussed. \philnote{Using what methods: theoretical, N-Body, \dots ?} The redshifted 21 cm line provides accurate redshift information, which will soon be available at $z\lesssim2$.  
+In this paper, the new possibility of cross-correlating the neutral hydrogen (HI) density field from 21 cm intensity mapping (IM) experiments with the kSZ signal is discussed and tested with simulations. The redshifted 21 cm line provides accurate redshift information, which will soon be available at $z\lesssim2$.  
 %which enables us to reconstruct velocity field and 
 %get better correlation with kSZ powerspectra. 
-Intensity mapping surveys, rather than distinguishing individual galaxies, integrate \philnote{Many intensity mapping surveys integrate, while one intensity mapping survey integrates. I know this is confusing, but sorry that's how English works.} all signals in a pixel, enabling them quickly scan large areas of the sky. In the following few years, there will be several full-sky experiments producing data at redshifts $\lesssim2.5$ 
-%CHIME \cite{2014SPIE.9145E..22B}, Tianlai \cite{2015ApJ...798...40X}, 
-%HIRAX \cite{HIRAX} etc.
+Intensity mapping surveys, rather than distinguishing individual galaxies, integrate all signals in a pixel, enabling them quickly scan large areas of the sky. In the following few years, there will be several full-sky experiments producing data at redshifts $\lesssim2.5$ 
 \cite{2014CHIME, TIANLAI, HIRAX}.
-%HIRAX \cite{HIRAX} etc.
+With the abundant data of density fields with accurate redshift information, we are able to linearly reconstruct the velocity fields, and hence calculate a 
+large sky kSZ map to cross correlate with real kSZ signals. 
 
-Promising as it seems, the loss of large-scale modes in IM surveys will complicate the cross-correlation of the IM field with large-scale signals. The main challenge comes from the bright astrophysical foregrounds, which contaminate small $k_\parallel$ modes. Besides, the low resolution of IM surveys \philnote{as compared to galaxy surveys [?]} and spatial loss from inteferometers \philnote{again not sure what this means} will \philnote{reduce the S/N of the cross-correlation with the kSZ, in particular [?]}. Fig.\ref{fig:cmb_21cm} shows \philnote{an illustration} of the modes of the matter density field which can be observed by \philnote{a CHIME-like} survey.
+Promising as it seems, the loss of large-scale modes in IM surveys will complicate the cross-correlation of the IM field with kSZ signals. The main challenge comes from the bright astrophysical foregrounds, which contaminate the large-scale modes parallel to the line of sight, i.e. small $k_\parallel$ modes. Besides, the large-scale modes in perpendicular plane, i.e. small $k_\perp$ modes, is poorly resolved with inteferometers. Fig.\ref{fig:cmb_21cm} shows an illustration of the modes of the matter density field which can be observed by a CHIME-like survey.
 %Consider the contamination from promary CMB 
 %and noise scale of Planck
-A mode counting comparison with the kSZ signal (shown in Fig.\ref{fig:k3v}) reveals that the deficiency of $\ell<100$ modes for constructing velocity fields is identified as the main obstacle. \philnote{the main obstacle to what? constructing velocity fields?}
-Therefore, in this work, we make use of an algorithm which uses non-linear tidal distortions on small scales to reconstruct the large-scale field \cite{2012:pen,2015:zhu}. With it, velocity fields can be well reproduced. Convolving $v_z$ with large $\ell$ density fields, we could at most assemble resolvable kSZ signals. \philnote{I'm not sure what you mean here. Do you mean that the method allows you to maximize the cross-correlation with kSZ?} This procedure is depicted at the bottom of Fig. \ref{fig:cmb_21cm}. Final correlation is presented against different conditions. \philnote{What do you mean here? Be more specific. What conditions are being varried? Do you mean something like: Finally, we discuss the effect on the cross-correlation of varying various survey-related parameters such as \dots ?}
+Since the large scale modes are essential 
+for calculating velocity fields, 
+directly using this IM fields to cross correlate with kSZ signal can only 
+resolve $<20\%$ of the signal.  
+
+Therefore, in this work, 
+we first solve for the large-scale modes 
+from their non-linear tidal distortions on small scale power spectrum \cite{2012:pen,2015:zhu}. 
+As shown in simulations, velocity fields can be well reproduced 
+after the algorithm. 
+Convolving the reconstructed $v_z$ with large $\ell$ density fields, we could better assemble observable kSZ signals. 
+The full procedure is depicted at the bottom of Fig. \ref{fig:cmb_21cm}. 
+The effect on the cross-correlation obtained from this method of varying various survey-related parameters such as foreground noise level, shortest baseline length, spatial and frequency resolution are discussed.
 
 The paper is organized as follows: Section II introduces the method we use to cross-correlate density fields with the kSZ signal (similarly to \cite{Shao11}); Section III discusses the realities of 21cm IM surveys and properties of the observed fields; Section IV clarifies the important scales of the density and velocity fields in relation to the kSZ signal; Section IV describes the non-linear tidal reconstruction method for the missing large-scale modes in the IM fields; Section V presents our analytical and numerical results, while in Section VI we summarize our S/N calculations; We conclude in Section VII.
 
@@ -60,8 +70,15 @@ The paper is organized as follows: Section II introduces the method we use to cr
 \end{minipage}
 \caption{
 %    All the $k$ and $\ell$ are matched for $z=1$
-(Top) Theoretical prediction for the two-dimensional power spectrum of 21 cm fluctuations at $z=1$ observed by CHIME, assuming high foregrounds ($R_\parallel=15$ h/Mpc) \philnote{Reference the section where this is explained}. (Middle) Window for kSZ measurements based on Planck 217 GHz band noise. The kSZ signal is calculated in 1.2 Gpc boxes.
+(Top) Theoretical prediction for the two-dimensional power spectrum of 21 cm fluctuations at $z=1$ observed by CHIME, assuming high foregrounds ($R_\parallel=15$ h/Mpc). See discussions in Section.\ref{sec:21cm}. (Middle) Window for kSZ measurements based on Planck 217 GHz band noise. The kSZ signal is calculated in 1.2 Gpc boxes.
 %Demonstration of cross correlation algorithm, 
-(Bottom) The kSZ signal comes from the cross talk of $v_z(\ell_\mr{low})$ with $\delta(\ell_\mr{high})$, at scales $\ell_\mr{high}-\ell_\mr{low}\sim1000-2000$. Since large scale modes are lost in $\delta_\mr{21cm}$, we first reconstruct them with tidal reconstruction. \philnote{I think you are off by an order of magnitude in your wedge. See figure 9 in https://arxiv.org/pdf/1401.2095v1.pdf } \philnote{Also, I don't quite understand this schematic. If there is no overlap in $(k_\parallel, k_\perp)$ the cross-correlation should be zero? Also if $v_z$ large-scale but $\ell$ of 1000?}
+(Bottom) The algorithm could be divided into two parts: 1. solving for the lost large scale modes 
+from their tidal distortions on small scale power spectra observed in 21cm IM; 
+2. calculating the velocity fields from reconstructed large scale modes 
+and multiply them with density fields in real space.  
+Notice that the multiplication in real space is a convolution in Fourier space, 
+therefore the effective modes for velocity and density fields are off by $\ell\sim1000-2000$ in projected plane. 
+See discussions in Section.\ref{sec:kszAnalysis}. 
+\philnote{See figure 9 in https://arxiv.org/pdf/1401.2095v1.pdf }
 }
 \end{figure}
