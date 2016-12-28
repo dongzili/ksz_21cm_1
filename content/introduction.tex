@@ -72,13 +72,12 @@ The paper is organized as follows: Section II introduces the method we use to cr
 %    All the $k$ and $\ell$ are matched for $z=1$
 (Top) Theoretical prediction for the two-dimensional power spectrum of 21 cm fluctuations at $z=1$ observed by CHIME, assuming high foregrounds ($R_\parallel=15$ h/Mpc). See discussions in Section.\ref{sec:21cm}. (Middle) Window for kSZ measurements based on Planck 217 GHz band noise. The kSZ signal is calculated in 1.2 Gpc boxes.
 %Demonstration of cross correlation algorithm, 
-(Bottom) The algorithm could be divided into two parts: 1. solving for the lost large scale modes 
-from their tidal distortions on small scale power spectra observed in 21cm IM; 
-2. calculating the velocity fields from reconstructed large scale modes 
-and multiply them with density fields in real space.  
-Notice that the multiplication in real space is a convolution in Fourier space, 
-therefore the effective modes for velocity and density fields are off by $\ell\sim1000-2000$ in projected plane. 
-See discussions in Section.\ref{sec:kszAnalysis}. 
+(Bottom) The algorithm first solve for the lost large scale modes 
+with tidal reconstruction 
+and use it to calculate velocity fields.   
+The kSZ signal is a convolution of density and velocity in Fourier space, 
+therefore velocity and density fields of different k are coupled together 
+as discussed in Section.\ref{sec:kszAnalysis}. 
 \philnote{See figure 9 in https://arxiv.org/pdf/1401.2095v1.pdf }
 }
 \end{figure}
