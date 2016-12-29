@@ -31,12 +31,21 @@ Different components of $t_{ij}$ are related to different $k$ modes of the large
     \kappa_\mr{3D}=\nabla^2\Phi_L=\frac{3}{2}\nabla^{-2}\partial_i\partial_j t_{ij}
 \end{eqnarray}
 We note that $f(k,\tau)$ increases with $k$ at the scales we are interested in, indicating the distortions are more manifest on small scales. This reinforces the feasibility of using observable high $k$ modes of the 21 cm IM field to extract low $k$ modes. 
+
+More detailed steps are described in \cite{2015:zhu}.  
+We make slight adjustment as to use all 5 observables in $t_{ij}$ 
+rather than only $\gamma_1$ and $\gamma_2$ in transverse plane. 
+As for the influence of redshift distortion concerned in \cite{2015:zhu}, 
+linearly, it is just a change of absolute value of $\delta(\bm{k})$ related to $k_z$, which is easy to correct.
+To avoid contaminations coming from nonliear redshift distortions, 
+we discard $\delta(\bm{k})$ with $k_z$ greater than a cut off scale 
+$k_{z\,\mr{max}}$ when applying tidal reconstruction algorithm. 
+Choosing $k_{z\,\mr{max}}=k_{\perp\,\mr{max}}$, 
+we see no noticeable downgrading of reconstruction results on $v_z$ 
+after considering redshift distortions.  
+
+
 \if2=1
-We apply identical filters as \ref{15Hongming} 
-when selecting the distortions. 
-However, \ref{15Hongming} only harness $t_{ij}$ components 
-in transverse plane, i.e.$\gamma_1$ and $\gamma_2$ 
-as to avoid bias from redshift distortions. 
 We use all five components, since there are more intact modes in 
 z direction than transverse plane, 
 and $\gamma z$ is actually the most important 

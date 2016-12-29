@@ -3,7 +3,7 @@ Ideally, the velocity reconstruction method diskussed in the previous section sh
 \begin{enumerate}
 \item The angular resolution of the telescope:
  
-In comparison to galaxy surveys, IM surveys sacrifice angular resolution in exchange for sky coverage and survey speed. The effect of this finite angular resolution on S/N of the cross-correlation can be roughly taken in to account with a Heaviside Function in $k_\perp$ space, $H(k_\mr{max}-k)$.
+In comparison to galaxy surveys, IM surveys sacrifice angular resolution in exchange for sky coverage and survey speed. The effect of this finite angular resolution on S/N of the cross-correlation can be roughly taken in to account with a Heaviside Function in $k_\perp$ space, $H(k_{\perp\,\mr{max}}-k_\perp)$.
 %We choose a realistic $k_\mr{max}$ based on baselines of ongoing experiments 
 %\cite{HIRAX,2014SPIE.9145E..22B,2014SPIE.9145E..4VN,2012IJMPS..12..256C,2015ApJ...798...40X}, 
 %and an ideal $k_\mr{max}$ based on noise status of Planck Satellite.
@@ -42,11 +42,11 @@ $H(\ell-\ell_\mr{min})$ to mimick this effect.
 Therefore, a realistic 21 cm density contrast will appear as 
 \begin{eqnarray}
 \label{eq:ns}
-    \delta_\mr{IM}(\bm{k})=\delta(\bm{k})H(k_\mr{max}-k)W(k_\parallel)H(\ell-\ell_\mr{min}).
+    \delta_\mr{IM}(\bm{k})=\delta(\bm{k})H(k_{\perp\,\mr{max}}-k_\perp)W(k_\parallel)H(\ell-\ell_\mr{min}).
 \end{eqnarray}
 where $k_\parallel = \ell / \chi$. 
 
-Table.\ref{tab:para} lists several representive values for the different parameters introduced above, based on previous observations and predictions. Fig. \ref{fig:cmb_21cm} is an illustration of the relevant scales for the various observables, corresponding to $R_\parallel=15$ Mpc/h, $k_\mr{max}=0.6$ h/Mpc at $z=1$. With this 21 cm IM field, we construct a momentum field $p_\parallel$ following Eq.(\ref{eq:ksz}). As demonstrated in Fig.\ref{fig:p}, it does not cover the modes necessary for a cross-correlation with kSZ.
+Table.\ref{tab:para} lists several representive values for the different parameters introduced above, based on previous observations and predictions. Fig. \ref{fig:cmb_21cm} is an illustration of the relevant scales for the various observables, corresponding to $R_\parallel=15$ Mpc/h, $k_{\perp\,\mr{max}}=0.6$ h/Mpc at $z=1$. With this 21 cm IM field, we construct a momentum field $p_\parallel$ following Eq.(\ref{eq:ksz}). As demonstrated in Fig.\ref{fig:p}, it does not cover the modes necessary for a cross-correlation with kSZ.
 
 Actually, directly using $\delta_\mr{IM}$ with any combination of the parameters above to generate kSZ map will only yield a correlation coeffcient $r<0.2$ with observable kSZ signals. 
 %With the noise filtered density contrast $\delta_{nf}$, we follow the procedure described in
@@ -65,7 +65,7 @@ Actually, directly using $\delta_\mr{IM}$ with any combination of the parameters
      \hline
      & CHIME & HIRAX & CHIME &HIRAX\\
      \cline{2-5}
-     $k_\mr{max}$ h/Mpc 
+     $k_{\perp\,\mr{max}}$ h/Mpc 
      \footnote{Small scale noise: based on CHIME\cite{2014CHIME} and HIRAX\cite{HIRAX} 
      with 80 m and 200 m longest baseline respectively.}
      & 0.6 & 1.2 & 0.4 & 0.8 \\
